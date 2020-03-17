@@ -33,69 +33,124 @@
 #' @name Settime
 NULL
 
-#' @param input_file input file.
-#' @param output_file output file.
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Settime
-#' @export 
-cdo_setcalendar <- new_operator("setcalendar", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_setcalendar <- function(infile, outfile = NULL) {
+  .new_step(operator = 'setcalendar', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Settime
-#' @export 
-cdo_setdate <- new_operator("setdate", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_setdate <- function(infile, outfile = NULL) {
+  .new_step(operator = 'setdate', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Settime
-#' @export 
-cdo_setday <- new_operator("setday", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_setday <- function(infile, outfile = NULL) {
+  .new_step(operator = 'setday', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Settime
-#' @export 
-cdo_setmon <- new_operator("setmon", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_setmon <- function(infile, outfile = NULL) {
+  .new_step(operator = 'setmon', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Settime
-#' @export 
-cdo_setreftime <- new_operator("setreftime", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_setreftime <- function(infile, outfile = NULL) {
+  .new_step(operator = 'setreftime', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Settime
-#' @export 
-cdo_settaxis <- new_operator("settaxis", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_settaxis <- function(infile, outfile = NULL) {
+  .new_step(operator = 'settaxis', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Settime
-#' @export 
-cdo_settbounds <- new_operator("settbounds", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_settbounds <- function(infile, outfile = NULL) {
+  .new_step(operator = 'settbounds', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Settime
-#' @export 
-cdo_settime <- new_operator("settime", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_settime <- function(infile, outfile = NULL) {
+  .new_step(operator = 'settime', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Settime
-#' @export 
-cdo_settunits <- new_operator("settunits", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_settunits <- function(infile, outfile = NULL) {
+  .new_step(operator = 'settunits', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Settime
-#' @export 
-cdo_setyear <- new_operator("setyear", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_setyear <- function(infile, outfile = NULL) {
+  .new_step(operator = 'setyear', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Settime
-#' @export 
-cdo_shifttime <- new_operator("shifttime", 1, 1)
-
+#' @export
+cdo_shifttime <- function(infile, outfile = NULL) {
+  .new_step(operator = 'shifttime', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}

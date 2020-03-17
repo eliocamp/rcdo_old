@@ -16,27 +16,91 @@
 #' @name EOFs
 NULL
 
-#' @param input_file input file.
-#' @param output_file_1,output_file_2 output files.
+#' @param infile input file.
+#' @param outfile1,outfile2 output files.
 #' @rdname EOFs
-#' @export 
-cdo_eof <- new_operator("eof", 1, 2)
-
-#' @param input_file input file.
-#' @param output_file_1,output_file_2 output files.
+#' @export
+cdo_eof <- function(infile, outfile1 = NULL, outfile2 = NULL) {
+  .new_step(operator = 'eof', 
+            inputs = list(infile), 
+            outputs = c(outfile1), 
+            n_inputs = 1,
+            n_outputs = 2)
+}
+#' @param infile input file.
+#' @param outfile1,outfile2 output files.
 #' @rdname EOFs
-#' @export 
-cdo_eof3d <- new_operator("eof3d", 1, 2)
-
-#' @param input_file input file.
-#' @param output_file_1,output_file_2 output files.
+#' @export
+cdo_eof <- function(infile, outfile1 = NULL, outfile2 = NULL) {
+  .new_step(operator = 'eof', 
+            inputs = list(infile), 
+            outputs = c(outfile2), 
+            n_inputs = 1,
+            n_outputs = 2)
+}
+#' @param infile input file.
+#' @param outfile1,outfile2 output files.
 #' @rdname EOFs
-#' @export 
-cdo_eofspatial <- new_operator("eofspatial", 1, 2)
-
-#' @param input_file input file.
-#' @param output_file_1,output_file_2 output files.
+#' @export
+cdo_eof3d <- function(infile, outfile1 = NULL, outfile2 = NULL) {
+  .new_step(operator = 'eof3d', 
+            inputs = list(infile), 
+            outputs = c(outfile1), 
+            n_inputs = 1,
+            n_outputs = 2)
+}
+#' @param infile input file.
+#' @param outfile1,outfile2 output files.
 #' @rdname EOFs
-#' @export 
-cdo_eoftime <- new_operator("eoftime", 1, 2)
-
+#' @export
+cdo_eof3d <- function(infile, outfile1 = NULL, outfile2 = NULL) {
+  .new_step(operator = 'eof3d', 
+            inputs = list(infile), 
+            outputs = c(outfile2), 
+            n_inputs = 1,
+            n_outputs = 2)
+}
+#' @param infile input file.
+#' @param outfile1,outfile2 output files.
+#' @rdname EOFs
+#' @export
+cdo_eofspatial <- function(infile, outfile1 = NULL, outfile2 = NULL) {
+  .new_step(operator = 'eofspatial', 
+            inputs = list(infile), 
+            outputs = c(outfile1), 
+            n_inputs = 1,
+            n_outputs = 2)
+}
+#' @param infile input file.
+#' @param outfile1,outfile2 output files.
+#' @rdname EOFs
+#' @export
+cdo_eofspatial <- function(infile, outfile1 = NULL, outfile2 = NULL) {
+  .new_step(operator = 'eofspatial', 
+            inputs = list(infile), 
+            outputs = c(outfile2), 
+            n_inputs = 1,
+            n_outputs = 2)
+}
+#' @param infile input file.
+#' @param outfile1,outfile2 output files.
+#' @rdname EOFs
+#' @export
+cdo_eoftime <- function(infile, outfile1 = NULL, outfile2 = NULL) {
+  .new_step(operator = 'eoftime', 
+            inputs = list(infile), 
+            outputs = c(outfile1), 
+            n_inputs = 1,
+            n_outputs = 2)
+}
+#' @param infile input file.
+#' @param outfile1,outfile2 output files.
+#' @rdname EOFs
+#' @export
+cdo_eoftime <- function(infile, outfile1 = NULL, outfile2 = NULL) {
+  .new_step(operator = 'eoftime', 
+            inputs = list(infile), 
+            outputs = c(outfile2), 
+            n_inputs = 1,
+            n_outputs = 2)
+}

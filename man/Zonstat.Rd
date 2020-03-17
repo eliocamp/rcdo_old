@@ -15,32 +15,32 @@
 \alias{cdo_zonvar1}
 \title{Zonal statistical values}
 \usage{
-cdo_zonavg(input_file, output_file = NULL)
+cdo_zonavg(infile, outfile = NULL)
 
-cdo_zonmax(input_file, output_file = NULL)
+cdo_zonmax(infile, outfile = NULL)
 
-cdo_zonmean(input_file, output_file = NULL)
+cdo_zonmean(infile, outfile = NULL)
 
-cdo_zonmin(input_file, output_file = NULL)
+cdo_zonmin(infile, outfile = NULL)
 
-cdo_zonpctl(input_file, output_file = NULL)
+cdo_zonpctl(infile, outfile = NULL)
 
-cdo_zonrange(input_file, output_file = NULL)
+cdo_zonrange(infile, outfile = NULL)
 
-cdo_zonstd(input_file, output_file = NULL)
+cdo_zonstd(infile, outfile = NULL)
 
-cdo_zonstd1(input_file, output_file = NULL)
+cdo_zonstd1(infile, outfile = NULL)
 
-cdo_zonsum(input_file, output_file = NULL)
+cdo_zonsum(infile, outfile = NULL)
 
-cdo_zonvar(input_file, output_file = NULL)
+cdo_zonvar(infile, outfile = NULL)
 
-cdo_zonvar1(input_file, output_file = NULL)
+cdo_zonvar1(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This module computes zonal statistical values of the input fields. According to

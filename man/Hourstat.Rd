@@ -14,30 +14,30 @@
 \alias{cdo_hourvar1}
 \title{Hourly statistical values}
 \usage{
-cdo_houravg(input_file, output_file = NULL)
+cdo_houravg(infile, outfile = NULL)
 
-cdo_hourmax(input_file, output_file = NULL)
+cdo_hourmax(infile, outfile = NULL)
 
-cdo_hourmean(input_file, output_file = NULL)
+cdo_hourmean(infile, outfile = NULL)
 
-cdo_hourmin(input_file, output_file = NULL)
+cdo_hourmin(infile, outfile = NULL)
 
-cdo_hourrange(input_file, output_file = NULL)
+cdo_hourrange(infile, outfile = NULL)
 
-cdo_hourstd(input_file, output_file = NULL)
+cdo_hourstd(infile, outfile = NULL)
 
-cdo_hourstd1(input_file, output_file = NULL)
+cdo_hourstd1(infile, outfile = NULL)
 
-cdo_hoursum(input_file, output_file = NULL)
+cdo_hoursum(infile, outfile = NULL)
 
-cdo_hourvar(input_file, output_file = NULL)
+cdo_hourvar(infile, outfile = NULL)
 
-cdo_hourvar1(input_file, output_file = NULL)
+cdo_hourvar1(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This module computes statistical values over timesteps of the same hour.

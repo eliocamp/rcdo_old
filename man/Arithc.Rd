@@ -8,18 +8,18 @@
 \alias{cdo_subc}
 \title{Arithmetic with a constant}
 \usage{
-cdo_addc(input_file, output_file = NULL)
+cdo_addc(infile, outfile = NULL)
 
-cdo_divc(input_file, output_file = NULL)
+cdo_divc(infile, outfile = NULL)
 
-cdo_mulc(input_file, output_file = NULL)
+cdo_mulc(infile, outfile = NULL)
 
-cdo_subc(input_file, output_file = NULL)
+cdo_subc(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This module performs simple arithmetic with all field elements of a dataset and

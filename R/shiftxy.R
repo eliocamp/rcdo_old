@@ -15,15 +15,25 @@
 #' @name Shiftxy
 NULL
 
-#' @param input_file input file.
-#' @param output_file output file.
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Shiftxy
-#' @export 
-cdo_shiftx <- new_operator("shiftx", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_shiftx <- function(infile, outfile = NULL) {
+  .new_step(operator = 'shiftx', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Shiftxy
-#' @export 
-cdo_shifty <- new_operator("shifty", 1, 1)
-
+#' @export
+cdo_shifty <- function(infile, outfile = NULL) {
+  .new_step(operator = 'shifty', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}

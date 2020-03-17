@@ -33,63 +33,113 @@
 #' @name Gridboxstat
 NULL
 
-#' @param input_file input file.
-#' @param output_file output file.
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Gridboxstat
-#' @export 
-cdo_gridboxavg <- new_operator("gridboxavg", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_gridboxavg <- function(infile, outfile = NULL) {
+  .new_step(operator = 'gridboxavg', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Gridboxstat
-#' @export 
-cdo_gridboxmax <- new_operator("gridboxmax", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_gridboxmax <- function(infile, outfile = NULL) {
+  .new_step(operator = 'gridboxmax', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Gridboxstat
-#' @export 
-cdo_gridboxmean <- new_operator("gridboxmean", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_gridboxmean <- function(infile, outfile = NULL) {
+  .new_step(operator = 'gridboxmean', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Gridboxstat
-#' @export 
-cdo_gridboxmin <- new_operator("gridboxmin", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_gridboxmin <- function(infile, outfile = NULL) {
+  .new_step(operator = 'gridboxmin', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Gridboxstat
-#' @export 
-cdo_gridboxrange <- new_operator("gridboxrange", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_gridboxrange <- function(infile, outfile = NULL) {
+  .new_step(operator = 'gridboxrange', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Gridboxstat
-#' @export 
-cdo_gridboxstd <- new_operator("gridboxstd", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_gridboxstd <- function(infile, outfile = NULL) {
+  .new_step(operator = 'gridboxstd', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Gridboxstat
-#' @export 
-cdo_gridboxstd1 <- new_operator("gridboxstd1", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_gridboxstd1 <- function(infile, outfile = NULL) {
+  .new_step(operator = 'gridboxstd1', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Gridboxstat
-#' @export 
-cdo_gridboxsum <- new_operator("gridboxsum", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_gridboxsum <- function(infile, outfile = NULL) {
+  .new_step(operator = 'gridboxsum', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Gridboxstat
-#' @export 
-cdo_gridboxvar <- new_operator("gridboxvar", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_gridboxvar <- function(infile, outfile = NULL) {
+  .new_step(operator = 'gridboxvar', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Gridboxstat
-#' @export 
-cdo_gridboxvar1 <- new_operator("gridboxvar1", 1, 1)
-
+#' @export
+cdo_gridboxvar1 <- function(infile, outfile = NULL) {
+  .new_step(operator = 'gridboxvar1', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}

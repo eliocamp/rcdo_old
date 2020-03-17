@@ -5,12 +5,14 @@
 \alias{cdo_tee}
 \title{Duplicate a data stream and write it to file}
 \usage{
-cdo_tee(input_file_1, input_file_2, output_file = NULL)
+cdo_tee(infile1, infile2, outfile = NULL)
+
+cdo_tee(infile1, infile2, outfile = NULL)
 }
 \arguments{
-\item{input_file_1, input_file_2}{input files.}
+\item{infile1, infile2}{input files.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This operator copies the input dataset to outfile1 and outfile2. The first

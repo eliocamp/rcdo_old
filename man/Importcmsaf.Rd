@@ -5,12 +5,12 @@
 \alias{cdo_import_cmsaf}
 \title{Import CM-SAF HDF5 files}
 \usage{
-cdo_import_cmsaf(input_file, output_file = NULL)
+cdo_import_cmsaf(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This operator imports gridded CM-SAF (Satellite Application Facility on Climate

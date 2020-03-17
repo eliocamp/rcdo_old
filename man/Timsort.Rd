@@ -5,12 +5,12 @@
 \alias{cdo_timsort}
 \title{Timsort}
 \usage{
-cdo_timsort(input_file, output_file = NULL)
+cdo_timsort(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 Sorts the elements in ascending order over all timesteps for every field

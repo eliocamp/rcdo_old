@@ -29,15 +29,25 @@
 #' @name Smooth
 NULL
 
-#' @param input_file input file.
-#' @param output_file output file.
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Smooth
-#' @export 
-cdo_smooth <- new_operator("smooth", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_smooth <- function(infile, outfile = NULL) {
+  .new_step(operator = 'smooth', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Smooth
-#' @export 
-cdo_smooth9 <- new_operator("smooth9", 1, 1)
-
+#' @export
+cdo_smooth9 <- function(infile, outfile = NULL) {
+  .new_step(operator = 'smooth9', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}

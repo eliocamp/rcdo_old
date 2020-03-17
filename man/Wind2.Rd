@@ -5,12 +5,12 @@
 \alias{cdo_dv2ps}
 \title{D and V to velocity potential and stream function}
 \usage{
-cdo_dv2ps(input_file, output_file = NULL)
+cdo_dv2ps(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 Calculate spherical harmonic coefficients of velocity potential and stream

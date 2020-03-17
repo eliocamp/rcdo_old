@@ -20,9 +20,25 @@
 #' @name Intyear
 NULL
 
-#' @param input_file_1,input_file_2 input files.
-#' @param output_files output files.
+#' @param infile1,infile2 input files.
+#' @param obase preffix added to the output files.
 #' @rdname Intyear
-#' @export 
-cdo_intyear <- new_operator("intyear", 2, -1)
-
+#' @export
+cdo_intyear <- function(infile1, infile2, obase = NULL) {
+  .new_step(operator = 'intyear', 
+            inputs = list(infile1), 
+            outputs = c(obase), 
+            n_inputs = 2,
+            n_outputs = -1)
+}
+#' @param infile1,infile2 input files.
+#' @param obase preffix added to the output files.
+#' @rdname Intyear
+#' @export
+cdo_intyear <- function(infile1, infile2, obase = NULL) {
+  .new_step(operator = 'intyear', 
+            inputs = list(infile2), 
+            outputs = c(obase), 
+            n_inputs = 2,
+            n_outputs = -1)
+}

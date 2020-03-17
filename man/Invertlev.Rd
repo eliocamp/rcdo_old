@@ -5,12 +5,12 @@
 \alias{cdo_invertlev}
 \title{Invert levels}
 \usage{
-cdo_invertlev(input_file, output_file = NULL)
+cdo_invertlev(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This operator inverts the levels of all 3D variables.

@@ -14,9 +14,14 @@
 #' @name Yearmonstat
 NULL
 
-#' @param input_file input file.
-#' @param output_file output file.
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Yearmonstat
-#' @export 
-cdo_yearmonmean <- new_operator("yearmonmean", 1, 1)
-
+#' @export
+cdo_yearmonmean <- function(infile, outfile = NULL) {
+  .new_step(operator = 'yearmonmean', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}

@@ -7,16 +7,16 @@
 \alias{cdo_shaded}
 \title{Lat/Lon plot}
 \usage{
-cdo_contour(input_file, output_file = NULL)
+cdo_contour(infile, outfile = NULL)
 
-cdo_grfill(input_file, output_file = NULL)
+cdo_grfill(infile, outfile = NULL)
 
-cdo_shaded(input_file, output_file = NULL)
+cdo_shaded(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 The operators in this module generates 2D Lon/Lat plots. The data for the plot

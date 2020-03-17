@@ -8,18 +8,26 @@
 \alias{cdo_eoftime}
 \title{Empirical Orthogonal Functions}
 \usage{
-cdo_eof(input_file, output_file_1 = NULL, output_file_2 = NULL)
+cdo_eof(infile, outfile1 = NULL, outfile2 = NULL)
 
-cdo_eof3d(input_file, output_file_1 = NULL, output_file_2 = NULL)
+cdo_eof(infile, outfile1 = NULL, outfile2 = NULL)
 
-cdo_eofspatial(input_file, output_file_1 = NULL, output_file_2 = NULL)
+cdo_eof3d(infile, outfile1 = NULL, outfile2 = NULL)
 
-cdo_eoftime(input_file, output_file_1 = NULL, output_file_2 = NULL)
+cdo_eof3d(infile, outfile1 = NULL, outfile2 = NULL)
+
+cdo_eofspatial(infile, outfile1 = NULL, outfile2 = NULL)
+
+cdo_eofspatial(infile, outfile1 = NULL, outfile2 = NULL)
+
+cdo_eoftime(infile, outfile1 = NULL, outfile2 = NULL)
+
+cdo_eoftime(infile, outfile1 = NULL, outfile2 = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file_1, output_file_2}{output files.}
+\item{outfile1, outfile2}{output files.}
 }
 \description{
 This module calculates empirical orthogonal functions of the data in infile as

@@ -6,14 +6,14 @@
 \alias{cdo_remapbic}
 \title{Bicubic interpolation}
 \usage{
-cdo_genbic(input_file, output_file = NULL)
+cdo_genbic(infile, outfile = NULL)
 
-cdo_remapbic(input_file, output_file = NULL)
+cdo_remapbic(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This module contains operators for a bicubic remapping of fields between grids

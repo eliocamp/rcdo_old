@@ -10,22 +10,22 @@
 \alias{cdo_splityearmon}
 \title{Split timesteps of a dataset}
 \usage{
-cdo_splitday(input_file, output_files = NULL)
+cdo_splitday(infile, obase = NULL)
 
-cdo_splithour(input_file, output_files = NULL)
+cdo_splithour(infile, obase = NULL)
 
-cdo_splitmon(input_file, output_files = NULL)
+cdo_splitmon(infile, obase = NULL)
 
-cdo_splitseas(input_file, output_files = NULL)
+cdo_splitseas(infile, obase = NULL)
 
-cdo_splityear(input_file, output_files = NULL)
+cdo_splityear(infile, obase = NULL)
 
-cdo_splityearmon(input_file, output_files = NULL)
+cdo_splityearmon(infile, obase = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_files}{output files.}
+\item{obase}{preffix added to the output files.}
 }
 \description{
 This module splits infile into timesteps pieces. The output files will be named

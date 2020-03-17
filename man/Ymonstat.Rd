@@ -14,30 +14,30 @@
 \alias{cdo_ymonvar1}
 \title{Multi-year monthly statistical values}
 \usage{
-cdo_ymonavg(input_file, output_file = NULL)
+cdo_ymonavg(infile, outfile = NULL)
 
-cdo_ymonmax(input_file, output_file = NULL)
+cdo_ymonmax(infile, outfile = NULL)
 
-cdo_ymonmean(input_file, output_file = NULL)
+cdo_ymonmean(infile, outfile = NULL)
 
-cdo_ymonmin(input_file, output_file = NULL)
+cdo_ymonmin(infile, outfile = NULL)
 
-cdo_ymonrange(input_file, output_file = NULL)
+cdo_ymonrange(infile, outfile = NULL)
 
-cdo_ymonstd(input_file, output_file = NULL)
+cdo_ymonstd(infile, outfile = NULL)
 
-cdo_ymonstd1(input_file, output_file = NULL)
+cdo_ymonstd1(infile, outfile = NULL)
 
-cdo_ymonsum(input_file, output_file = NULL)
+cdo_ymonsum(infile, outfile = NULL)
 
-cdo_ymonvar(input_file, output_file = NULL)
+cdo_ymonvar(infile, outfile = NULL)
 
-cdo_ymonvar1(input_file, output_file = NULL)
+cdo_ymonvar1(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This module computes statistical values of each month of year. Depending on the

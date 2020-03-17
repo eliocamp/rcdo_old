@@ -5,12 +5,14 @@
 \alias{cdo_eofcoeff}
 \title{Principal coefficients of EOFs}
 \usage{
-cdo_eofcoeff(input_file_1, input_file_2, output_files = NULL)
+cdo_eofcoeff(infile1, infile2, obase = NULL)
+
+cdo_eofcoeff(infile1, infile2, obase = NULL)
 }
 \arguments{
-\item{input_file_1, input_file_2}{input files.}
+\item{infile1, infile2}{input files.}
 
-\item{output_files}{output files.}
+\item{obase}{preffix added to the output files.}
 }
 \description{
 This module calculates the time series of the principal coefficients for given

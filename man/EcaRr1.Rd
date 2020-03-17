@@ -5,12 +5,12 @@
 \alias{cdo_eca_rr1}
 \title{Wet days index per time period}
 \usage{
-cdo_eca_rr1(input_file, output_file = NULL)
+cdo_eca_rr1(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 Let infile be a time series of the daily precipitation amount RR in \link{mm} (or

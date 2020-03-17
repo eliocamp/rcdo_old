@@ -31,9 +31,14 @@
 #' @name Splitsel
 NULL
 
-#' @param input_file input file.
-#' @param output_files output files.
+#' @param infile input file.
+#' @param obase preffix added to the output files.
 #' @rdname Splitsel
-#' @export 
-cdo_splitsel <- new_operator("splitsel", 1, -1)
-
+#' @export
+cdo_splitsel <- function(infile, obase = NULL) {
+  .new_step(operator = 'splitsel', 
+            inputs = list(infile), 
+            outputs = c(obase), 
+            n_inputs = 1,
+            n_outputs = -1)
+}

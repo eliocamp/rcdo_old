@@ -14,30 +14,30 @@
 \alias{cdo_vertvar1}
 \title{Vertical statistical values}
 \usage{
-cdo_vertavg(input_file, output_file = NULL)
+cdo_vertavg(infile, outfile = NULL)
 
-cdo_vertmax(input_file, output_file = NULL)
+cdo_vertmax(infile, outfile = NULL)
 
-cdo_vertmean(input_file, output_file = NULL)
+cdo_vertmean(infile, outfile = NULL)
 
-cdo_vertmin(input_file, output_file = NULL)
+cdo_vertmin(infile, outfile = NULL)
 
-cdo_vertrange(input_file, output_file = NULL)
+cdo_vertrange(infile, outfile = NULL)
 
-cdo_vertstd(input_file, output_file = NULL)
+cdo_vertstd(infile, outfile = NULL)
 
-cdo_vertstd1(input_file, output_file = NULL)
+cdo_vertstd1(infile, outfile = NULL)
 
-cdo_vertsum(input_file, output_file = NULL)
+cdo_vertsum(infile, outfile = NULL)
 
-cdo_vertvar(input_file, output_file = NULL)
+cdo_vertvar(infile, outfile = NULL)
 
-cdo_vertvar1(input_file, output_file = NULL)
+cdo_vertvar1(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This module computes statistical values over all levels of the input variables.

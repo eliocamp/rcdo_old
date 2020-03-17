@@ -30,57 +30,102 @@
 #' @name Seltime
 NULL
 
-#' @param input_file input file.
-#' @param output_file output file.
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Seltime
-#' @export 
-cdo_seldate <- new_operator("seldate", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_seldate <- function(infile, outfile = NULL) {
+  .new_step(operator = 'seldate', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Seltime
-#' @export 
-cdo_selday <- new_operator("selday", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_selday <- function(infile, outfile = NULL) {
+  .new_step(operator = 'selday', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Seltime
-#' @export 
-cdo_selhour <- new_operator("selhour", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_selhour <- function(infile, outfile = NULL) {
+  .new_step(operator = 'selhour', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Seltime
-#' @export 
-cdo_selmonth <- new_operator("selmonth", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_selmonth <- function(infile, outfile = NULL) {
+  .new_step(operator = 'selmonth', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Seltime
-#' @export 
-cdo_selseason <- new_operator("selseason", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_selseason <- function(infile, outfile = NULL) {
+  .new_step(operator = 'selseason', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Seltime
-#' @export 
-cdo_selsmon <- new_operator("selsmon", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_selsmon <- function(infile, outfile = NULL) {
+  .new_step(operator = 'selsmon', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Seltime
-#' @export 
-cdo_seltime <- new_operator("seltime", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_seltime <- function(infile, outfile = NULL) {
+  .new_step(operator = 'seltime', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Seltime
-#' @export 
-cdo_seltimestep <- new_operator("seltimestep", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_seltimestep <- function(infile, outfile = NULL) {
+  .new_step(operator = 'seltimestep', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Seltime
-#' @export 
-cdo_selyear <- new_operator("selyear", 1, 1)
-
+#' @export
+cdo_selyear <- function(infile, outfile = NULL) {
+  .new_step(operator = 'selyear', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}

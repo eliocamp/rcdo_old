@@ -19,21 +19,36 @@
 #' @name Magplot
 NULL
 
-#' @param input_file input file.
-#' @param output_file output file.
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Magplot
-#' @export 
-cdo_contour <- new_operator("contour", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_contour <- function(infile, outfile = NULL) {
+  .new_step(operator = 'contour', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Magplot
-#' @export 
-cdo_grfill <- new_operator("grfill", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_grfill <- function(infile, outfile = NULL) {
+  .new_step(operator = 'grfill', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Magplot
-#' @export 
-cdo_shaded <- new_operator("shaded", 1, 1)
-
+#' @export
+cdo_shaded <- function(infile, outfile = NULL) {
+  .new_step(operator = 'shaded', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}

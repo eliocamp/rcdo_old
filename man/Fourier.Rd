@@ -5,12 +5,12 @@
 \alias{cdo_fourier}
 \title{Fourier transformation}
 \usage{
-cdo_fourier(input_file, output_file = NULL)
+cdo_fourier(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 The fourier operator performs the fourier transformation or the inverse fourier

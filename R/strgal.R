@@ -24,9 +24,14 @@
 #' @name Strgal
 NULL
 
-#' @param input_file input file.
-#' @param output_file output file.
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Strgal
-#' @export 
-cdo_strgal <- new_operator("strgal", 1, 1)
-
+#' @export
+cdo_strgal <- function(infile, outfile = NULL) {
+  .new_step(operator = 'strgal', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}

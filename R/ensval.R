@@ -20,15 +20,25 @@
 #' @name Ensval
 NULL
 
-#' @param input_files input files.
-#' @param output_file output file.
+#' @param infiles input files.
+#' @param outfile output file.
 #' @rdname Ensval
-#' @export 
-cdo_ensbrs <- new_operator("ensbrs", -1, 1)
-
-#' @param input_files input files.
-#' @param output_file output file.
+#' @export
+cdo_ensbrs <- function(infiles, outfile = NULL) {
+  .new_step(operator = 'ensbrs', 
+            inputs = list(infiles), 
+            outputs = c(outfile), 
+            n_inputs = -1,
+            n_outputs = 1)
+}
+#' @param infiles input files.
+#' @param outfile output file.
 #' @rdname Ensval
-#' @export 
-cdo_enscrps <- new_operator("enscrps", -1, 1)
-
+#' @export
+cdo_enscrps <- function(infiles, outfile = NULL) {
+  .new_step(operator = 'enscrps', 
+            inputs = list(infiles), 
+            outputs = c(outfile), 
+            n_inputs = -1,
+            n_outputs = 1)
+}

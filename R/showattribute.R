@@ -15,13 +15,25 @@
 #' @name Showattribute
 NULL
 
-#' @param input_file input file.
+#' @param infile input file.
+#' 
 #' @rdname Showattribute
-#' @export 
-cdo_showattribute <- new_operator("showattribute", 1, 0)
-
-#' @param input_file input file.
+#' @export
+cdo_showattribute <- function(infile) {
+  .new_step(operator = 'showattribute', 
+            inputs = list(infile), 
+            outputs = c(), 
+            n_inputs = 1,
+            n_outputs = 0)
+}
+#' @param infile input file.
+#' 
 #' @rdname Showattribute
-#' @export 
-cdo_showattsvar <- new_operator("showattsvar", 1, 0)
-
+#' @export
+cdo_showattsvar <- function(infile) {
+  .new_step(operator = 'showattsvar', 
+            inputs = list(infile), 
+            outputs = c(), 
+            n_inputs = 1,
+            n_outputs = 0)
+}

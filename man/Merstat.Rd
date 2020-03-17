@@ -15,32 +15,32 @@
 \alias{cdo_mervar1}
 \title{Meridional statistical values}
 \usage{
-cdo_meravg(input_file, output_file = NULL)
+cdo_meravg(infile, outfile = NULL)
 
-cdo_mermax(input_file, output_file = NULL)
+cdo_mermax(infile, outfile = NULL)
 
-cdo_mermean(input_file, output_file = NULL)
+cdo_mermean(infile, outfile = NULL)
 
-cdo_mermin(input_file, output_file = NULL)
+cdo_mermin(infile, outfile = NULL)
 
-cdo_merpctl(input_file, output_file = NULL)
+cdo_merpctl(infile, outfile = NULL)
 
-cdo_merrange(input_file, output_file = NULL)
+cdo_merrange(infile, outfile = NULL)
 
-cdo_merstd(input_file, output_file = NULL)
+cdo_merstd(infile, outfile = NULL)
 
-cdo_merstd1(input_file, output_file = NULL)
+cdo_merstd1(infile, outfile = NULL)
 
-cdo_mersum(input_file, output_file = NULL)
+cdo_mersum(infile, outfile = NULL)
 
-cdo_mervar(input_file, output_file = NULL)
+cdo_mervar(infile, outfile = NULL)
 
-cdo_mervar1(input_file, output_file = NULL)
+cdo_mervar1(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This module computes meridional statistical values of the input fields.

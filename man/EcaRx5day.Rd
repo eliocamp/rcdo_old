@@ -5,12 +5,12 @@
 \alias{cdo_eca_rx5day}
 \title{Highest five-day precipitation amount per time period}
 \usage{
-cdo_eca_rx5day(input_file, output_file = NULL)
+cdo_eca_rx5day(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 Let infile be a time series of 5-day precipitation totals RR, then the maximum

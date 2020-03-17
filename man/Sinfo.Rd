@@ -6,12 +6,12 @@
 \alias{cdo_sinfon}
 \title{Short information}
 \usage{
-cdo_sinfo(input_files)
+cdo_sinfo(infiles)
 
-cdo_sinfon(input_files)
+cdo_sinfon(infiles)
 }
 \arguments{
-\item{input_files}{input files.}
+\item{infiles}{input files.}
 }
 \description{
 This module writes information about the structure of infiles to standard

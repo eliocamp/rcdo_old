@@ -4,7 +4,7 @@
 \alias{.build_command}
 \title{Build the command to run}
 \usage{
-.build_command(operator, inputs, outputs = NULL)
+.build_command(operation, chain = FALSE)
 }
 \arguments{
 \item{operator}{name of the operator}

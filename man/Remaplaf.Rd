@@ -6,14 +6,14 @@
 \alias{cdo_remaplaf}
 \title{Largest area fraction remapping}
 \usage{
-cdo_genlaf(input_file, output_file = NULL)
+cdo_genlaf(infile, outfile = NULL)
 
-cdo_remaplaf(input_file, output_file = NULL)
+cdo_remaplaf(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This module contains operators for a largest area fraction remapping of fields

@@ -8,18 +8,18 @@
 \alias{cdo_muldpy}
 \title{Arithmetic with days}
 \usage{
-cdo_divdpm(input_file, output_file = NULL)
+cdo_divdpm(infile, outfile = NULL)
 
-cdo_divdpy(input_file, output_file = NULL)
+cdo_divdpy(infile, outfile = NULL)
 
-cdo_muldpm(input_file, output_file = NULL)
+cdo_muldpm(infile, outfile = NULL)
 
-cdo_muldpy(input_file, output_file = NULL)
+cdo_muldpy(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This module multiplies or divides each timestep of a dataset with the

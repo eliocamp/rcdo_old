@@ -23,9 +23,25 @@
 #' @name EcaCwdi
 NULL
 
-#' @param input_file_1,input_file_2 input files.
-#' @param output_file output file.
+#' @param infile1,infile2 input files.
+#' @param outfile output file.
 #' @rdname EcaCwdi
-#' @export 
-cdo_eca_cwdi <- new_operator("eca_cwdi", 2, 1)
-
+#' @export
+cdo_eca_cwdi <- function(infile1, infile2, outfile = NULL) {
+  .new_step(operator = 'eca_cwdi', 
+            inputs = list(infile1), 
+            outputs = c(outfile), 
+            n_inputs = 2,
+            n_outputs = 1)
+}
+#' @param infile1,infile2 input files.
+#' @param outfile output file.
+#' @rdname EcaCwdi
+#' @export
+cdo_eca_cwdi <- function(infile1, infile2, outfile = NULL) {
+  .new_step(operator = 'eca_cwdi', 
+            inputs = list(infile2), 
+            outputs = c(outfile), 
+            n_inputs = 2,
+            n_outputs = 1)
+}

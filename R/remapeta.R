@@ -24,9 +24,14 @@
 #' @name Remapeta
 NULL
 
-#' @param input_file input file.
-#' @param output_file output file.
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Remapeta
-#' @export 
-cdo_remapeta <- new_operator("remapeta", 1, 1)
-
+#' @export
+cdo_remapeta <- function(infile, outfile = NULL) {
+  .new_step(operator = 'remapeta', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}

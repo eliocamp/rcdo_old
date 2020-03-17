@@ -67,9 +67,36 @@
 #' @name Yseaspctl
 NULL
 
-#' @param input_file_1,input_file_2,input_file_3 input files.
-#' @param output_file output file.
+#' @param infile1,infile2,infile3 input files.
+#' @param outfile output file.
 #' @rdname Yseaspctl
-#' @export 
-cdo_yseaspctl <- new_operator("yseaspctl", 3, 1)
-
+#' @export
+cdo_yseaspctl <- function(infile1, infile2, infile3, outfile = NULL) {
+  .new_step(operator = 'yseaspctl', 
+            inputs = list(infile1), 
+            outputs = c(outfile), 
+            n_inputs = 3,
+            n_outputs = 1)
+}
+#' @param infile1,infile2,infile3 input files.
+#' @param outfile output file.
+#' @rdname Yseaspctl
+#' @export
+cdo_yseaspctl <- function(infile1, infile2, infile3, outfile = NULL) {
+  .new_step(operator = 'yseaspctl', 
+            inputs = list(infile2), 
+            outputs = c(outfile), 
+            n_inputs = 3,
+            n_outputs = 1)
+}
+#' @param infile1,infile2,infile3 input files.
+#' @param outfile output file.
+#' @rdname Yseaspctl
+#' @export
+cdo_yseaspctl <- function(infile1, infile2, infile3, outfile = NULL) {
+  .new_step(operator = 'yseaspctl', 
+            inputs = list(infile3), 
+            outputs = c(outfile), 
+            n_inputs = 3,
+            n_outputs = 1)
+}

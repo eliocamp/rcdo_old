@@ -6,14 +6,14 @@
 \alias{cdo_copy}
 \title{Copy datasets}
 \usage{
-cdo_cat(input_files, output_file = NULL)
+cdo_cat(infiles, outfile = NULL)
 
-cdo_copy(input_files, output_file = NULL)
+cdo_copy(infiles, outfile = NULL)
 }
 \arguments{
-\item{input_files}{input files.}
+\item{infiles}{input files.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This module contains operators to copy or concatenate datasets. infiles is an

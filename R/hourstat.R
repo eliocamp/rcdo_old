@@ -17,63 +17,113 @@
 #' @name Hourstat
 NULL
 
-#' @param input_file input file.
-#' @param output_file output file.
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Hourstat
-#' @export 
-cdo_houravg <- new_operator("houravg", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_houravg <- function(infile, outfile = NULL) {
+  .new_step(operator = 'houravg', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Hourstat
-#' @export 
-cdo_hourmax <- new_operator("hourmax", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_hourmax <- function(infile, outfile = NULL) {
+  .new_step(operator = 'hourmax', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Hourstat
-#' @export 
-cdo_hourmean <- new_operator("hourmean", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_hourmean <- function(infile, outfile = NULL) {
+  .new_step(operator = 'hourmean', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Hourstat
-#' @export 
-cdo_hourmin <- new_operator("hourmin", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_hourmin <- function(infile, outfile = NULL) {
+  .new_step(operator = 'hourmin', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Hourstat
-#' @export 
-cdo_hourrange <- new_operator("hourrange", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_hourrange <- function(infile, outfile = NULL) {
+  .new_step(operator = 'hourrange', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Hourstat
-#' @export 
-cdo_hourstd <- new_operator("hourstd", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_hourstd <- function(infile, outfile = NULL) {
+  .new_step(operator = 'hourstd', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Hourstat
-#' @export 
-cdo_hourstd1 <- new_operator("hourstd1", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_hourstd1 <- function(infile, outfile = NULL) {
+  .new_step(operator = 'hourstd1', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Hourstat
-#' @export 
-cdo_hoursum <- new_operator("hoursum", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_hoursum <- function(infile, outfile = NULL) {
+  .new_step(operator = 'hoursum', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Hourstat
-#' @export 
-cdo_hourvar <- new_operator("hourvar", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_hourvar <- function(infile, outfile = NULL) {
+  .new_step(operator = 'hourvar', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Hourstat
-#' @export 
-cdo_hourvar1 <- new_operator("hourvar1", 1, 1)
-
+#' @export
+cdo_hourvar1 <- function(infile, outfile = NULL) {
+  .new_step(operator = 'hourvar1', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}

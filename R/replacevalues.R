@@ -21,21 +21,36 @@
 #' @name Replacevalues
 NULL
 
-#' @param input_file input file.
-#' @param output_file output file.
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Replacevalues
-#' @export 
-cdo_setrtoc <- new_operator("setrtoc", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_setrtoc <- function(infile, outfile = NULL) {
+  .new_step(operator = 'setrtoc', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Replacevalues
-#' @export 
-cdo_setrtoc2 <- new_operator("setrtoc2", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_setrtoc2 <- function(infile, outfile = NULL) {
+  .new_step(operator = 'setrtoc2', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Replacevalues
-#' @export 
-cdo_setvals <- new_operator("setvals", 1, 1)
-
+#' @export
+cdo_setvals <- function(infile, outfile = NULL) {
+  .new_step(operator = 'setvals', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}

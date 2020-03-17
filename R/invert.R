@@ -14,9 +14,14 @@
 #' @name Invert
 NULL
 
-#' @param input_file input file.
-#' @param output_file output file.
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Invert
-#' @export 
-cdo_invertlat <- new_operator("invertlat", 1, 1)
-
+#' @export
+cdo_invertlat <- function(infile, outfile = NULL) {
+  .new_step(operator = 'invertlat', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}

@@ -31,39 +31,69 @@
 #' @name Splittime
 NULL
 
-#' @param input_file input file.
-#' @param output_files output files.
+#' @param infile input file.
+#' @param obase preffix added to the output files.
 #' @rdname Splittime
-#' @export 
-cdo_splitday <- new_operator("splitday", 1, -1)
-
-#' @param input_file input file.
-#' @param output_files output files.
+#' @export
+cdo_splitday <- function(infile, obase = NULL) {
+  .new_step(operator = 'splitday', 
+            inputs = list(infile), 
+            outputs = c(obase), 
+            n_inputs = 1,
+            n_outputs = -1)
+}
+#' @param infile input file.
+#' @param obase preffix added to the output files.
 #' @rdname Splittime
-#' @export 
-cdo_splithour <- new_operator("splithour", 1, -1)
-
-#' @param input_file input file.
-#' @param output_files output files.
+#' @export
+cdo_splithour <- function(infile, obase = NULL) {
+  .new_step(operator = 'splithour', 
+            inputs = list(infile), 
+            outputs = c(obase), 
+            n_inputs = 1,
+            n_outputs = -1)
+}
+#' @param infile input file.
+#' @param obase preffix added to the output files.
 #' @rdname Splittime
-#' @export 
-cdo_splitmon <- new_operator("splitmon", 1, -1)
-
-#' @param input_file input file.
-#' @param output_files output files.
+#' @export
+cdo_splitmon <- function(infile, obase = NULL) {
+  .new_step(operator = 'splitmon', 
+            inputs = list(infile), 
+            outputs = c(obase), 
+            n_inputs = 1,
+            n_outputs = -1)
+}
+#' @param infile input file.
+#' @param obase preffix added to the output files.
 #' @rdname Splittime
-#' @export 
-cdo_splitseas <- new_operator("splitseas", 1, -1)
-
-#' @param input_file input file.
-#' @param output_files output files.
+#' @export
+cdo_splitseas <- function(infile, obase = NULL) {
+  .new_step(operator = 'splitseas', 
+            inputs = list(infile), 
+            outputs = c(obase), 
+            n_inputs = 1,
+            n_outputs = -1)
+}
+#' @param infile input file.
+#' @param obase preffix added to the output files.
 #' @rdname Splittime
-#' @export 
-cdo_splityear <- new_operator("splityear", 1, -1)
-
-#' @param input_file input file.
-#' @param output_files output files.
+#' @export
+cdo_splityear <- function(infile, obase = NULL) {
+  .new_step(operator = 'splityear', 
+            inputs = list(infile), 
+            outputs = c(obase), 
+            n_inputs = 1,
+            n_outputs = -1)
+}
+#' @param infile input file.
+#' @param obase preffix added to the output files.
 #' @rdname Splittime
-#' @export 
-cdo_splityearmon <- new_operator("splityearmon", 1, -1)
-
+#' @export
+cdo_splityearmon <- function(infile, obase = NULL) {
+  .new_step(operator = 'splityearmon', 
+            inputs = list(infile), 
+            outputs = c(obase), 
+            n_inputs = 1,
+            n_outputs = -1)
+}

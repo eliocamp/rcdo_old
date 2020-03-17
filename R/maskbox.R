@@ -19,15 +19,25 @@
 #' @name Maskbox
 NULL
 
-#' @param input_file input file.
-#' @param output_file output file.
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Maskbox
-#' @export 
-cdo_maskindexbox <- new_operator("maskindexbox", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_maskindexbox <- function(infile, outfile = NULL) {
+  .new_step(operator = 'maskindexbox', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Maskbox
-#' @export 
-cdo_masklonlatbox <- new_operator("masklonlatbox", 1, 1)
-
+#' @export
+cdo_masklonlatbox <- function(infile, outfile = NULL) {
+  .new_step(operator = 'masklonlatbox', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}

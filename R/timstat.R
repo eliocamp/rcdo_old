@@ -29,63 +29,113 @@
 #' @name Timstat
 NULL
 
-#' @param input_file input file.
-#' @param output_file output file.
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Timstat
-#' @export 
-cdo_timavg <- new_operator("timavg", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_timavg <- function(infile, outfile = NULL) {
+  .new_step(operator = 'timavg', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Timstat
-#' @export 
-cdo_timmax <- new_operator("timmax", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_timmax <- function(infile, outfile = NULL) {
+  .new_step(operator = 'timmax', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Timstat
-#' @export 
-cdo_timmean <- new_operator("timmean", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_timmean <- function(infile, outfile = NULL) {
+  .new_step(operator = 'timmean', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Timstat
-#' @export 
-cdo_timmin <- new_operator("timmin", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_timmin <- function(infile, outfile = NULL) {
+  .new_step(operator = 'timmin', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Timstat
-#' @export 
-cdo_timrange <- new_operator("timrange", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_timrange <- function(infile, outfile = NULL) {
+  .new_step(operator = 'timrange', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Timstat
-#' @export 
-cdo_timstd <- new_operator("timstd", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_timstd <- function(infile, outfile = NULL) {
+  .new_step(operator = 'timstd', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Timstat
-#' @export 
-cdo_timstd1 <- new_operator("timstd1", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_timstd1 <- function(infile, outfile = NULL) {
+  .new_step(operator = 'timstd1', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Timstat
-#' @export 
-cdo_timsum <- new_operator("timsum", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_timsum <- function(infile, outfile = NULL) {
+  .new_step(operator = 'timsum', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Timstat
-#' @export 
-cdo_timvar <- new_operator("timvar", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_timvar <- function(infile, outfile = NULL) {
+  .new_step(operator = 'timvar', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Timstat
-#' @export 
-cdo_timvar1 <- new_operator("timvar1", 1, 1)
-
+#' @export
+cdo_timvar1 <- function(infile, outfile = NULL) {
+  .new_step(operator = 'timvar1', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}

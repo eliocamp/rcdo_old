@@ -6,12 +6,16 @@
 \alias{cdo_diffn}
 \title{Compare two datasets field by field}
 \usage{
-cdo_diff(input_file_1, input_file_2)
+cdo_diff(infile1, infile2)
 
-cdo_diffn(input_file_1, input_file_2)
+cdo_diff(infile1, infile2)
+
+cdo_diffn(infile1, infile2)
+
+cdo_diffn(infile1, infile2)
 }
 \arguments{
-\item{input_file_1, input_file_2}{input files.}
+\item{infile1, infile2}{input files.}
 }
 \description{
 Compares the contents of two datasets field by field. The input datasets need

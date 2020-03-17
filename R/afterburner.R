@@ -17,9 +17,14 @@
 #' @name Afterburner
 NULL
 
-#' @param input_files input files.
-#' @param output_file output file.
+#' @param infiles input files.
+#' @param outfile output file.
 #' @rdname Afterburner
-#' @export 
-cdo_after <- new_operator("after", -1, 1)
-
+#' @export
+cdo_after <- function(infiles, outfile = NULL) {
+  .new_step(operator = 'after', 
+            inputs = list(infiles), 
+            outputs = c(outfile), 
+            n_inputs = -1,
+            n_outputs = 1)
+}

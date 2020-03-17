@@ -27,43 +27,91 @@
 #' @name Ninfo
 NULL
 
-#' @param input_file input file.
+#' @param infile input file.
+#' 
 #' @rdname Ninfo
-#' @export 
-cdo_ndate <- new_operator("ndate", 1, 0)
-
-#' @param input_file input file.
+#' @export
+cdo_ndate <- function(infile) {
+  .new_step(operator = 'ndate', 
+            inputs = list(infile), 
+            outputs = c(), 
+            n_inputs = 1,
+            n_outputs = 0)
+}
+#' @param infile input file.
+#' 
 #' @rdname Ninfo
-#' @export 
-cdo_ngridpoints <- new_operator("ngridpoints", 1, 0)
-
-#' @param input_file input file.
+#' @export
+cdo_ngridpoints <- function(infile) {
+  .new_step(operator = 'ngridpoints', 
+            inputs = list(infile), 
+            outputs = c(), 
+            n_inputs = 1,
+            n_outputs = 0)
+}
+#' @param infile input file.
+#' 
 #' @rdname Ninfo
-#' @export 
-cdo_ngrids <- new_operator("ngrids", 1, 0)
-
-#' @param input_file input file.
+#' @export
+cdo_ngrids <- function(infile) {
+  .new_step(operator = 'ngrids', 
+            inputs = list(infile), 
+            outputs = c(), 
+            n_inputs = 1,
+            n_outputs = 0)
+}
+#' @param infile input file.
+#' 
 #' @rdname Ninfo
-#' @export 
-cdo_nlevel <- new_operator("nlevel", 1, 0)
-
-#' @param input_file input file.
+#' @export
+cdo_nlevel <- function(infile) {
+  .new_step(operator = 'nlevel', 
+            inputs = list(infile), 
+            outputs = c(), 
+            n_inputs = 1,
+            n_outputs = 0)
+}
+#' @param infile input file.
+#' 
 #' @rdname Ninfo
-#' @export 
-cdo_nmon <- new_operator("nmon", 1, 0)
-
-#' @param input_file input file.
+#' @export
+cdo_nmon <- function(infile) {
+  .new_step(operator = 'nmon', 
+            inputs = list(infile), 
+            outputs = c(), 
+            n_inputs = 1,
+            n_outputs = 0)
+}
+#' @param infile input file.
+#' 
 #' @rdname Ninfo
-#' @export 
-cdo_npar <- new_operator("npar", 1, 0)
-
-#' @param input_file input file.
+#' @export
+cdo_npar <- function(infile) {
+  .new_step(operator = 'npar', 
+            inputs = list(infile), 
+            outputs = c(), 
+            n_inputs = 1,
+            n_outputs = 0)
+}
+#' @param infile input file.
+#' 
 #' @rdname Ninfo
-#' @export 
-cdo_ntime <- new_operator("ntime", 1, 0)
-
-#' @param input_file input file.
+#' @export
+cdo_ntime <- function(infile) {
+  .new_step(operator = 'ntime', 
+            inputs = list(infile), 
+            outputs = c(), 
+            n_inputs = 1,
+            n_outputs = 0)
+}
+#' @param infile input file.
+#' 
 #' @rdname Ninfo
-#' @export 
-cdo_nyear <- new_operator("nyear", 1, 0)
-
+#' @export
+cdo_nyear <- function(infile) {
+  .new_step(operator = 'nyear', 
+            inputs = list(infile), 
+            outputs = c(), 
+            n_inputs = 1,
+            n_outputs = 0)
+}

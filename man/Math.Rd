@@ -21,44 +21,44 @@
 \alias{cdo_tan}
 \title{Mathematical functions}
 \usage{
-cdo_abs(input_file, output_file = NULL)
+cdo_abs(infile, outfile = NULL)
 
-cdo_acos(input_file, output_file = NULL)
+cdo_acos(infile, outfile = NULL)
 
-cdo_asin(input_file, output_file = NULL)
+cdo_asin(infile, outfile = NULL)
 
-cdo_atan(input_file, output_file = NULL)
+cdo_atan(infile, outfile = NULL)
 
-cdo_cos(input_file, output_file = NULL)
+cdo_cos(infile, outfile = NULL)
 
-cdo_exp(input_file, output_file = NULL)
+cdo_exp(infile, outfile = NULL)
 
-cdo_int(input_file, output_file = NULL)
+cdo_int(infile, outfile = NULL)
 
-cdo_ln(input_file, output_file = NULL)
+cdo_ln(infile, outfile = NULL)
 
-cdo_log10(input_file, output_file = NULL)
+cdo_log10(infile, outfile = NULL)
 
-cdo_nint(input_file, output_file = NULL)
+cdo_nint(infile, outfile = NULL)
 
-cdo_not(input_file, output_file = NULL)
+cdo_not(infile, outfile = NULL)
 
-cdo_pow(input_file, output_file = NULL)
+cdo_pow(infile, outfile = NULL)
 
-cdo_reci(input_file, output_file = NULL)
+cdo_reci(infile, outfile = NULL)
 
-cdo_sin(input_file, output_file = NULL)
+cdo_sin(infile, outfile = NULL)
 
-cdo_sqr(input_file, output_file = NULL)
+cdo_sqr(infile, outfile = NULL)
 
-cdo_sqrt(input_file, output_file = NULL)
+cdo_sqrt(infile, outfile = NULL)
 
-cdo_tan(input_file, output_file = NULL)
+cdo_tan(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This module contains some standard mathematical functions. All trigonometric

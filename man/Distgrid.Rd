@@ -5,12 +5,12 @@
 \alias{cdo_distgrid}
 \title{Distribute horizontal grid}
 \usage{
-cdo_distgrid(input_file, output_file = NULL)
+cdo_distgrid(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This operator distributes a dataset into smaller pieces. Each output file

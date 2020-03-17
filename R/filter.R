@@ -38,21 +38,36 @@
 #' @name Filter
 NULL
 
-#' @param input_file input file.
-#' @param output_file output file.
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Filter
-#' @export 
-cdo_bandpass <- new_operator("bandpass", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_bandpass <- function(infile, outfile = NULL) {
+  .new_step(operator = 'bandpass', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Filter
-#' @export 
-cdo_highpass <- new_operator("highpass", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_highpass <- function(infile, outfile = NULL) {
+  .new_step(operator = 'highpass', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Filter
-#' @export 
-cdo_lowpass <- new_operator("lowpass", 1, 1)
-
+#' @export
+cdo_lowpass <- function(infile, outfile = NULL) {
+  .new_step(operator = 'lowpass', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}

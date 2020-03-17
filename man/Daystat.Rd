@@ -14,30 +14,30 @@
 \alias{cdo_dayvar1}
 \title{Daily statistical values}
 \usage{
-cdo_dayavg(input_file, output_file = NULL)
+cdo_dayavg(infile, outfile = NULL)
 
-cdo_daymax(input_file, output_file = NULL)
+cdo_daymax(infile, outfile = NULL)
 
-cdo_daymean(input_file, output_file = NULL)
+cdo_daymean(infile, outfile = NULL)
 
-cdo_daymin(input_file, output_file = NULL)
+cdo_daymin(infile, outfile = NULL)
 
-cdo_dayrange(input_file, output_file = NULL)
+cdo_dayrange(infile, outfile = NULL)
 
-cdo_daystd(input_file, output_file = NULL)
+cdo_daystd(infile, outfile = NULL)
 
-cdo_daystd1(input_file, output_file = NULL)
+cdo_daystd1(infile, outfile = NULL)
 
-cdo_daysum(input_file, output_file = NULL)
+cdo_daysum(infile, outfile = NULL)
 
-cdo_dayvar(input_file, output_file = NULL)
+cdo_dayvar(infile, outfile = NULL)
 
-cdo_dayvar1(input_file, output_file = NULL)
+cdo_dayvar1(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This module computes statistical values over timesteps of the same day.

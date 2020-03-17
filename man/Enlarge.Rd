@@ -5,12 +5,12 @@
 \alias{cdo_enlarge}
 \title{Enlarge fields}
 \usage{
-cdo_enlarge(input_file, output_file = NULL)
+cdo_enlarge(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 Enlarge all fields of infile to a user given horizontal grid. Normally only the

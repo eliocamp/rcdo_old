@@ -5,12 +5,12 @@
 \alias{cdo_maskregion}
 \title{Mask regions}
 \usage{
-cdo_maskregion(input_file, output_file = NULL)
+cdo_maskregion(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 Masks different regions of fields with a regular lon/lat grid. The elements

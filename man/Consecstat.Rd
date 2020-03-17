@@ -6,14 +6,14 @@
 \alias{cdo_consects}
 \title{Consecute timestep periods}
 \usage{
-cdo_consecsum(input_file, output_file = NULL)
+cdo_consecsum(infile, outfile = NULL)
 
-cdo_consects(input_file, output_file = NULL)
+cdo_consects(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This module computes periods over all timesteps in infile where a certain

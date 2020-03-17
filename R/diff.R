@@ -27,13 +27,47 @@
 #' @name Diff
 NULL
 
-#' @param input_file_1,input_file_2 input files.
+#' @param infile1,infile2 input files.
+#' 
 #' @rdname Diff
-#' @export 
-cdo_diff <- new_operator("diff", 2, 0)
-
-#' @param input_file_1,input_file_2 input files.
+#' @export
+cdo_diff <- function(infile1, infile2) {
+  .new_step(operator = 'diff', 
+            inputs = list(infile1), 
+            outputs = c(), 
+            n_inputs = 2,
+            n_outputs = 0)
+}
+#' @param infile1,infile2 input files.
+#' 
 #' @rdname Diff
-#' @export 
-cdo_diffn <- new_operator("diffn", 2, 0)
-
+#' @export
+cdo_diff <- function(infile1, infile2) {
+  .new_step(operator = 'diff', 
+            inputs = list(infile2), 
+            outputs = c(), 
+            n_inputs = 2,
+            n_outputs = 0)
+}
+#' @param infile1,infile2 input files.
+#' 
+#' @rdname Diff
+#' @export
+cdo_diffn <- function(infile1, infile2) {
+  .new_step(operator = 'diffn', 
+            inputs = list(infile1), 
+            outputs = c(), 
+            n_inputs = 2,
+            n_outputs = 0)
+}
+#' @param infile1,infile2 input files.
+#' 
+#' @rdname Diff
+#' @export
+cdo_diffn <- function(infile1, infile2) {
+  .new_step(operator = 'diffn', 
+            inputs = list(infile2), 
+            outputs = c(), 
+            n_inputs = 2,
+            n_outputs = 0)
+}

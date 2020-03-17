@@ -4,13 +4,13 @@
 \alias{cdo_add_output}
 \title{Add output to operators}
 \usage{
-cdo_add_output(cdo_operator, output_files)
+cdo_add_output(operation, output)
 }
 \arguments{
-\item{cdo_operator}{a cdo_operator, which is the result of any \verb{cdo_*} functions
+\item{operation}{a cdo_operator, which is the result of any \verb{cdo_*} functions
 that has at least one output file. `}
 
-\item{output_files}{filenames}
+\item{output}{filenames}
 }
 \description{
 Easily add an output file to an operator.

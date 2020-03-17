@@ -7,16 +7,16 @@
 \alias{cdo_setvals}
 \title{Replace variable values}
 \usage{
-cdo_setrtoc(input_file, output_file = NULL)
+cdo_setrtoc(infile, outfile = NULL)
 
-cdo_setrtoc2(input_file, output_file = NULL)
+cdo_setrtoc2(infile, outfile = NULL)
 
-cdo_setvals(input_file, output_file = NULL)
+cdo_setvals(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This module replaces old variable values with new values, depending on the

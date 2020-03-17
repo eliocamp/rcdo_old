@@ -21,15 +21,25 @@
 #' @name Remapcon2
 NULL
 
-#' @param input_file input file.
-#' @param output_file output file.
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Remapcon2
-#' @export 
-cdo_gencon2 <- new_operator("gencon2", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_gencon2 <- function(infile, outfile = NULL) {
+  .new_step(operator = 'gencon2', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Remapcon2
-#' @export 
-cdo_remapcon2 <- new_operator("remapcon2", 1, 1)
-
+#' @export
+cdo_remapcon2 <- function(infile, outfile = NULL) {
+  .new_step(operator = 'remapcon2', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}

@@ -12,24 +12,24 @@
 \alias{cdo_nyear}
 \title{Print the number of parameters, levels or times}
 \usage{
-cdo_ndate(input_file)
+cdo_ndate(infile)
 
-cdo_ngridpoints(input_file)
+cdo_ngridpoints(infile)
 
-cdo_ngrids(input_file)
+cdo_ngrids(infile)
 
-cdo_nlevel(input_file)
+cdo_nlevel(infile)
 
-cdo_nmon(input_file)
+cdo_nmon(infile)
 
-cdo_npar(input_file)
+cdo_npar(infile)
 
-cdo_ntime(input_file)
+cdo_ntime(infile)
 
-cdo_nyear(input_file)
+cdo_nyear(infile)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 }
 \description{
 This module prints the number of variables, levels or times of the input

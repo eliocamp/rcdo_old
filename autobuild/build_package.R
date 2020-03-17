@@ -10,38 +10,60 @@ operator_io <- operator_io[n_input != 0]
 r_files <- list.files("R", full.names = TRUE)
 unlink(r_files)
 
+
+
+manual_folder <- file.path("autobuild", "manual")
+manual_files <- list.files(manual_folder)
+
+lapply(manual_files, function(f) file.copy(file.path(manual_folder, f),
+                                           file.path(file.path("R", f)),
+                                           overwrite = TRUE))
+
 fun_from_io <- function(operator, n_input, n_output, family) {
-  
-  input_args <- NULL
-  args <- .file_args(n_input, "input_file")
-  if (args[1] != "") {
+  # browser()
+  input_params <- ""
+  input_args <- .file_args(n_input, "infile")
+  if (input_args[1] != "") {
     if (!(n_input %in% c(0, 1))) {
       description <- " input files."
     } else {
       description <- " input file."
     }
     
-    input_args <- paste0("#' @param ", paste0(args, collapse = ","), description)
+    input_params <- paste0("@param ", paste0(input_args, collapse = ","), description)
   }
   
-  output_args <- NULL
-  args <- .file_args(n_output, "output_file")
-  if (args[1] != "") {
+  # fun_def <- paste0("cdo_", operator, " <- function(", input_args)
+  
+  
+  if (n_output == -1) {
+    output_args <- "obase"
+    output_args_null <- "obase = NULL"
+    output_params <- paste0("@param obase preffix added to the output files.")
+  } else if (n_output == 0) {
+    output_args <- ""
+    output_args_null <- NULL
+    output_params <- ""
+  } else {
+    output_args <- .file_args(n_output, "outfile")
+    
     if (!(n_output %in% c(0, 1))) {
       description <- " output files."
     } else {
       description <- " output file."
     }
-    
-    output_args <- paste0("#' @param ", paste0(args, collapse = ","), description)
+    output_params <- paste0("@param ", paste0(output_args, collapse = ","), description)
+    output_args_null <- paste0(paste0(output_args, " = NULL"), collapse = ", ")
   }
+  args <- paste0(c(input_args, output_args_null), collapse = ", ")
   
-  fun_def <- glue::glue("#' @rdname {family}\n#' @export \ncdo_{operator} <- new_operator(\"{operator}\", {n_input}, {n_output})\n\n")
-  paste0(c(input_args, output_args, fun_def), collapse = "\n")
+  template <- paste0(readLines("autobuild/function_template.R"), collapse = "\n")
+  
+  glue::glue(template)
 }
 
 
-docs <- "~/Downloads/cdo-1.9.8/src/operator_help.h"
+docs <- "autobuild/source/cdo-1.9.8/src/operator_help.h"
 
 text <- readLines(docs)
 
@@ -135,10 +157,3 @@ for (i in seq_along(family_start)[-length(family_start)]) {
 }
 
 # operator_help <- data.table::rbindlist(operator_help)
-
-manual_folder <- file.path("autobuild", "manual")
-manual_files <- list.files(manual_folder)
-
-lapply(manual_files, function(f) file.copy(file.path(manual_folder, f),
-                                           file.path(file.path("R", f)),
-                                           overwrite = TRUE))

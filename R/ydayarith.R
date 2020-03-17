@@ -22,27 +22,91 @@
 #' @name Ydayarith
 NULL
 
-#' @param input_file_1,input_file_2 input files.
-#' @param output_file output file.
+#' @param infile1,infile2 input files.
+#' @param outfile output file.
 #' @rdname Ydayarith
-#' @export 
-cdo_ydayadd <- new_operator("ydayadd", 2, 1)
-
-#' @param input_file_1,input_file_2 input files.
-#' @param output_file output file.
+#' @export
+cdo_ydayadd <- function(infile1, infile2, outfile = NULL) {
+  .new_step(operator = 'ydayadd', 
+            inputs = list(infile1), 
+            outputs = c(outfile), 
+            n_inputs = 2,
+            n_outputs = 1)
+}
+#' @param infile1,infile2 input files.
+#' @param outfile output file.
 #' @rdname Ydayarith
-#' @export 
-cdo_ydaydiv <- new_operator("ydaydiv", 2, 1)
-
-#' @param input_file_1,input_file_2 input files.
-#' @param output_file output file.
+#' @export
+cdo_ydayadd <- function(infile1, infile2, outfile = NULL) {
+  .new_step(operator = 'ydayadd', 
+            inputs = list(infile2), 
+            outputs = c(outfile), 
+            n_inputs = 2,
+            n_outputs = 1)
+}
+#' @param infile1,infile2 input files.
+#' @param outfile output file.
 #' @rdname Ydayarith
-#' @export 
-cdo_ydaymul <- new_operator("ydaymul", 2, 1)
-
-#' @param input_file_1,input_file_2 input files.
-#' @param output_file output file.
+#' @export
+cdo_ydaydiv <- function(infile1, infile2, outfile = NULL) {
+  .new_step(operator = 'ydaydiv', 
+            inputs = list(infile1), 
+            outputs = c(outfile), 
+            n_inputs = 2,
+            n_outputs = 1)
+}
+#' @param infile1,infile2 input files.
+#' @param outfile output file.
 #' @rdname Ydayarith
-#' @export 
-cdo_ydaysub <- new_operator("ydaysub", 2, 1)
-
+#' @export
+cdo_ydaydiv <- function(infile1, infile2, outfile = NULL) {
+  .new_step(operator = 'ydaydiv', 
+            inputs = list(infile2), 
+            outputs = c(outfile), 
+            n_inputs = 2,
+            n_outputs = 1)
+}
+#' @param infile1,infile2 input files.
+#' @param outfile output file.
+#' @rdname Ydayarith
+#' @export
+cdo_ydaymul <- function(infile1, infile2, outfile = NULL) {
+  .new_step(operator = 'ydaymul', 
+            inputs = list(infile1), 
+            outputs = c(outfile), 
+            n_inputs = 2,
+            n_outputs = 1)
+}
+#' @param infile1,infile2 input files.
+#' @param outfile output file.
+#' @rdname Ydayarith
+#' @export
+cdo_ydaymul <- function(infile1, infile2, outfile = NULL) {
+  .new_step(operator = 'ydaymul', 
+            inputs = list(infile2), 
+            outputs = c(outfile), 
+            n_inputs = 2,
+            n_outputs = 1)
+}
+#' @param infile1,infile2 input files.
+#' @param outfile output file.
+#' @rdname Ydayarith
+#' @export
+cdo_ydaysub <- function(infile1, infile2, outfile = NULL) {
+  .new_step(operator = 'ydaysub', 
+            inputs = list(infile1), 
+            outputs = c(outfile), 
+            n_inputs = 2,
+            n_outputs = 1)
+}
+#' @param infile1,infile2 input files.
+#' @param outfile output file.
+#' @rdname Ydayarith
+#' @export
+cdo_ydaysub <- function(infile1, infile2, outfile = NULL) {
+  .new_step(operator = 'ydaysub', 
+            inputs = list(infile2), 
+            outputs = c(outfile), 
+            n_inputs = 2,
+            n_outputs = 1)
+}

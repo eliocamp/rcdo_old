@@ -5,12 +5,12 @@
 \alias{cdo_cmorlite}
 \title{CMOR lite}
 \usage{
-cdo_cmorlite(input_file, output_file = NULL)
+cdo_cmorlite(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 The CMOR (Climate Model Output Rewriter) library comprises a set of functions,

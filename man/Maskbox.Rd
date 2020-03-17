@@ -6,14 +6,14 @@
 \alias{cdo_masklonlatbox}
 \title{Mask a box}
 \usage{
-cdo_maskindexbox(input_file, output_file = NULL)
+cdo_maskindexbox(infile, outfile = NULL)
 
-cdo_masklonlatbox(input_file, output_file = NULL)
+cdo_masklonlatbox(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 Masked a box of the rectangularly understood field. The elements inside the box

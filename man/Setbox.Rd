@@ -6,14 +6,14 @@
 \alias{cdo_setclonlatbox}
 \title{Set a box to constant}
 \usage{
-cdo_setcindexbox(input_file, output_file = NULL)
+cdo_setcindexbox(infile, outfile = NULL)
 
-cdo_setclonlatbox(input_file, output_file = NULL)
+cdo_setclonlatbox(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 Sets a box of the rectangularly understood field to a constant value. The

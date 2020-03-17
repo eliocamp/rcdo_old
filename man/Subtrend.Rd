@@ -5,12 +5,16 @@
 \alias{cdo_subtrend}
 \title{Subtract a trend}
 \usage{
-cdo_subtrend(input_file_1, input_file_2, input_file_3, output_file = NULL)
+cdo_subtrend(infile1, infile2, infile3, outfile = NULL)
+
+cdo_subtrend(infile1, infile2, infile3, outfile = NULL)
+
+cdo_subtrend(infile1, infile2, infile3, outfile = NULL)
 }
 \arguments{
-\item{input_file_1, input_file_2, input_file_3}{input files.}
+\item{infile1, infile2, infile3}{input files.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This operator is for subtracting a trend computed by the operator trend. It is

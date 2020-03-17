@@ -8,18 +8,26 @@
 \alias{cdo_yhoursub}
 \title{Multi-year hourly arithmetic}
 \usage{
-cdo_yhouradd(input_file_1, input_file_2, output_file = NULL)
+cdo_yhouradd(infile1, infile2, outfile = NULL)
 
-cdo_yhourdiv(input_file_1, input_file_2, output_file = NULL)
+cdo_yhouradd(infile1, infile2, outfile = NULL)
 
-cdo_yhourmul(input_file_1, input_file_2, output_file = NULL)
+cdo_yhourdiv(infile1, infile2, outfile = NULL)
 
-cdo_yhoursub(input_file_1, input_file_2, output_file = NULL)
+cdo_yhourdiv(infile1, infile2, outfile = NULL)
+
+cdo_yhourmul(infile1, infile2, outfile = NULL)
+
+cdo_yhourmul(infile1, infile2, outfile = NULL)
+
+cdo_yhoursub(infile1, infile2, outfile = NULL)
+
+cdo_yhoursub(infile1, infile2, outfile = NULL)
 }
 \arguments{
-\item{input_file_1, input_file_2}{input files.}
+\item{infile1, infile2}{input files.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This module performs simple arithmetic of a time series and one timestep with

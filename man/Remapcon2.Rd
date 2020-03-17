@@ -6,14 +6,14 @@
 \alias{cdo_remapcon2}
 \title{Second order conservative remapping}
 \usage{
-cdo_gencon2(input_file, output_file = NULL)
+cdo_gencon2(infile, outfile = NULL)
 
-cdo_remapcon2(input_file, output_file = NULL)
+cdo_remapcon2(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This module contains operators for a second order conservative remapping of

@@ -6,14 +6,14 @@
 \alias{cdo_remapbil}
 \title{Bilinear interpolation}
 \usage{
-cdo_genbil(input_file, output_file = NULL)
+cdo_genbil(infile, outfile = NULL)
 
-cdo_remapbil(input_file, output_file = NULL)
+cdo_remapbil(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This module contains operators for a bilinear remapping of fields between grids

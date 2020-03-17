@@ -5,12 +5,16 @@
 \alias{cdo_ydaypctl}
 \title{Multi-year daily percentile values}
 \usage{
-cdo_ydaypctl(input_file_1, input_file_2, input_file_3, output_file = NULL)
+cdo_ydaypctl(infile1, infile2, infile3, outfile = NULL)
+
+cdo_ydaypctl(infile1, infile2, infile3, outfile = NULL)
+
+cdo_ydaypctl(infile1, infile2, infile3, outfile = NULL)
 }
 \arguments{
-\item{input_file_1, input_file_2, input_file_3}{input files.}
+\item{infile1, infile2, infile3}{input files.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This operator writes a certain percentile of each day of year in infile1 to

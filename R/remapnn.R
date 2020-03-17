@@ -17,15 +17,25 @@
 #' @name Remapnn
 NULL
 
-#' @param input_file input file.
-#' @param output_file output file.
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Remapnn
-#' @export 
-cdo_gennn <- new_operator("gennn", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_gennn <- function(infile, outfile = NULL) {
+  .new_step(operator = 'gennn', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Remapnn
-#' @export 
-cdo_remapnn <- new_operator("remapnn", 1, 1)
-
+#' @export
+cdo_remapnn <- function(infile, outfile = NULL) {
+  .new_step(operator = 'remapnn', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}

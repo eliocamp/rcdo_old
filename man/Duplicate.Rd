@@ -5,12 +5,12 @@
 \alias{cdo_duplicate}
 \title{Duplicates a dataset}
 \usage{
-cdo_duplicate(input_file, output_file = NULL)
+cdo_duplicate(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This operator duplicates the contents of infile and writes the result to

@@ -14,9 +14,14 @@
 #' @name Samplegrid
 NULL
 
-#' @param input_file input file.
-#' @param output_file output file.
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Samplegrid
-#' @export 
-cdo_samplegrid <- new_operator("samplegrid", 1, 1)
-
+#' @export
+cdo_samplegrid <- function(infile, outfile = NULL) {
+  .new_step(operator = 'samplegrid', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}

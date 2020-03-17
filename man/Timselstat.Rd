@@ -14,30 +14,30 @@
 \alias{cdo_timselvar1}
 \title{Time range statistical values}
 \usage{
-cdo_timselavg(input_file, output_file = NULL)
+cdo_timselavg(infile, outfile = NULL)
 
-cdo_timselmax(input_file, output_file = NULL)
+cdo_timselmax(infile, outfile = NULL)
 
-cdo_timselmean(input_file, output_file = NULL)
+cdo_timselmean(infile, outfile = NULL)
 
-cdo_timselmin(input_file, output_file = NULL)
+cdo_timselmin(infile, outfile = NULL)
 
-cdo_timselrange(input_file, output_file = NULL)
+cdo_timselrange(infile, outfile = NULL)
 
-cdo_timselstd(input_file, output_file = NULL)
+cdo_timselstd(infile, outfile = NULL)
 
-cdo_timselstd1(input_file, output_file = NULL)
+cdo_timselstd1(infile, outfile = NULL)
 
-cdo_timselsum(input_file, output_file = NULL)
+cdo_timselsum(infile, outfile = NULL)
 
-cdo_timselvar(input_file, output_file = NULL)
+cdo_timselvar(infile, outfile = NULL)
 
-cdo_timselvar1(input_file, output_file = NULL)
+cdo_timselvar1(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This module computes statistical values for a selected number of timesteps.

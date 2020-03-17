@@ -20,9 +20,14 @@
 #' @name EcaTr
 NULL
 
-#' @param input_file input file.
-#' @param output_file output file.
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname EcaTr
-#' @export 
-cdo_eca_tr <- new_operator("eca_tr", 1, 1)
-
+#' @export
+cdo_eca_tr <- function(infile, outfile = NULL) {
+  .new_step(operator = 'eca_tr', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}

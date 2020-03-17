@@ -6,14 +6,14 @@
 \alias{cdo_remapnn}
 \title{Nearest neighbor remapping}
 \usage{
-cdo_gennn(input_file, output_file = NULL)
+cdo_gennn(infile, outfile = NULL)
 
-cdo_remapnn(input_file, output_file = NULL)
+cdo_remapnn(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This module contains operators for a nearest neighbor remapping of fields

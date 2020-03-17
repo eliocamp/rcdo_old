@@ -5,32 +5,37 @@
 #' files (such as [cdo_info()]), in which case, the commands are executed 
 #' inmmediately. 
 #' 
-#' @param cdo_operator a cdo_operator, which is the result of any `cdo_*` functions
+#' @param operation a cdo_operator, which is the result of any `cdo_*` functions
 #' that has at least one output file. `
 #' 
 #' 
 #' @export
-cdo_run <- function(cdo_operator) {
-  out <- system(cdo_operator, intern = TRUE)
-  if (inherits(cdo_operator, "cdo_output")) {
-    out <- strsplit(cdo_operator, " ")[[1]]
-    out <- out[length(out)]
+cdo_run <- function(operation) {
+  if (is.null(operation$params$outputs)) {
+    operation <- cdo_add_output(operation, tempfile())
   }
+  
+  
+  command <- paste0("cdo ", .build_command(operation, chain = FALSE))
+  
+  out <- system(command, intern = TRUE)
+  
+  if (operation$pattern$n_outputs > 0) {
+    return(operation$params$outputs)
+  } 
   return(out)
 }
-
 
 #' Add output to operators
 #' 
 #' Easily add an output file to an operator. 
 #' 
-#' @param cdo_operator a cdo_operator, which is the result of any `cdo_*` functions
+#' @param operation a cdo_operator, which is the result of any `cdo_*` functions
 #' that has at least one output file. `
-#' @param output_files filenames
+#' @param output filenames
 #' 
 #' @export
-cdo_add_output <- function(cdo_operator, output_files) {
-  output <- paste0("cdo ", cdo_operator, " ", output_files)
-  class(output) <- c("cdo_output", class(output))
-  output
+cdo_add_output <- function(operation, output) {
+  operation$params$outputs <- output
+  return(operation)
 }

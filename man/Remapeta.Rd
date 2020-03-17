@@ -5,12 +5,12 @@
 \alias{cdo_remapeta}
 \title{Remap vertical hybrid level}
 \usage{
-cdo_remapeta(input_file, output_file = NULL)
+cdo_remapeta(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This operator interpolates between different vertical hybrid levels. This

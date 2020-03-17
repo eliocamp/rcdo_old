@@ -14,30 +14,30 @@
 \alias{cdo_runvar1}
 \title{Running statistical values}
 \usage{
-cdo_runavg(input_file, output_file = NULL)
+cdo_runavg(infile, outfile = NULL)
 
-cdo_runmax(input_file, output_file = NULL)
+cdo_runmax(infile, outfile = NULL)
 
-cdo_runmean(input_file, output_file = NULL)
+cdo_runmean(infile, outfile = NULL)
 
-cdo_runmin(input_file, output_file = NULL)
+cdo_runmin(infile, outfile = NULL)
 
-cdo_runrange(input_file, output_file = NULL)
+cdo_runrange(infile, outfile = NULL)
 
-cdo_runstd(input_file, output_file = NULL)
+cdo_runstd(infile, outfile = NULL)
 
-cdo_runstd1(input_file, output_file = NULL)
+cdo_runstd1(infile, outfile = NULL)
 
-cdo_runsum(input_file, output_file = NULL)
+cdo_runsum(infile, outfile = NULL)
 
-cdo_runvar(input_file, output_file = NULL)
+cdo_runvar(infile, outfile = NULL)
 
-cdo_runvar1(input_file, output_file = NULL)
+cdo_runvar1(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This module computes running statistical values over a selected number of

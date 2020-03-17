@@ -5,12 +5,12 @@
 \alias{cdo_sealevelpressure}
 \title{Sea level pressure}
 \usage{
-cdo_sealevelpressure(input_file, output_file = NULL)
+cdo_sealevelpressure(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This operator computes the sea level pressure (air_pressure_at_sea_level).

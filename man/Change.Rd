@@ -11,24 +11,24 @@
 \alias{cdo_chunit}
 \title{Change field header}
 \usage{
-cdo_chcode(input_file, output_file = NULL)
+cdo_chcode(infile, outfile = NULL)
 
-cdo_chlevel(input_file, output_file = NULL)
+cdo_chlevel(infile, outfile = NULL)
 
-cdo_chlevelc(input_file, output_file = NULL)
+cdo_chlevelc(infile, outfile = NULL)
 
-cdo_chlevelv(input_file, output_file = NULL)
+cdo_chlevelv(infile, outfile = NULL)
 
-cdo_chname(input_file, output_file = NULL)
+cdo_chname(infile, outfile = NULL)
 
-cdo_chparam(input_file, output_file = NULL)
+cdo_chparam(infile, outfile = NULL)
 
-cdo_chunit(input_file, output_file = NULL)
+cdo_chunit(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This module reads fields from infile, changes some header values and writes the

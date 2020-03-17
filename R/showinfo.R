@@ -36,68 +36,146 @@
 #' @name Showinfo
 NULL
 
-#' @param input_file input file.
+#' @param infile input file.
+#' 
 #' @rdname Showinfo
-#' @export 
-cdo_showatts <- new_operator("showatts", 1, 0)
-
-#' @param input_file input file.
+#' @export
+cdo_showatts <- function(infile) {
+  .new_step(operator = 'showatts', 
+            inputs = list(infile), 
+            outputs = c(), 
+            n_inputs = 1,
+            n_outputs = 0)
+}
+#' @param infile input file.
+#' 
 #' @rdname Showinfo
-#' @export 
-cdo_showattsglob <- new_operator("showattsglob", 1, 0)
-
-#' @param input_file input file.
+#' @export
+cdo_showattsglob <- function(infile) {
+  .new_step(operator = 'showattsglob', 
+            inputs = list(infile), 
+            outputs = c(), 
+            n_inputs = 1,
+            n_outputs = 0)
+}
+#' @param infile input file.
+#' 
 #' @rdname Showinfo
-#' @export 
-cdo_showcode <- new_operator("showcode", 1, 0)
-
-#' @param input_file input file.
+#' @export
+cdo_showcode <- function(infile) {
+  .new_step(operator = 'showcode', 
+            inputs = list(infile), 
+            outputs = c(), 
+            n_inputs = 1,
+            n_outputs = 0)
+}
+#' @param infile input file.
+#' 
 #' @rdname Showinfo
-#' @export 
-cdo_showdate <- new_operator("showdate", 1, 0)
-
-#' @param input_file input file.
+#' @export
+cdo_showdate <- function(infile) {
+  .new_step(operator = 'showdate', 
+            inputs = list(infile), 
+            outputs = c(), 
+            n_inputs = 1,
+            n_outputs = 0)
+}
+#' @param infile input file.
+#' 
 #' @rdname Showinfo
-#' @export 
-cdo_showformat <- new_operator("showformat", 1, 0)
-
-#' @param input_file input file.
+#' @export
+cdo_showformat <- function(infile) {
+  .new_step(operator = 'showformat', 
+            inputs = list(infile), 
+            outputs = c(), 
+            n_inputs = 1,
+            n_outputs = 0)
+}
+#' @param infile input file.
+#' 
 #' @rdname Showinfo
-#' @export 
-cdo_showlevel <- new_operator("showlevel", 1, 0)
-
-#' @param input_file input file.
+#' @export
+cdo_showlevel <- function(infile) {
+  .new_step(operator = 'showlevel', 
+            inputs = list(infile), 
+            outputs = c(), 
+            n_inputs = 1,
+            n_outputs = 0)
+}
+#' @param infile input file.
+#' 
 #' @rdname Showinfo
-#' @export 
-cdo_showltype <- new_operator("showltype", 1, 0)
-
-#' @param input_file input file.
+#' @export
+cdo_showltype <- function(infile) {
+  .new_step(operator = 'showltype', 
+            inputs = list(infile), 
+            outputs = c(), 
+            n_inputs = 1,
+            n_outputs = 0)
+}
+#' @param infile input file.
+#' 
 #' @rdname Showinfo
-#' @export 
-cdo_showmon <- new_operator("showmon", 1, 0)
-
-#' @param input_file input file.
+#' @export
+cdo_showmon <- function(infile) {
+  .new_step(operator = 'showmon', 
+            inputs = list(infile), 
+            outputs = c(), 
+            n_inputs = 1,
+            n_outputs = 0)
+}
+#' @param infile input file.
+#' 
 #' @rdname Showinfo
-#' @export 
-cdo_showname <- new_operator("showname", 1, 0)
-
-#' @param input_file input file.
+#' @export
+cdo_showname <- function(infile) {
+  .new_step(operator = 'showname', 
+            inputs = list(infile), 
+            outputs = c(), 
+            n_inputs = 1,
+            n_outputs = 0)
+}
+#' @param infile input file.
+#' 
 #' @rdname Showinfo
-#' @export 
-cdo_showstdname <- new_operator("showstdname", 1, 0)
-
-#' @param input_file input file.
+#' @export
+cdo_showstdname <- function(infile) {
+  .new_step(operator = 'showstdname', 
+            inputs = list(infile), 
+            outputs = c(), 
+            n_inputs = 1,
+            n_outputs = 0)
+}
+#' @param infile input file.
+#' 
 #' @rdname Showinfo
-#' @export 
-cdo_showtime <- new_operator("showtime", 1, 0)
-
-#' @param input_file input file.
+#' @export
+cdo_showtime <- function(infile) {
+  .new_step(operator = 'showtime', 
+            inputs = list(infile), 
+            outputs = c(), 
+            n_inputs = 1,
+            n_outputs = 0)
+}
+#' @param infile input file.
+#' 
 #' @rdname Showinfo
-#' @export 
-cdo_showtimestamp <- new_operator("showtimestamp", 1, 0)
-
-#' @param input_file input file.
+#' @export
+cdo_showtimestamp <- function(infile) {
+  .new_step(operator = 'showtimestamp', 
+            inputs = list(infile), 
+            outputs = c(), 
+            n_inputs = 1,
+            n_outputs = 0)
+}
+#' @param infile input file.
+#' 
 #' @rdname Showinfo
-#' @export 
-cdo_showyear <- new_operator("showyear", 1, 0)
-
+#' @export
+cdo_showyear <- function(infile) {
+  .new_step(operator = 'showyear', 
+            inputs = list(infile), 
+            outputs = c(), 
+            n_inputs = 1,
+            n_outputs = 0)
+}

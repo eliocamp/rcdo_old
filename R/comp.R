@@ -38,39 +38,135 @@
 #' @name Comp
 NULL
 
-#' @param input_file_1,input_file_2 input files.
-#' @param output_file output file.
+#' @param infile1,infile2 input files.
+#' @param outfile output file.
 #' @rdname Comp
-#' @export 
-cdo_eq <- new_operator("eq", 2, 1)
-
-#' @param input_file_1,input_file_2 input files.
-#' @param output_file output file.
+#' @export
+cdo_eq <- function(infile1, infile2, outfile = NULL) {
+  .new_step(operator = 'eq', 
+            inputs = list(infile1), 
+            outputs = c(outfile), 
+            n_inputs = 2,
+            n_outputs = 1)
+}
+#' @param infile1,infile2 input files.
+#' @param outfile output file.
 #' @rdname Comp
-#' @export 
-cdo_ge <- new_operator("ge", 2, 1)
-
-#' @param input_file_1,input_file_2 input files.
-#' @param output_file output file.
+#' @export
+cdo_eq <- function(infile1, infile2, outfile = NULL) {
+  .new_step(operator = 'eq', 
+            inputs = list(infile2), 
+            outputs = c(outfile), 
+            n_inputs = 2,
+            n_outputs = 1)
+}
+#' @param infile1,infile2 input files.
+#' @param outfile output file.
 #' @rdname Comp
-#' @export 
-cdo_gt <- new_operator("gt", 2, 1)
-
-#' @param input_file_1,input_file_2 input files.
-#' @param output_file output file.
+#' @export
+cdo_ge <- function(infile1, infile2, outfile = NULL) {
+  .new_step(operator = 'ge', 
+            inputs = list(infile1), 
+            outputs = c(outfile), 
+            n_inputs = 2,
+            n_outputs = 1)
+}
+#' @param infile1,infile2 input files.
+#' @param outfile output file.
 #' @rdname Comp
-#' @export 
-cdo_le <- new_operator("le", 2, 1)
-
-#' @param input_file_1,input_file_2 input files.
-#' @param output_file output file.
+#' @export
+cdo_ge <- function(infile1, infile2, outfile = NULL) {
+  .new_step(operator = 'ge', 
+            inputs = list(infile2), 
+            outputs = c(outfile), 
+            n_inputs = 2,
+            n_outputs = 1)
+}
+#' @param infile1,infile2 input files.
+#' @param outfile output file.
 #' @rdname Comp
-#' @export 
-cdo_lt <- new_operator("lt", 2, 1)
-
-#' @param input_file_1,input_file_2 input files.
-#' @param output_file output file.
+#' @export
+cdo_gt <- function(infile1, infile2, outfile = NULL) {
+  .new_step(operator = 'gt', 
+            inputs = list(infile1), 
+            outputs = c(outfile), 
+            n_inputs = 2,
+            n_outputs = 1)
+}
+#' @param infile1,infile2 input files.
+#' @param outfile output file.
 #' @rdname Comp
-#' @export 
-cdo_ne <- new_operator("ne", 2, 1)
-
+#' @export
+cdo_gt <- function(infile1, infile2, outfile = NULL) {
+  .new_step(operator = 'gt', 
+            inputs = list(infile2), 
+            outputs = c(outfile), 
+            n_inputs = 2,
+            n_outputs = 1)
+}
+#' @param infile1,infile2 input files.
+#' @param outfile output file.
+#' @rdname Comp
+#' @export
+cdo_le <- function(infile1, infile2, outfile = NULL) {
+  .new_step(operator = 'le', 
+            inputs = list(infile1), 
+            outputs = c(outfile), 
+            n_inputs = 2,
+            n_outputs = 1)
+}
+#' @param infile1,infile2 input files.
+#' @param outfile output file.
+#' @rdname Comp
+#' @export
+cdo_le <- function(infile1, infile2, outfile = NULL) {
+  .new_step(operator = 'le', 
+            inputs = list(infile2), 
+            outputs = c(outfile), 
+            n_inputs = 2,
+            n_outputs = 1)
+}
+#' @param infile1,infile2 input files.
+#' @param outfile output file.
+#' @rdname Comp
+#' @export
+cdo_lt <- function(infile1, infile2, outfile = NULL) {
+  .new_step(operator = 'lt', 
+            inputs = list(infile1), 
+            outputs = c(outfile), 
+            n_inputs = 2,
+            n_outputs = 1)
+}
+#' @param infile1,infile2 input files.
+#' @param outfile output file.
+#' @rdname Comp
+#' @export
+cdo_lt <- function(infile1, infile2, outfile = NULL) {
+  .new_step(operator = 'lt', 
+            inputs = list(infile2), 
+            outputs = c(outfile), 
+            n_inputs = 2,
+            n_outputs = 1)
+}
+#' @param infile1,infile2 input files.
+#' @param outfile output file.
+#' @rdname Comp
+#' @export
+cdo_ne <- function(infile1, infile2, outfile = NULL) {
+  .new_step(operator = 'ne', 
+            inputs = list(infile1), 
+            outputs = c(outfile), 
+            n_inputs = 2,
+            n_outputs = 1)
+}
+#' @param infile1,infile2 input files.
+#' @param outfile output file.
+#' @rdname Comp
+#' @export
+cdo_ne <- function(infile1, infile2, outfile = NULL) {
+  .new_step(operator = 'ne', 
+            inputs = list(infile2), 
+            outputs = c(outfile), 
+            n_inputs = 2,
+            n_outputs = 1)
+}

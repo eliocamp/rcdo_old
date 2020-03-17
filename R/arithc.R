@@ -23,27 +23,47 @@
 #' @name Arithc
 NULL
 
-#' @param input_file input file.
-#' @param output_file output file.
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Arithc
-#' @export 
-cdo_addc <- new_operator("addc", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_addc <- function(infile, outfile = NULL) {
+  .new_step(operator = 'addc', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Arithc
-#' @export 
-cdo_divc <- new_operator("divc", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_divc <- function(infile, outfile = NULL) {
+  .new_step(operator = 'divc', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Arithc
-#' @export 
-cdo_mulc <- new_operator("mulc", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_mulc <- function(infile, outfile = NULL) {
+  .new_step(operator = 'mulc', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Arithc
-#' @export 
-cdo_subc <- new_operator("subc", 1, 1)
-
+#' @export
+cdo_subc <- function(infile, outfile = NULL) {
+  .new_step(operator = 'subc', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}

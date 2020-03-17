@@ -18,15 +18,25 @@
 #' @name Gridcell
 NULL
 
-#' @param input_file input file.
-#' @param output_file output file.
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Gridcell
-#' @export 
-cdo_gridarea <- new_operator("gridarea", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_gridarea <- function(infile, outfile = NULL) {
+  .new_step(operator = 'gridarea', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Gridcell
-#' @export 
-cdo_gridweights <- new_operator("gridweights", 1, 1)
-
+#' @export
+cdo_gridweights <- function(infile, outfile = NULL) {
+  .new_step(operator = 'gridweights', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}

@@ -5,12 +5,12 @@
 \alias{cdo_regres}
 \title{Regression}
 \usage{
-cdo_regres(input_file, output_file = NULL)
+cdo_regres(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 The values of the input file infile are assumed to be distributed as

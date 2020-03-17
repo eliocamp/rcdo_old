@@ -18,15 +18,25 @@
 #' @name NCL_wind
 NULL
 
-#' @param input_file input file.
-#' @param output_file output file.
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname NCL_wind
-#' @export 
-cdo_uv2dv_cfd <- new_operator("uv2dv_cfd", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_uv2dv_cfd <- function(infile, outfile = NULL) {
+  .new_step(operator = 'uv2dv_cfd', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname NCL_wind
-#' @export 
-cdo_uv2vr_cfd <- new_operator("uv2vr_cfd", 1, 1)
-
+#' @export
+cdo_uv2vr_cfd <- function(infile, outfile = NULL) {
+  .new_step(operator = 'uv2vr_cfd', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}

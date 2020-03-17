@@ -17,34 +17,34 @@
 \alias{cdo_showyear}
 \title{Show variables, levels or times}
 \usage{
-cdo_showatts(input_file)
+cdo_showatts(infile)
 
-cdo_showattsglob(input_file)
+cdo_showattsglob(infile)
 
-cdo_showcode(input_file)
+cdo_showcode(infile)
 
-cdo_showdate(input_file)
+cdo_showdate(infile)
 
-cdo_showformat(input_file)
+cdo_showformat(infile)
 
-cdo_showlevel(input_file)
+cdo_showlevel(infile)
 
-cdo_showltype(input_file)
+cdo_showltype(infile)
 
-cdo_showmon(input_file)
+cdo_showmon(infile)
 
-cdo_showname(input_file)
+cdo_showname(infile)
 
-cdo_showstdname(input_file)
+cdo_showstdname(infile)
 
-cdo_showtime(input_file)
+cdo_showtime(infile)
 
-cdo_showtimestamp(input_file)
+cdo_showtimestamp(infile)
 
-cdo_showyear(input_file)
+cdo_showyear(infile)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 }
 \description{
 This module prints the format, variables, levels or times of the input dataset.

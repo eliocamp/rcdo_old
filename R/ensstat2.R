@@ -19,21 +19,36 @@
 #' @name Ensstat2
 NULL
 
-#' @param input_files input files.
-#' @param output_file output file.
+#' @param infiles input files.
+#' @param outfile output file.
 #' @rdname Ensstat2
-#' @export 
-cdo_ensrkhistspace <- new_operator("ensrkhistspace", -1, 1)
-
-#' @param input_files input files.
-#' @param output_file output file.
+#' @export
+cdo_ensrkhistspace <- function(infiles, outfile = NULL) {
+  .new_step(operator = 'ensrkhistspace', 
+            inputs = list(infiles), 
+            outputs = c(outfile), 
+            n_inputs = -1,
+            n_outputs = 1)
+}
+#' @param infiles input files.
+#' @param outfile output file.
 #' @rdname Ensstat2
-#' @export 
-cdo_ensrkhisttime <- new_operator("ensrkhisttime", -1, 1)
-
-#' @param input_files input files.
-#' @param output_file output file.
+#' @export
+cdo_ensrkhisttime <- function(infiles, outfile = NULL) {
+  .new_step(operator = 'ensrkhisttime', 
+            inputs = list(infiles), 
+            outputs = c(outfile), 
+            n_inputs = -1,
+            n_outputs = 1)
+}
+#' @param infiles input files.
+#' @param outfile output file.
 #' @rdname Ensstat2
-#' @export 
-cdo_ensroc <- new_operator("ensroc", -1, 1)
-
+#' @export
+cdo_ensroc <- function(infiles, outfile = NULL) {
+  .new_step(operator = 'ensroc', 
+            inputs = list(infiles), 
+            outputs = c(outfile), 
+            n_inputs = -1,
+            n_outputs = 1)
+}

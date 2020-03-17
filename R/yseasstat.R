@@ -63,63 +63,113 @@
 #' @name Yseasstat
 NULL
 
-#' @param input_file input file.
-#' @param output_file output file.
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Yseasstat
-#' @export 
-cdo_yseasavg <- new_operator("yseasavg", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_yseasavg <- function(infile, outfile = NULL) {
+  .new_step(operator = 'yseasavg', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Yseasstat
-#' @export 
-cdo_yseasmax <- new_operator("yseasmax", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_yseasmax <- function(infile, outfile = NULL) {
+  .new_step(operator = 'yseasmax', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Yseasstat
-#' @export 
-cdo_yseasmean <- new_operator("yseasmean", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_yseasmean <- function(infile, outfile = NULL) {
+  .new_step(operator = 'yseasmean', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Yseasstat
-#' @export 
-cdo_yseasmin <- new_operator("yseasmin", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_yseasmin <- function(infile, outfile = NULL) {
+  .new_step(operator = 'yseasmin', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Yseasstat
-#' @export 
-cdo_yseasrange <- new_operator("yseasrange", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_yseasrange <- function(infile, outfile = NULL) {
+  .new_step(operator = 'yseasrange', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Yseasstat
-#' @export 
-cdo_yseasstd <- new_operator("yseasstd", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_yseasstd <- function(infile, outfile = NULL) {
+  .new_step(operator = 'yseasstd', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Yseasstat
-#' @export 
-cdo_yseasstd1 <- new_operator("yseasstd1", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_yseasstd1 <- function(infile, outfile = NULL) {
+  .new_step(operator = 'yseasstd1', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Yseasstat
-#' @export 
-cdo_yseassum <- new_operator("yseassum", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_yseassum <- function(infile, outfile = NULL) {
+  .new_step(operator = 'yseassum', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Yseasstat
-#' @export 
-cdo_yseasvar <- new_operator("yseasvar", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_yseasvar <- function(infile, outfile = NULL) {
+  .new_step(operator = 'yseasvar', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Yseasstat
-#' @export 
-cdo_yseasvar1 <- new_operator("yseasvar1", 1, 1)
-
+#' @export
+cdo_yseasvar1 <- function(infile, outfile = NULL) {
+  .new_step(operator = 'yseasvar1', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}

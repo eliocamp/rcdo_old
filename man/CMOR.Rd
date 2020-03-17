@@ -5,10 +5,10 @@
 \alias{cdo_cmor}
 \title{Climate Model Output Rewriting to produce CMIP-compliant data}
 \usage{
-cdo_cmor(input_file)
+cdo_cmor(infile)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 }
 \description{
 DESCRIPTION

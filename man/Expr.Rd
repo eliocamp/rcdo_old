@@ -8,18 +8,18 @@
 \alias{cdo_exprf}
 \title{Evaluate expressions}
 \usage{
-cdo_aexpr(input_file, output_file = NULL)
+cdo_aexpr(infile, outfile = NULL)
 
-cdo_aexprf(input_file, output_file = NULL)
+cdo_aexprf(infile, outfile = NULL)
 
-cdo_expr(input_file, output_file = NULL)
+cdo_expr(infile, outfile = NULL)
 
-cdo_exprf(input_file, output_file = NULL)
+cdo_exprf(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This module arithmetically processes every timestep of the input dataset. Each

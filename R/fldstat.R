@@ -15,69 +15,124 @@
 #' @name Fldstat
 NULL
 
-#' @param input_file input file.
-#' @param output_file output file.
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Fldstat
-#' @export 
-cdo_fldavg <- new_operator("fldavg", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_fldavg <- function(infile, outfile = NULL) {
+  .new_step(operator = 'fldavg', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Fldstat
-#' @export 
-cdo_fldmax <- new_operator("fldmax", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_fldmax <- function(infile, outfile = NULL) {
+  .new_step(operator = 'fldmax', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Fldstat
-#' @export 
-cdo_fldmean <- new_operator("fldmean", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_fldmean <- function(infile, outfile = NULL) {
+  .new_step(operator = 'fldmean', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Fldstat
-#' @export 
-cdo_fldmin <- new_operator("fldmin", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_fldmin <- function(infile, outfile = NULL) {
+  .new_step(operator = 'fldmin', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Fldstat
-#' @export 
-cdo_fldpctl <- new_operator("fldpctl", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_fldpctl <- function(infile, outfile = NULL) {
+  .new_step(operator = 'fldpctl', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Fldstat
-#' @export 
-cdo_fldrange <- new_operator("fldrange", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_fldrange <- function(infile, outfile = NULL) {
+  .new_step(operator = 'fldrange', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Fldstat
-#' @export 
-cdo_fldstd <- new_operator("fldstd", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_fldstd <- function(infile, outfile = NULL) {
+  .new_step(operator = 'fldstd', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Fldstat
-#' @export 
-cdo_fldstd1 <- new_operator("fldstd1", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_fldstd1 <- function(infile, outfile = NULL) {
+  .new_step(operator = 'fldstd1', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Fldstat
-#' @export 
-cdo_fldsum <- new_operator("fldsum", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_fldsum <- function(infile, outfile = NULL) {
+  .new_step(operator = 'fldsum', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Fldstat
-#' @export 
-cdo_fldvar <- new_operator("fldvar", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_fldvar <- function(infile, outfile = NULL) {
+  .new_step(operator = 'fldvar', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Fldstat
-#' @export 
-cdo_fldvar1 <- new_operator("fldvar1", 1, 1)
-
+#' @export
+cdo_fldvar1 <- function(infile, outfile = NULL) {
+  .new_step(operator = 'fldvar1', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}

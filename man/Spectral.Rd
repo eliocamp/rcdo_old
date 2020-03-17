@@ -6,14 +6,14 @@
 \alias{cdo_sp2gp}
 \title{Spectral transformation}
 \usage{
-cdo_gp2sp(input_file, output_file = NULL)
+cdo_gp2sp(infile, outfile = NULL)
 
-cdo_sp2gp(input_file, output_file = NULL)
+cdo_sp2gp(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This module transforms fields on a global regular Gaussian grid to spectral

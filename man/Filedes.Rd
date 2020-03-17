@@ -9,18 +9,18 @@
 \alias{cdo_zaxisdes}
 \title{Dataset description}
 \usage{
-cdo_codetab(input_file)
+cdo_codetab(infile)
 
-cdo_griddes(input_file)
+cdo_griddes(infile)
 
-cdo_partab(input_file)
+cdo_partab(infile)
 
-cdo_vct(input_file)
+cdo_vct(infile)
 
-cdo_zaxisdes(input_file)
+cdo_zaxisdes(infile)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 }
 \description{
 This module provides operators to print meta information about a dataset. The

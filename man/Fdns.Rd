@@ -5,12 +5,14 @@
 \alias{cdo_fdns}
 \title{Frost days where no snow index per time period}
 \usage{
-cdo_fdns(input_file_1, input_file_2, output_file = NULL)
+cdo_fdns(infile1, infile2, outfile = NULL)
+
+cdo_fdns(infile1, infile2, outfile = NULL)
 }
 \arguments{
-\item{input_file_1, input_file_2}{input files.}
+\item{infile1, infile2}{input files.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 Let infile1 be a time series of the daily minimum temperature TN and infile2 be

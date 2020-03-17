@@ -16,63 +16,113 @@
 #' @name Ydaystat
 NULL
 
-#' @param input_file input file.
-#' @param output_file output file.
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Ydaystat
-#' @export 
-cdo_ydayavg <- new_operator("ydayavg", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_ydayavg <- function(infile, outfile = NULL) {
+  .new_step(operator = 'ydayavg', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Ydaystat
-#' @export 
-cdo_ydaymax <- new_operator("ydaymax", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_ydaymax <- function(infile, outfile = NULL) {
+  .new_step(operator = 'ydaymax', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Ydaystat
-#' @export 
-cdo_ydaymean <- new_operator("ydaymean", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_ydaymean <- function(infile, outfile = NULL) {
+  .new_step(operator = 'ydaymean', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Ydaystat
-#' @export 
-cdo_ydaymin <- new_operator("ydaymin", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_ydaymin <- function(infile, outfile = NULL) {
+  .new_step(operator = 'ydaymin', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Ydaystat
-#' @export 
-cdo_ydayrange <- new_operator("ydayrange", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_ydayrange <- function(infile, outfile = NULL) {
+  .new_step(operator = 'ydayrange', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Ydaystat
-#' @export 
-cdo_ydaystd <- new_operator("ydaystd", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_ydaystd <- function(infile, outfile = NULL) {
+  .new_step(operator = 'ydaystd', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Ydaystat
-#' @export 
-cdo_ydaystd1 <- new_operator("ydaystd1", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_ydaystd1 <- function(infile, outfile = NULL) {
+  .new_step(operator = 'ydaystd1', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Ydaystat
-#' @export 
-cdo_ydaysum <- new_operator("ydaysum", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_ydaysum <- function(infile, outfile = NULL) {
+  .new_step(operator = 'ydaysum', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Ydaystat
-#' @export 
-cdo_ydayvar <- new_operator("ydayvar", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_ydayvar <- function(infile, outfile = NULL) {
+  .new_step(operator = 'ydayvar', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Ydaystat
-#' @export 
-cdo_ydayvar1 <- new_operator("ydayvar1", 1, 1)
-
+#' @export
+cdo_ydayvar1 <- function(infile, outfile = NULL) {
+  .new_step(operator = 'ydayvar1', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}

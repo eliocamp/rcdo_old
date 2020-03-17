@@ -28,18 +28,36 @@
 #' @name Info
 NULL
 
-#' @param input_files input files.
+#' @param infiles input files.
+#' 
 #' @rdname Info
-#' @export 
-cdo_info <- new_operator("info", -1, 0)
-
-#' @param input_files input files.
+#' @export
+cdo_info <- function(infiles) {
+  .new_step(operator = 'info', 
+            inputs = list(infiles), 
+            outputs = c(), 
+            n_inputs = -1,
+            n_outputs = 0)
+}
+#' @param infiles input files.
+#' 
 #' @rdname Info
-#' @export 
-cdo_infon <- new_operator("infon", -1, 0)
-
-#' @param input_files input files.
+#' @export
+cdo_infon <- function(infiles) {
+  .new_step(operator = 'infon', 
+            inputs = list(infiles), 
+            outputs = c(), 
+            n_inputs = -1,
+            n_outputs = 0)
+}
+#' @param infiles input files.
+#' 
 #' @rdname Info
-#' @export 
-cdo_map <- new_operator("map", -1, 0)
-
+#' @export
+cdo_map <- function(infiles) {
+  .new_step(operator = 'map', 
+            inputs = list(infiles), 
+            outputs = c(), 
+            n_inputs = -1,
+            n_outputs = 0)
+}

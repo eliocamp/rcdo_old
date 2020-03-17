@@ -6,14 +6,14 @@
 \alias{cdo_ml2pl}
 \title{Vertical interpolation}
 \usage{
-cdo_ml2hl(input_file, output_file = NULL)
+cdo_ml2hl(infile, outfile = NULL)
 
-cdo_ml2pl(input_file, output_file = NULL)
+cdo_ml2pl(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 Interpolate 3D variables on hybrid sigma pressure level to pressure or height

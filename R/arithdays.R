@@ -20,27 +20,47 @@
 #' @name Arithdays
 NULL
 
-#' @param input_file input file.
-#' @param output_file output file.
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Arithdays
-#' @export 
-cdo_divdpm <- new_operator("divdpm", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_divdpm <- function(infile, outfile = NULL) {
+  .new_step(operator = 'divdpm', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Arithdays
-#' @export 
-cdo_divdpy <- new_operator("divdpy", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_divdpy <- function(infile, outfile = NULL) {
+  .new_step(operator = 'divdpy', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Arithdays
-#' @export 
-cdo_muldpm <- new_operator("muldpm", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_muldpm <- function(infile, outfile = NULL) {
+  .new_step(operator = 'muldpm', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Arithdays
-#' @export 
-cdo_muldpy <- new_operator("muldpy", 1, 1)
-
+#' @export
+cdo_muldpy <- function(infile, outfile = NULL) {
+  .new_step(operator = 'muldpy', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}

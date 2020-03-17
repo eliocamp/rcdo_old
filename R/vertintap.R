@@ -22,15 +22,25 @@
 #' @name Vertintap
 NULL
 
-#' @param input_file input file.
-#' @param output_file output file.
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Vertintap
-#' @export 
-cdo_ap2hl <- new_operator("ap2hl", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_ap2hl <- function(infile, outfile = NULL) {
+  .new_step(operator = 'ap2hl', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Vertintap
-#' @export 
-cdo_ap2pl <- new_operator("ap2pl", 1, 1)
-
+#' @export
+cdo_ap2pl <- function(infile, outfile = NULL) {
+  .new_step(operator = 'ap2pl', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}

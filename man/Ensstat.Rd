@@ -15,32 +15,32 @@
 \alias{cdo_ensvar1}
 \title{Statistical values over an ensemble}
 \usage{
-cdo_ensavg(input_files, output_file = NULL)
+cdo_ensavg(infiles, outfile = NULL)
 
-cdo_ensmax(input_files, output_file = NULL)
+cdo_ensmax(infiles, outfile = NULL)
 
-cdo_ensmean(input_files, output_file = NULL)
+cdo_ensmean(infiles, outfile = NULL)
 
-cdo_ensmin(input_files, output_file = NULL)
+cdo_ensmin(infiles, outfile = NULL)
 
-cdo_enspctl(input_files, output_file = NULL)
+cdo_enspctl(infiles, outfile = NULL)
 
-cdo_ensrange(input_files, output_file = NULL)
+cdo_ensrange(infiles, outfile = NULL)
 
-cdo_ensstd(input_files, output_file = NULL)
+cdo_ensstd(infiles, outfile = NULL)
 
-cdo_ensstd1(input_files, output_file = NULL)
+cdo_ensstd1(infiles, outfile = NULL)
 
-cdo_enssum(input_files, output_file = NULL)
+cdo_enssum(infiles, outfile = NULL)
 
-cdo_ensvar(input_files, output_file = NULL)
+cdo_ensvar(infiles, outfile = NULL)
 
-cdo_ensvar1(input_files, output_file = NULL)
+cdo_ensvar1(infiles, outfile = NULL)
 }
 \arguments{
-\item{input_files}{input files.}
+\item{infiles}{input files.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This module computes statistical values over an ensemble of input files.

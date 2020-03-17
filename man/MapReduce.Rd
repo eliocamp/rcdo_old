@@ -5,12 +5,12 @@
 \alias{cdo_reducegrid}
 \title{Reduce fields to user-defined mask}
 \usage{
-cdo_reducegrid(input_file, output_file = NULL)
+cdo_reducegrid(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This module holds an operator for data reduction based on a user defined mask.

@@ -6,14 +6,14 @@
 \alias{cdo_enscrps}
 \title{Ensemble validation tools}
 \usage{
-cdo_ensbrs(input_files, output_file = NULL)
+cdo_ensbrs(infiles, outfile = NULL)
 
-cdo_enscrps(input_files, output_file = NULL)
+cdo_enscrps(infiles, outfile = NULL)
 }
 \arguments{
-\item{input_files}{input files.}
+\item{infiles}{input files.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This module computes ensemble validation scores and their decomposition such as

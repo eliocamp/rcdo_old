@@ -6,14 +6,14 @@
 \alias{cdo_uv2dv}
 \title{Wind transformation}
 \usage{
-cdo_dv2uv(input_file, output_file = NULL)
+cdo_dv2uv(infile, outfile = NULL)
 
-cdo_uv2dv(input_file, output_file = NULL)
+cdo_uv2dv(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This module converts relative divergence and vorticity to U and V wind and vice

@@ -5,12 +5,12 @@
 \alias{cdo_runpctl}
 \title{Running percentile values}
 \usage{
-cdo_runpctl(input_file, output_file = NULL)
+cdo_runpctl(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This module computes running percentiles over a selected number of timesteps in

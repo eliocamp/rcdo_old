@@ -5,12 +5,14 @@
 \alias{cdo_trend}
 \title{Trend of time series}
 \usage{
-cdo_trend(input_file, output_file_1 = NULL, output_file_2 = NULL)
+cdo_trend(infile, outfile1 = NULL, outfile2 = NULL)
+
+cdo_trend(infile, outfile1 = NULL, outfile2 = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file_1, output_file_2}{output files.}
+\item{outfile1, outfile2}{output files.}
 }
 \description{
 The values of the input file infile are assumed to be distributed as

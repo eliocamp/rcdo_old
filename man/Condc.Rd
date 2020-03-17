@@ -6,14 +6,14 @@
 \alias{cdo_ifthenc}
 \title{Conditional select a constant}
 \usage{
-cdo_ifnotthenc(input_file, output_file = NULL)
+cdo_ifnotthenc(infile, outfile = NULL)
 
-cdo_ifthenc(input_file, output_file = NULL)
+cdo_ifthenc(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This module creates fields with a constant value or missing value. The fields

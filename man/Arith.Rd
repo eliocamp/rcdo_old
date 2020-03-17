@@ -11,24 +11,38 @@
 \alias{cdo_sub}
 \title{Arithmetic on two datasets}
 \usage{
-cdo_add(input_file_1, input_file_2, output_file = NULL)
+cdo_add(infile1, infile2, outfile = NULL)
 
-cdo_atan2(input_file_1, input_file_2, output_file = NULL)
+cdo_add(infile1, infile2, outfile = NULL)
 
-cdo_div(input_file_1, input_file_2, output_file = NULL)
+cdo_atan2(infile1, infile2, outfile = NULL)
 
-cdo_max(input_file_1, input_file_2, output_file = NULL)
+cdo_atan2(infile1, infile2, outfile = NULL)
 
-cdo_min(input_file_1, input_file_2, output_file = NULL)
+cdo_div(infile1, infile2, outfile = NULL)
 
-cdo_mul(input_file_1, input_file_2, output_file = NULL)
+cdo_div(infile1, infile2, outfile = NULL)
 
-cdo_sub(input_file_1, input_file_2, output_file = NULL)
+cdo_max(infile1, infile2, outfile = NULL)
+
+cdo_max(infile1, infile2, outfile = NULL)
+
+cdo_min(infile1, infile2, outfile = NULL)
+
+cdo_min(infile1, infile2, outfile = NULL)
+
+cdo_mul(infile1, infile2, outfile = NULL)
+
+cdo_mul(infile1, infile2, outfile = NULL)
+
+cdo_sub(infile1, infile2, outfile = NULL)
+
+cdo_sub(infile1, infile2, outfile = NULL)
 }
 \arguments{
-\item{input_file_1, input_file_2}{input files.}
+\item{infile1, infile2}{input files.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This module performs simple arithmetic of two datasets. The number of fields in

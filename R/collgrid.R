@@ -33,9 +33,14 @@
 #' @name Collgrid
 NULL
 
-#' @param input_files input files.
-#' @param output_file output file.
+#' @param infiles input files.
+#' @param outfile output file.
 #' @rdname Collgrid
-#' @export 
-cdo_collgrid <- new_operator("collgrid", -1, 1)
-
+#' @export
+cdo_collgrid <- function(infiles, outfile = NULL) {
+  .new_step(operator = 'collgrid', 
+            inputs = list(infiles), 
+            outputs = c(outfile), 
+            n_inputs = -1,
+            n_outputs = 1)
+}

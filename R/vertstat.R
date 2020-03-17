@@ -32,63 +32,113 @@
 #' @name Vertstat
 NULL
 
-#' @param input_file input file.
-#' @param output_file output file.
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Vertstat
-#' @export 
-cdo_vertavg <- new_operator("vertavg", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_vertavg <- function(infile, outfile = NULL) {
+  .new_step(operator = 'vertavg', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Vertstat
-#' @export 
-cdo_vertmax <- new_operator("vertmax", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_vertmax <- function(infile, outfile = NULL) {
+  .new_step(operator = 'vertmax', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Vertstat
-#' @export 
-cdo_vertmean <- new_operator("vertmean", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_vertmean <- function(infile, outfile = NULL) {
+  .new_step(operator = 'vertmean', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Vertstat
-#' @export 
-cdo_vertmin <- new_operator("vertmin", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_vertmin <- function(infile, outfile = NULL) {
+  .new_step(operator = 'vertmin', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Vertstat
-#' @export 
-cdo_vertrange <- new_operator("vertrange", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_vertrange <- function(infile, outfile = NULL) {
+  .new_step(operator = 'vertrange', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Vertstat
-#' @export 
-cdo_vertstd <- new_operator("vertstd", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_vertstd <- function(infile, outfile = NULL) {
+  .new_step(operator = 'vertstd', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Vertstat
-#' @export 
-cdo_vertstd1 <- new_operator("vertstd1", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_vertstd1 <- function(infile, outfile = NULL) {
+  .new_step(operator = 'vertstd1', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Vertstat
-#' @export 
-cdo_vertsum <- new_operator("vertsum", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_vertsum <- function(infile, outfile = NULL) {
+  .new_step(operator = 'vertsum', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Vertstat
-#' @export 
-cdo_vertvar <- new_operator("vertvar", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_vertvar <- function(infile, outfile = NULL) {
+  .new_step(operator = 'vertvar', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Vertstat
-#' @export 
-cdo_vertvar1 <- new_operator("vertvar1", 1, 1)
-
+#' @export
+cdo_vertvar1 <- function(infile, outfile = NULL) {
+  .new_step(operator = 'vertvar1', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}

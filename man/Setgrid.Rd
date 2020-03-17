@@ -8,18 +8,18 @@
 \alias{cdo_setgridtype}
 \title{Set grid information}
 \usage{
-cdo_setgrid(input_file, output_file = NULL)
+cdo_setgrid(infile, outfile = NULL)
 
-cdo_setgridarea(input_file, output_file = NULL)
+cdo_setgridarea(infile, outfile = NULL)
 
-cdo_setgridmask(input_file, output_file = NULL)
+cdo_setgridmask(infile, outfile = NULL)
 
-cdo_setgridtype(input_file, output_file = NULL)
+cdo_setgridtype(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This module modifies the metadata of the horizontal grid. Depending on the

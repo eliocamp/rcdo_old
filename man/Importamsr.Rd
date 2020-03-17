@@ -5,12 +5,12 @@
 \alias{cdo_import_amsr}
 \title{Import AMSR binary files}
 \usage{
-cdo_import_amsr(input_file, output_file = NULL)
+cdo_import_amsr(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This operator imports gridded binary AMSR (Advanced Microwave Scanning

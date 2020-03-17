@@ -22,27 +22,47 @@
 #' @name Expr
 NULL
 
-#' @param input_file input file.
-#' @param output_file output file.
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Expr
-#' @export 
-cdo_aexpr <- new_operator("aexpr", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_aexpr <- function(infile, outfile = NULL) {
+  .new_step(operator = 'aexpr', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Expr
-#' @export 
-cdo_aexprf <- new_operator("aexprf", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_aexprf <- function(infile, outfile = NULL) {
+  .new_step(operator = 'aexprf', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Expr
-#' @export 
-cdo_expr <- new_operator("expr", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_expr <- function(infile, outfile = NULL) {
+  .new_step(operator = 'expr', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Expr
-#' @export 
-cdo_exprf <- new_operator("exprf", 1, 1)
-
+#' @export
+cdo_exprf <- function(infile, outfile = NULL) {
+  .new_step(operator = 'exprf', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}

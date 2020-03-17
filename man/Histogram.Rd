@@ -8,18 +8,18 @@
 \alias{cdo_histsum}
 \title{Histogram}
 \usage{
-cdo_histcount(input_file, output_file = NULL)
+cdo_histcount(infile, outfile = NULL)
 
-cdo_histfreq(input_file, output_file = NULL)
+cdo_histfreq(infile, outfile = NULL)
 
-cdo_histmean(input_file, output_file = NULL)
+cdo_histmean(infile, outfile = NULL)
 
-cdo_histsum(input_file, output_file = NULL)
+cdo_histsum(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This module creates bins for a histogram of the input data. The bins have to be

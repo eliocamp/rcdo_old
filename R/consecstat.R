@@ -23,15 +23,25 @@
 #' @name Consecstat
 NULL
 
-#' @param input_file input file.
-#' @param output_file output file.
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Consecstat
-#' @export 
-cdo_consecsum <- new_operator("consecsum", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_consecsum <- function(infile, outfile = NULL) {
+  .new_step(operator = 'consecsum', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Consecstat
-#' @export 
-cdo_consects <- new_operator("consects", 1, 1)
-
+#' @export
+cdo_consects <- function(infile, outfile = NULL) {
+  .new_step(operator = 'consects', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}

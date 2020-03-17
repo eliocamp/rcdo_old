@@ -5,12 +5,12 @@
 \alias{cdo_graph}
 \title{Line graph plot}
 \usage{
-cdo_graph(input_files, output_file = NULL)
+cdo_graph(infiles, outfile = NULL)
 }
 \arguments{
-\item{input_files}{input files.}
+\item{infiles}{input files.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This operator generates line graph plots. The data for the plot is read from

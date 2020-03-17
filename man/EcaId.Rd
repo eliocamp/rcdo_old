@@ -5,12 +5,12 @@
 \alias{cdo_eca_id}
 \title{Ice days index per time period}
 \usage{
-cdo_eca_id(input_file, output_file = NULL)
+cdo_eca_id(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 Let infile be a time series of the daily maximum temperature TX, then the

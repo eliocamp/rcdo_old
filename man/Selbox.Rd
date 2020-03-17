@@ -6,14 +6,14 @@
 \alias{cdo_sellonlatbox}
 \title{Select a box of a field}
 \usage{
-cdo_selindexbox(input_file, output_file = NULL)
+cdo_selindexbox(infile, outfile = NULL)
 
-cdo_sellonlatbox(input_file, output_file = NULL)
+cdo_sellonlatbox(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 Selects a box of the rectangularly understood field.

@@ -7,16 +7,16 @@
 \alias{cdo_selmulti}
 \title{Select multiple fields via GRIB1 parameters}
 \usage{
-cdo_changemulti(input_file, output_file = NULL)
+cdo_changemulti(infile, outfile = NULL)
 
-cdo_delmulti(input_file, output_file = NULL)
+cdo_delmulti(infile, outfile = NULL)
 
-cdo_selmulti(input_file, output_file = NULL)
+cdo_selmulti(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This module selects multiple fields from infile and writes them to outfile.

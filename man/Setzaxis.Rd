@@ -6,14 +6,14 @@
 \alias{cdo_setzaxis}
 \title{Set z-axis information}
 \usage{
-cdo_genlevelbounds(input_file, output_file = NULL)
+cdo_genlevelbounds(infile, outfile = NULL)
 
-cdo_setzaxis(input_file, output_file = NULL)
+cdo_setzaxis(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This module modifies the metadata of the vertical grid.

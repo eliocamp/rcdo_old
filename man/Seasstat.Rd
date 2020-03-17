@@ -14,30 +14,30 @@
 \alias{cdo_seasvar1}
 \title{Seasonal statistical values}
 \usage{
-cdo_seasavg(input_file, output_file = NULL)
+cdo_seasavg(infile, outfile = NULL)
 
-cdo_seasmax(input_file, output_file = NULL)
+cdo_seasmax(infile, outfile = NULL)
 
-cdo_seasmean(input_file, output_file = NULL)
+cdo_seasmean(infile, outfile = NULL)
 
-cdo_seasmin(input_file, output_file = NULL)
+cdo_seasmin(infile, outfile = NULL)
 
-cdo_seasrange(input_file, output_file = NULL)
+cdo_seasrange(infile, outfile = NULL)
 
-cdo_seasstd(input_file, output_file = NULL)
+cdo_seasstd(infile, outfile = NULL)
 
-cdo_seasstd1(input_file, output_file = NULL)
+cdo_seasstd1(infile, outfile = NULL)
 
-cdo_seassum(input_file, output_file = NULL)
+cdo_seassum(infile, outfile = NULL)
 
-cdo_seasvar(input_file, output_file = NULL)
+cdo_seasvar(infile, outfile = NULL)
 
-cdo_seasvar1(input_file, output_file = NULL)
+cdo_seasvar1(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This module computes statistical values over timesteps of the same season.

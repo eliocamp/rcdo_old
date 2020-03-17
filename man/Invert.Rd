@@ -5,12 +5,12 @@
 \alias{cdo_invertlat}
 \title{Invert latitudes}
 \usage{
-cdo_invertlat(input_file, output_file = NULL)
+cdo_invertlat(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This operator inverts the latitudes of all fields on a rectilinear grid.

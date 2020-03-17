@@ -21,9 +21,25 @@
 #' @name EcaR90p
 NULL
 
-#' @param input_file_1,input_file_2 input files.
-#' @param output_file output file.
+#' @param infile1,infile2 input files.
+#' @param outfile output file.
 #' @rdname EcaR90p
-#' @export 
-cdo_eca_r90p <- new_operator("eca_r90p", 2, 1)
-
+#' @export
+cdo_eca_r90p <- function(infile1, infile2, outfile = NULL) {
+  .new_step(operator = 'eca_r90p', 
+            inputs = list(infile1), 
+            outputs = c(outfile), 
+            n_inputs = 2,
+            n_outputs = 1)
+}
+#' @param infile1,infile2 input files.
+#' @param outfile output file.
+#' @rdname EcaR90p
+#' @export
+cdo_eca_r90p <- function(infile1, infile2, outfile = NULL) {
+  .new_step(operator = 'eca_r90p', 
+            inputs = list(infile2), 
+            outputs = c(outfile), 
+            n_inputs = 2,
+            n_outputs = 1)
+}

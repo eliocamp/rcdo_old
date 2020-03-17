@@ -14,30 +14,30 @@
 \alias{cdo_timvar1}
 \title{Statistical values over all timesteps}
 \usage{
-cdo_timavg(input_file, output_file = NULL)
+cdo_timavg(infile, outfile = NULL)
 
-cdo_timmax(input_file, output_file = NULL)
+cdo_timmax(infile, outfile = NULL)
 
-cdo_timmean(input_file, output_file = NULL)
+cdo_timmean(infile, outfile = NULL)
 
-cdo_timmin(input_file, output_file = NULL)
+cdo_timmin(infile, outfile = NULL)
 
-cdo_timrange(input_file, output_file = NULL)
+cdo_timrange(infile, outfile = NULL)
 
-cdo_timstd(input_file, output_file = NULL)
+cdo_timstd(infile, outfile = NULL)
 
-cdo_timstd1(input_file, output_file = NULL)
+cdo_timstd1(infile, outfile = NULL)
 
-cdo_timsum(input_file, output_file = NULL)
+cdo_timsum(infile, outfile = NULL)
 
-cdo_timvar(input_file, output_file = NULL)
+cdo_timvar(infile, outfile = NULL)
 
-cdo_timvar1(input_file, output_file = NULL)
+cdo_timvar1(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This module computes statistical values over all timesteps in infile. Depending

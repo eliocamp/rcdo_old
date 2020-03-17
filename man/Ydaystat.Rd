@@ -14,30 +14,30 @@
 \alias{cdo_ydayvar1}
 \title{Multi-year daily statistical values}
 \usage{
-cdo_ydayavg(input_file, output_file = NULL)
+cdo_ydayavg(infile, outfile = NULL)
 
-cdo_ydaymax(input_file, output_file = NULL)
+cdo_ydaymax(infile, outfile = NULL)
 
-cdo_ydaymean(input_file, output_file = NULL)
+cdo_ydaymean(infile, outfile = NULL)
 
-cdo_ydaymin(input_file, output_file = NULL)
+cdo_ydaymin(infile, outfile = NULL)
 
-cdo_ydayrange(input_file, output_file = NULL)
+cdo_ydayrange(infile, outfile = NULL)
 
-cdo_ydaystd(input_file, output_file = NULL)
+cdo_ydaystd(infile, outfile = NULL)
 
-cdo_ydaystd1(input_file, output_file = NULL)
+cdo_ydaystd1(infile, outfile = NULL)
 
-cdo_ydaysum(input_file, output_file = NULL)
+cdo_ydaysum(infile, outfile = NULL)
 
-cdo_ydayvar(input_file, output_file = NULL)
+cdo_ydayvar(infile, outfile = NULL)
 
-cdo_ydayvar1(input_file, output_file = NULL)
+cdo_ydayvar1(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This module computes statistical values of each day of year. Depending on the

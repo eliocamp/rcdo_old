@@ -34,45 +34,80 @@
 #' @name Split
 NULL
 
-#' @param input_file input file.
-#' @param output_files output files.
+#' @param infile input file.
+#' @param obase preffix added to the output files.
 #' @rdname Split
-#' @export 
-cdo_splitcode <- new_operator("splitcode", 1, -1)
-
-#' @param input_file input file.
-#' @param output_files output files.
+#' @export
+cdo_splitcode <- function(infile, obase = NULL) {
+  .new_step(operator = 'splitcode', 
+            inputs = list(infile), 
+            outputs = c(obase), 
+            n_inputs = 1,
+            n_outputs = -1)
+}
+#' @param infile input file.
+#' @param obase preffix added to the output files.
 #' @rdname Split
-#' @export 
-cdo_splitgrid <- new_operator("splitgrid", 1, -1)
-
-#' @param input_file input file.
-#' @param output_files output files.
+#' @export
+cdo_splitgrid <- function(infile, obase = NULL) {
+  .new_step(operator = 'splitgrid', 
+            inputs = list(infile), 
+            outputs = c(obase), 
+            n_inputs = 1,
+            n_outputs = -1)
+}
+#' @param infile input file.
+#' @param obase preffix added to the output files.
 #' @rdname Split
-#' @export 
-cdo_splitlevel <- new_operator("splitlevel", 1, -1)
-
-#' @param input_file input file.
-#' @param output_files output files.
+#' @export
+cdo_splitlevel <- function(infile, obase = NULL) {
+  .new_step(operator = 'splitlevel', 
+            inputs = list(infile), 
+            outputs = c(obase), 
+            n_inputs = 1,
+            n_outputs = -1)
+}
+#' @param infile input file.
+#' @param obase preffix added to the output files.
 #' @rdname Split
-#' @export 
-cdo_splitname <- new_operator("splitname", 1, -1)
-
-#' @param input_file input file.
-#' @param output_files output files.
+#' @export
+cdo_splitname <- function(infile, obase = NULL) {
+  .new_step(operator = 'splitname', 
+            inputs = list(infile), 
+            outputs = c(obase), 
+            n_inputs = 1,
+            n_outputs = -1)
+}
+#' @param infile input file.
+#' @param obase preffix added to the output files.
 #' @rdname Split
-#' @export 
-cdo_splitparam <- new_operator("splitparam", 1, -1)
-
-#' @param input_file input file.
-#' @param output_files output files.
+#' @export
+cdo_splitparam <- function(infile, obase = NULL) {
+  .new_step(operator = 'splitparam', 
+            inputs = list(infile), 
+            outputs = c(obase), 
+            n_inputs = 1,
+            n_outputs = -1)
+}
+#' @param infile input file.
+#' @param obase preffix added to the output files.
 #' @rdname Split
-#' @export 
-cdo_splittabnum <- new_operator("splittabnum", 1, -1)
-
-#' @param input_file input file.
-#' @param output_files output files.
+#' @export
+cdo_splittabnum <- function(infile, obase = NULL) {
+  .new_step(operator = 'splittabnum', 
+            inputs = list(infile), 
+            outputs = c(obase), 
+            n_inputs = 1,
+            n_outputs = -1)
+}
+#' @param infile input file.
+#' @param obase preffix added to the output files.
 #' @rdname Split
-#' @export 
-cdo_splitzaxis <- new_operator("splitzaxis", 1, -1)
-
+#' @export
+cdo_splitzaxis <- function(infile, obase = NULL) {
+  .new_step(operator = 'splitzaxis', 
+            inputs = list(infile), 
+            outputs = c(obase), 
+            n_inputs = 1,
+            n_outputs = -1)
+}

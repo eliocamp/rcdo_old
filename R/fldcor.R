@@ -14,9 +14,25 @@
 #' @name Fldcor
 NULL
 
-#' @param input_file_1,input_file_2 input files.
-#' @param output_file output file.
+#' @param infile1,infile2 input files.
+#' @param outfile output file.
 #' @rdname Fldcor
-#' @export 
-cdo_fldcor <- new_operator("fldcor", 2, 1)
-
+#' @export
+cdo_fldcor <- function(infile1, infile2, outfile = NULL) {
+  .new_step(operator = 'fldcor', 
+            inputs = list(infile1), 
+            outputs = c(outfile), 
+            n_inputs = 2,
+            n_outputs = 1)
+}
+#' @param infile1,infile2 input files.
+#' @param outfile output file.
+#' @rdname Fldcor
+#' @export
+cdo_fldcor <- function(infile1, infile2, outfile = NULL) {
+  .new_step(operator = 'fldcor', 
+            inputs = list(infile2), 
+            outputs = c(outfile), 
+            n_inputs = 2,
+            n_outputs = 1)
+}

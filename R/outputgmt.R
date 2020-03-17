@@ -18,13 +18,25 @@
 #' @name Outputgmt
 NULL
 
-#' @param input_file input file.
+#' @param infile input file.
+#' 
 #' @rdname Outputgmt
-#' @export 
-cdo_gmtcells <- new_operator("gmtcells", 1, 0)
-
-#' @param input_file input file.
+#' @export
+cdo_gmtcells <- function(infile) {
+  .new_step(operator = 'gmtcells', 
+            inputs = list(infile), 
+            outputs = c(), 
+            n_inputs = 1,
+            n_outputs = 0)
+}
+#' @param infile input file.
+#' 
 #' @rdname Outputgmt
-#' @export 
-cdo_gmtxyz <- new_operator("gmtxyz", 1, 0)
-
+#' @export
+cdo_gmtxyz <- function(infile) {
+  .new_step(operator = 'gmtxyz', 
+            inputs = list(infile), 
+            outputs = c(), 
+            n_inputs = 1,
+            n_outputs = 0)
+}

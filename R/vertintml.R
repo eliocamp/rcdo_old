@@ -25,15 +25,25 @@
 #' @name Vertintml
 NULL
 
-#' @param input_file input file.
-#' @param output_file output file.
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Vertintml
-#' @export 
-cdo_ml2hl <- new_operator("ml2hl", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_ml2hl <- function(infile, outfile = NULL) {
+  .new_step(operator = 'ml2hl', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Vertintml
-#' @export 
-cdo_ml2pl <- new_operator("ml2pl", 1, 1)
-
+#' @export
+cdo_ml2pl <- function(infile, outfile = NULL) {
+  .new_step(operator = 'ml2pl', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}

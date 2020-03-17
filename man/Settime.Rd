@@ -15,32 +15,32 @@
 \alias{cdo_shifttime}
 \title{Set time}
 \usage{
-cdo_setcalendar(input_file, output_file = NULL)
+cdo_setcalendar(infile, outfile = NULL)
 
-cdo_setdate(input_file, output_file = NULL)
+cdo_setdate(infile, outfile = NULL)
 
-cdo_setday(input_file, output_file = NULL)
+cdo_setday(infile, outfile = NULL)
 
-cdo_setmon(input_file, output_file = NULL)
+cdo_setmon(infile, outfile = NULL)
 
-cdo_setreftime(input_file, output_file = NULL)
+cdo_setreftime(infile, outfile = NULL)
 
-cdo_settaxis(input_file, output_file = NULL)
+cdo_settaxis(infile, outfile = NULL)
 
-cdo_settbounds(input_file, output_file = NULL)
+cdo_settbounds(infile, outfile = NULL)
 
-cdo_settime(input_file, output_file = NULL)
+cdo_settime(infile, outfile = NULL)
 
-cdo_settunits(input_file, output_file = NULL)
+cdo_settunits(infile, outfile = NULL)
 
-cdo_setyear(input_file, output_file = NULL)
+cdo_setyear(infile, outfile = NULL)
 
-cdo_shifttime(input_file, output_file = NULL)
+cdo_shifttime(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This module sets the time axis or part of the time axis. Which part of the time

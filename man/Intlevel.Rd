@@ -5,12 +5,12 @@
 \alias{cdo_intlevel}
 \title{Linear level interpolation}
 \usage{
-cdo_intlevel(input_file, output_file = NULL)
+cdo_intlevel(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This operator performs a linear vertical interpolation of non hybrid 3D

@@ -35,9 +35,14 @@
 #' @name Distgrid
 NULL
 
-#' @param input_file input file.
-#' @param output_file output file.
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Distgrid
-#' @export 
-cdo_distgrid <- new_operator("distgrid", 1, 1)
-
+#' @export
+cdo_distgrid <- function(infile, outfile = NULL) {
+  .new_step(operator = 'distgrid', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}

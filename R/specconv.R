@@ -16,9 +16,14 @@
 #' @name Specconv
 NULL
 
-#' @param input_file input file.
-#' @param output_file output file.
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Specconv
-#' @export 
-cdo_sp2sp <- new_operator("sp2sp", 1, 1)
-
+#' @export
+cdo_sp2sp <- function(infile, outfile = NULL) {
+  .new_step(operator = 'sp2sp', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}

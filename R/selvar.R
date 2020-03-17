@@ -40,87 +40,157 @@
 #' @name Selvar
 NULL
 
-#' @param input_file input file.
-#' @param output_file output file.
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Selvar
-#' @export 
-cdo_delcode <- new_operator("delcode", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_delcode <- function(infile, outfile = NULL) {
+  .new_step(operator = 'delcode', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Selvar
-#' @export 
-cdo_delname <- new_operator("delname", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_delname <- function(infile, outfile = NULL) {
+  .new_step(operator = 'delname', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Selvar
-#' @export 
-cdo_delparam <- new_operator("delparam", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_delparam <- function(infile, outfile = NULL) {
+  .new_step(operator = 'delparam', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Selvar
-#' @export 
-cdo_selcode <- new_operator("selcode", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_selcode <- function(infile, outfile = NULL) {
+  .new_step(operator = 'selcode', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Selvar
-#' @export 
-cdo_selgrid <- new_operator("selgrid", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_selgrid <- function(infile, outfile = NULL) {
+  .new_step(operator = 'selgrid', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Selvar
-#' @export 
-cdo_sellevel <- new_operator("sellevel", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_sellevel <- function(infile, outfile = NULL) {
+  .new_step(operator = 'sellevel', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Selvar
-#' @export 
-cdo_sellevidx <- new_operator("sellevidx", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_sellevidx <- function(infile, outfile = NULL) {
+  .new_step(operator = 'sellevidx', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Selvar
-#' @export 
-cdo_selltype <- new_operator("selltype", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_selltype <- function(infile, outfile = NULL) {
+  .new_step(operator = 'selltype', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Selvar
-#' @export 
-cdo_selname <- new_operator("selname", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_selname <- function(infile, outfile = NULL) {
+  .new_step(operator = 'selname', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Selvar
-#' @export 
-cdo_selparam <- new_operator("selparam", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_selparam <- function(infile, outfile = NULL) {
+  .new_step(operator = 'selparam', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Selvar
-#' @export 
-cdo_selstdname <- new_operator("selstdname", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_selstdname <- function(infile, outfile = NULL) {
+  .new_step(operator = 'selstdname', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Selvar
-#' @export 
-cdo_seltabnum <- new_operator("seltabnum", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_seltabnum <- function(infile, outfile = NULL) {
+  .new_step(operator = 'seltabnum', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Selvar
-#' @export 
-cdo_selzaxis <- new_operator("selzaxis", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_selzaxis <- function(infile, outfile = NULL) {
+  .new_step(operator = 'selzaxis', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Selvar
-#' @export 
-cdo_selzaxisname <- new_operator("selzaxisname", 1, 1)
-
+#' @export
+cdo_selzaxisname <- function(infile, outfile = NULL) {
+  .new_step(operator = 'selzaxisname', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}

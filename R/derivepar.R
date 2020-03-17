@@ -22,9 +22,14 @@
 #' @name Derivepar
 NULL
 
-#' @param input_file input file.
-#' @param output_file output file.
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Derivepar
-#' @export 
-cdo_sealevelpressure <- new_operator("sealevelpressure", 1, 1)
-
+#' @export
+cdo_sealevelpressure <- function(infile, outfile = NULL) {
+  .new_step(operator = 'sealevelpressure', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}

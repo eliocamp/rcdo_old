@@ -17,15 +17,25 @@
 #' @name Selbox
 NULL
 
-#' @param input_file input file.
-#' @param output_file output file.
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Selbox
-#' @export 
-cdo_selindexbox <- new_operator("selindexbox", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_selindexbox <- function(infile, outfile = NULL) {
+  .new_step(operator = 'selindexbox', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Selbox
-#' @export 
-cdo_sellonlatbox <- new_operator("sellonlatbox", 1, 1)
-
+#' @export
+cdo_sellonlatbox <- function(infile, outfile = NULL) {
+  .new_step(operator = 'sellonlatbox', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}

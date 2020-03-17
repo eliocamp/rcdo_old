@@ -6,14 +6,18 @@
 \alias{cdo_ifthen}
 \title{Conditional select one field}
 \usage{
-cdo_ifnotthen(input_file_1, input_file_2, output_file = NULL)
+cdo_ifnotthen(infile1, infile2, outfile = NULL)
 
-cdo_ifthen(input_file_1, input_file_2, output_file = NULL)
+cdo_ifnotthen(infile1, infile2, outfile = NULL)
+
+cdo_ifthen(infile1, infile2, outfile = NULL)
+
+cdo_ifthen(infile1, infile2, outfile = NULL)
 }
 \arguments{
-\item{input_file_1, input_file_2}{input files.}
+\item{infile1, infile2}{input files.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This module selects field elements from infile2 with respect to infile1 and

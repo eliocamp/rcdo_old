@@ -5,10 +5,10 @@
 \alias{cdo_gradsdes}
 \title{GrADS data descriptor file}
 \usage{
-cdo_gradsdes(input_file)
+cdo_gradsdes(infile)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 }
 \description{
 Creates a GrADS data descriptor file. Supported file formats are GRIB1, NetCDF,

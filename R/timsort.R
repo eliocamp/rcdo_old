@@ -23,9 +23,14 @@
 #' @name Timsort
 NULL
 
-#' @param input_file input file.
-#' @param output_file output file.
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Timsort
-#' @export 
-cdo_timsort <- new_operator("timsort", 1, 1)
-
+#' @export
+cdo_timsort <- function(infile, outfile = NULL) {
+  .new_step(operator = 'timsort', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}

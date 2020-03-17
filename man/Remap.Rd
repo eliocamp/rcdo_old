@@ -5,12 +5,12 @@
 \alias{cdo_remap}
 \title{Grid remapping}
 \usage{
-cdo_remap(input_file, output_file = NULL)
+cdo_remap(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 Interpolation between different horizontal grids can be a very time-consuming

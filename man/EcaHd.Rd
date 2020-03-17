@@ -5,12 +5,12 @@
 \alias{cdo_eca_hd}
 \title{Heating degree days per time period}
 \usage{
-cdo_eca_hd(input_file, output_file = NULL)
+cdo_eca_hd(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 Let infile be a time series of the daily mean temperature TG, then the heating

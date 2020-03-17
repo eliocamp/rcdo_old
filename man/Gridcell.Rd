@@ -6,14 +6,14 @@
 \alias{cdo_gridweights}
 \title{Grid cell quantities}
 \usage{
-cdo_gridarea(input_file, output_file = NULL)
+cdo_gridarea(infile, outfile = NULL)
 
-cdo_gridweights(input_file, output_file = NULL)
+cdo_gridweights(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This module reads the grid cell area of the first grid from the input stream.

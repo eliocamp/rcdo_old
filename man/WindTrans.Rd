@@ -7,16 +7,16 @@
 \alias{cdo_uvDestag}
 \title{Wind Transformation}
 \usage{
-cdo_projuvLatLon(input_file, output_file = NULL)
+cdo_projuvLatLon(infile, outfile = NULL)
 
-cdo_rotuvNorth(input_file, output_file = NULL)
+cdo_rotuvNorth(infile, outfile = NULL)
 
-cdo_uvDestag(input_file, output_file = NULL)
+cdo_uvDestag(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This module contains special operators for datsets with wind components on a

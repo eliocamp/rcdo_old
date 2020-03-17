@@ -28,9 +28,14 @@
 #' @name Deltat
 NULL
 
-#' @param input_file input file.
-#' @param output_file output file.
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Deltat
-#' @export 
-cdo_deltat <- new_operator("deltat", 1, 1)
-
+#' @export
+cdo_deltat <- function(infile, outfile = NULL) {
+  .new_step(operator = 'deltat', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}

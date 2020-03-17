@@ -5,12 +5,14 @@
 \alias{cdo_timcovar}
 \title{Covariance over time}
 \usage{
-cdo_timcovar(input_file_1, input_file_2, output_file = NULL)
+cdo_timcovar(infile1, infile2, outfile = NULL)
+
+cdo_timcovar(infile1, infile2, outfile = NULL)
 }
 \arguments{
-\item{input_file_1, input_file_2}{input files.}
+\item{infile1, infile2}{input files.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This operator calculates the covariance of two fields at each gridpoint over

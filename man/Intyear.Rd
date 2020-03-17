@@ -5,12 +5,14 @@
 \alias{cdo_intyear}
 \title{Year interpolation}
 \usage{
-cdo_intyear(input_file_1, input_file_2, output_files = NULL)
+cdo_intyear(infile1, infile2, obase = NULL)
+
+cdo_intyear(infile1, infile2, obase = NULL)
 }
 \arguments{
-\item{input_file_1, input_file_2}{input files.}
+\item{infile1, infile2}{input files.}
 
-\item{output_files}{output files.}
+\item{obase}{preffix added to the output files.}
 }
 \description{
 This operator performs linear interpolation between two years, timestep by

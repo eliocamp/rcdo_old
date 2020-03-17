@@ -10,22 +10,22 @@
 \alias{cdo_nec}
 \title{Comparison of a field with a constant}
 \usage{
-cdo_eqc(input_file, output_file = NULL)
+cdo_eqc(infile, outfile = NULL)
 
-cdo_gec(input_file, output_file = NULL)
+cdo_gec(infile, outfile = NULL)
 
-cdo_gtc(input_file, output_file = NULL)
+cdo_gtc(infile, outfile = NULL)
 
-cdo_lec(input_file, output_file = NULL)
+cdo_lec(infile, outfile = NULL)
 
-cdo_ltc(input_file, output_file = NULL)
+cdo_ltc(infile, outfile = NULL)
 
-cdo_nec(input_file, output_file = NULL)
+cdo_nec(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This module compares all fields of a dataset with a constant. The resulting

@@ -6,14 +6,14 @@
 \alias{cdo_inttime}
 \title{Time interpolation}
 \usage{
-cdo_intntime(input_file, output_file = NULL)
+cdo_intntime(infile, outfile = NULL)
 
-cdo_inttime(input_file, output_file = NULL)
+cdo_inttime(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This module performs linear interpolation between timesteps.

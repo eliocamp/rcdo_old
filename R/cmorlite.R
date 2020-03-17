@@ -23,9 +23,14 @@
 #' @name CMORlite
 NULL
 
-#' @param input_file input file.
-#' @param output_file output file.
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname CMORlite
-#' @export 
-cdo_cmorlite <- new_operator("cmorlite", 1, 1)
-
+#' @export
+cdo_cmorlite <- function(infile, outfile = NULL) {
+  .new_step(operator = 'cmorlite', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}

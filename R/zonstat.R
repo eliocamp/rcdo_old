@@ -35,69 +35,124 @@
 #' @name Zonstat
 NULL
 
-#' @param input_file input file.
-#' @param output_file output file.
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Zonstat
-#' @export 
-cdo_zonavg <- new_operator("zonavg", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_zonavg <- function(infile, outfile = NULL) {
+  .new_step(operator = 'zonavg', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Zonstat
-#' @export 
-cdo_zonmax <- new_operator("zonmax", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_zonmax <- function(infile, outfile = NULL) {
+  .new_step(operator = 'zonmax', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Zonstat
-#' @export 
-cdo_zonmean <- new_operator("zonmean", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_zonmean <- function(infile, outfile = NULL) {
+  .new_step(operator = 'zonmean', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Zonstat
-#' @export 
-cdo_zonmin <- new_operator("zonmin", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_zonmin <- function(infile, outfile = NULL) {
+  .new_step(operator = 'zonmin', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Zonstat
-#' @export 
-cdo_zonpctl <- new_operator("zonpctl", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_zonpctl <- function(infile, outfile = NULL) {
+  .new_step(operator = 'zonpctl', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Zonstat
-#' @export 
-cdo_zonrange <- new_operator("zonrange", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_zonrange <- function(infile, outfile = NULL) {
+  .new_step(operator = 'zonrange', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Zonstat
-#' @export 
-cdo_zonstd <- new_operator("zonstd", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_zonstd <- function(infile, outfile = NULL) {
+  .new_step(operator = 'zonstd', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Zonstat
-#' @export 
-cdo_zonstd1 <- new_operator("zonstd1", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_zonstd1 <- function(infile, outfile = NULL) {
+  .new_step(operator = 'zonstd1', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Zonstat
-#' @export 
-cdo_zonsum <- new_operator("zonsum", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_zonsum <- function(infile, outfile = NULL) {
+  .new_step(operator = 'zonsum', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Zonstat
-#' @export 
-cdo_zonvar <- new_operator("zonvar", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_zonvar <- function(infile, outfile = NULL) {
+  .new_step(operator = 'zonvar', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Zonstat
-#' @export 
-cdo_zonvar1 <- new_operator("zonvar1", 1, 1)
-
+#' @export
+cdo_zonvar1 <- function(infile, outfile = NULL) {
+  .new_step(operator = 'zonvar1', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}

@@ -6,14 +6,14 @@
 \alias{cdo_select}
 \title{Select fields}
 \usage{
-cdo_delete(input_files, output_file = NULL)
+cdo_delete(infiles, outfile = NULL)
 
-cdo_select(input_files, output_file = NULL)
+cdo_select(infiles, outfile = NULL)
 }
 \arguments{
-\item{input_files}{input files.}
+\item{infiles}{input files.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This module selects some fields from infiles and writes them to outfile.

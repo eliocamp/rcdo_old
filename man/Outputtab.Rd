@@ -5,10 +5,10 @@
 \alias{cdo_outputtab}
 \title{Table output}
 \usage{
-cdo_outputtab(input_files)
+cdo_outputtab(infiles)
 }
 \arguments{
-\item{input_files}{input files.}
+\item{infiles}{input files.}
 }
 \description{
 This operator prints a table of all input datasets to standard output. infiles

@@ -5,12 +5,14 @@
 \alias{cdo_eca_cwdi}
 \title{Cold wave duration index wrt mean of reference period}
 \usage{
-cdo_eca_cwdi(input_file_1, input_file_2, output_file = NULL)
+cdo_eca_cwdi(infile1, infile2, outfile = NULL)
+
+cdo_eca_cwdi(infile1, infile2, outfile = NULL)
 }
 \arguments{
-\item{input_file_1, input_file_2}{input files.}
+\item{infile1, infile2}{input files.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 Let infile1 be a time series of the daily minimum temperature TN, and let

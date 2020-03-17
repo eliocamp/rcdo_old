@@ -6,12 +6,12 @@
 \alias{cdo_showattsvar}
 \title{Show attributes}
 \usage{
-cdo_showattribute(input_file)
+cdo_showattribute(infile)
 
-cdo_showattsvar(input_file)
+cdo_showattsvar(infile)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 }
 \description{
 This operator prints attributes of a dataset. If a global attribute should be

@@ -28,28 +28,58 @@
 #' @name Output
 NULL
 
-#' @param input_files input files.
+#' @param infiles input files.
+#' 
 #' @rdname Output
-#' @export 
-cdo_output <- new_operator("output", -1, 0)
-
-#' @param input_files input files.
+#' @export
+cdo_output <- function(infiles) {
+  .new_step(operator = 'output', 
+            inputs = list(infiles), 
+            outputs = c(), 
+            n_inputs = -1,
+            n_outputs = 0)
+}
+#' @param infiles input files.
+#' 
 #' @rdname Output
-#' @export 
-cdo_outputext <- new_operator("outputext", -1, 0)
-
-#' @param input_files input files.
+#' @export
+cdo_outputext <- function(infiles) {
+  .new_step(operator = 'outputext', 
+            inputs = list(infiles), 
+            outputs = c(), 
+            n_inputs = -1,
+            n_outputs = 0)
+}
+#' @param infiles input files.
+#' 
 #' @rdname Output
-#' @export 
-cdo_outputf <- new_operator("outputf", -1, 0)
-
-#' @param input_files input files.
+#' @export
+cdo_outputf <- function(infiles) {
+  .new_step(operator = 'outputf', 
+            inputs = list(infiles), 
+            outputs = c(), 
+            n_inputs = -1,
+            n_outputs = 0)
+}
+#' @param infiles input files.
+#' 
 #' @rdname Output
-#' @export 
-cdo_outputint <- new_operator("outputint", -1, 0)
-
-#' @param input_files input files.
+#' @export
+cdo_outputint <- function(infiles) {
+  .new_step(operator = 'outputint', 
+            inputs = list(infiles), 
+            outputs = c(), 
+            n_inputs = -1,
+            n_outputs = 0)
+}
+#' @param infiles input files.
+#' 
 #' @rdname Output
-#' @export 
-cdo_outputsrv <- new_operator("outputsrv", -1, 0)
-
+#' @export
+cdo_outputsrv <- function(infiles) {
+  .new_step(operator = 'outputsrv', 
+            inputs = list(infiles), 
+            outputs = c(), 
+            n_inputs = -1,
+            n_outputs = 0)
+}

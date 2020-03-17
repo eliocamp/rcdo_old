@@ -6,14 +6,14 @@
 \alias{cdo_selgridcell}
 \title{Select grid cells}
 \usage{
-cdo_delgridcell(input_file, output_file = NULL)
+cdo_delgridcell(infile, outfile = NULL)
 
-cdo_selgridcell(input_file, output_file = NULL)
+cdo_selgridcell(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 Selects grid cells of all fields from infile. The user has to give the indexes

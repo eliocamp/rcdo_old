@@ -5,12 +5,12 @@
 \alias{cdo_rotuvb}
 \title{Rotation}
 \usage{
-cdo_rotuvb(input_file, output_file = NULL)
+cdo_rotuvb(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This is a special operator for datsets with wind components on a rotated grid,

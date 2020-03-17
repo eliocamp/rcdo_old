@@ -5,12 +5,12 @@
 \alias{cdo_import_binary}
 \title{Import binary data sets}
 \usage{
-cdo_import_binary(input_file, output_file = NULL)
+cdo_import_binary(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This operator imports gridded binary data sets via a GrADS data descriptor

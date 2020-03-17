@@ -20,15 +20,25 @@
 #' @name Condc
 NULL
 
-#' @param input_file input file.
-#' @param output_file output file.
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Condc
-#' @export 
-cdo_ifnotthenc <- new_operator("ifnotthenc", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_ifnotthenc <- function(infile, outfile = NULL) {
+  .new_step(operator = 'ifnotthenc', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Condc
-#' @export 
-cdo_ifthenc <- new_operator("ifthenc", 1, 1)
-
+#' @export
+cdo_ifthenc <- function(infile, outfile = NULL) {
+  .new_step(operator = 'ifthenc', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}

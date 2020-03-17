@@ -22,27 +22,91 @@
 #' @name Monarith
 NULL
 
-#' @param input_file_1,input_file_2 input files.
-#' @param output_file output file.
+#' @param infile1,infile2 input files.
+#' @param outfile output file.
 #' @rdname Monarith
-#' @export 
-cdo_monadd <- new_operator("monadd", 2, 1)
-
-#' @param input_file_1,input_file_2 input files.
-#' @param output_file output file.
+#' @export
+cdo_monadd <- function(infile1, infile2, outfile = NULL) {
+  .new_step(operator = 'monadd', 
+            inputs = list(infile1), 
+            outputs = c(outfile), 
+            n_inputs = 2,
+            n_outputs = 1)
+}
+#' @param infile1,infile2 input files.
+#' @param outfile output file.
 #' @rdname Monarith
-#' @export 
-cdo_mondiv <- new_operator("mondiv", 2, 1)
-
-#' @param input_file_1,input_file_2 input files.
-#' @param output_file output file.
+#' @export
+cdo_monadd <- function(infile1, infile2, outfile = NULL) {
+  .new_step(operator = 'monadd', 
+            inputs = list(infile2), 
+            outputs = c(outfile), 
+            n_inputs = 2,
+            n_outputs = 1)
+}
+#' @param infile1,infile2 input files.
+#' @param outfile output file.
 #' @rdname Monarith
-#' @export 
-cdo_monmul <- new_operator("monmul", 2, 1)
-
-#' @param input_file_1,input_file_2 input files.
-#' @param output_file output file.
+#' @export
+cdo_mondiv <- function(infile1, infile2, outfile = NULL) {
+  .new_step(operator = 'mondiv', 
+            inputs = list(infile1), 
+            outputs = c(outfile), 
+            n_inputs = 2,
+            n_outputs = 1)
+}
+#' @param infile1,infile2 input files.
+#' @param outfile output file.
 #' @rdname Monarith
-#' @export 
-cdo_monsub <- new_operator("monsub", 2, 1)
-
+#' @export
+cdo_mondiv <- function(infile1, infile2, outfile = NULL) {
+  .new_step(operator = 'mondiv', 
+            inputs = list(infile2), 
+            outputs = c(outfile), 
+            n_inputs = 2,
+            n_outputs = 1)
+}
+#' @param infile1,infile2 input files.
+#' @param outfile output file.
+#' @rdname Monarith
+#' @export
+cdo_monmul <- function(infile1, infile2, outfile = NULL) {
+  .new_step(operator = 'monmul', 
+            inputs = list(infile1), 
+            outputs = c(outfile), 
+            n_inputs = 2,
+            n_outputs = 1)
+}
+#' @param infile1,infile2 input files.
+#' @param outfile output file.
+#' @rdname Monarith
+#' @export
+cdo_monmul <- function(infile1, infile2, outfile = NULL) {
+  .new_step(operator = 'monmul', 
+            inputs = list(infile2), 
+            outputs = c(outfile), 
+            n_inputs = 2,
+            n_outputs = 1)
+}
+#' @param infile1,infile2 input files.
+#' @param outfile output file.
+#' @rdname Monarith
+#' @export
+cdo_monsub <- function(infile1, infile2, outfile = NULL) {
+  .new_step(operator = 'monsub', 
+            inputs = list(infile1), 
+            outputs = c(outfile), 
+            n_inputs = 2,
+            n_outputs = 1)
+}
+#' @param infile1,infile2 input files.
+#' @param outfile output file.
+#' @rdname Monarith
+#' @export
+cdo_monsub <- function(infile1, infile2, outfile = NULL) {
+  .new_step(operator = 'monsub', 
+            inputs = list(infile2), 
+            outputs = c(outfile), 
+            n_inputs = 2,
+            n_outputs = 1)
+}

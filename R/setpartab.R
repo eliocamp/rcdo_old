@@ -17,15 +17,25 @@
 #' @name Setpartab
 NULL
 
-#' @param input_file input file.
-#' @param output_file output file.
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Setpartab
-#' @export 
-cdo_setpartabn <- new_operator("setpartabn", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_setpartabn <- function(infile, outfile = NULL) {
+  .new_step(operator = 'setpartabn', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Setpartab
-#' @export 
-cdo_setpartabp <- new_operator("setpartabp", 1, 1)
-
+#' @export
+cdo_setpartabp <- function(infile, outfile = NULL) {
+  .new_step(operator = 'setpartabp', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}

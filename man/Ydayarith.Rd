@@ -8,18 +8,26 @@
 \alias{cdo_ydaysub}
 \title{Multi-year daily arithmetic}
 \usage{
-cdo_ydayadd(input_file_1, input_file_2, output_file = NULL)
+cdo_ydayadd(infile1, infile2, outfile = NULL)
 
-cdo_ydaydiv(input_file_1, input_file_2, output_file = NULL)
+cdo_ydayadd(infile1, infile2, outfile = NULL)
 
-cdo_ydaymul(input_file_1, input_file_2, output_file = NULL)
+cdo_ydaydiv(infile1, infile2, outfile = NULL)
 
-cdo_ydaysub(input_file_1, input_file_2, output_file = NULL)
+cdo_ydaydiv(infile1, infile2, outfile = NULL)
+
+cdo_ydaymul(infile1, infile2, outfile = NULL)
+
+cdo_ydaymul(infile1, infile2, outfile = NULL)
+
+cdo_ydaysub(infile1, infile2, outfile = NULL)
+
+cdo_ydaysub(infile1, infile2, outfile = NULL)
 }
 \arguments{
-\item{input_file_1, input_file_2}{input files.}
+\item{infile1, infile2}{input files.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This module performs simple arithmetic of a time series and one timestep with

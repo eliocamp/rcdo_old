@@ -23,28 +23,58 @@
 #' @name Filedes
 NULL
 
-#' @param input_file input file.
+#' @param infile input file.
+#' 
 #' @rdname Filedes
-#' @export 
-cdo_codetab <- new_operator("codetab", 1, 0)
-
-#' @param input_file input file.
+#' @export
+cdo_codetab <- function(infile) {
+  .new_step(operator = 'codetab', 
+            inputs = list(infile), 
+            outputs = c(), 
+            n_inputs = 1,
+            n_outputs = 0)
+}
+#' @param infile input file.
+#' 
 #' @rdname Filedes
-#' @export 
-cdo_griddes <- new_operator("griddes", 1, 0)
-
-#' @param input_file input file.
+#' @export
+cdo_griddes <- function(infile) {
+  .new_step(operator = 'griddes', 
+            inputs = list(infile), 
+            outputs = c(), 
+            n_inputs = 1,
+            n_outputs = 0)
+}
+#' @param infile input file.
+#' 
 #' @rdname Filedes
-#' @export 
-cdo_partab <- new_operator("partab", 1, 0)
-
-#' @param input_file input file.
+#' @export
+cdo_partab <- function(infile) {
+  .new_step(operator = 'partab', 
+            inputs = list(infile), 
+            outputs = c(), 
+            n_inputs = 1,
+            n_outputs = 0)
+}
+#' @param infile input file.
+#' 
 #' @rdname Filedes
-#' @export 
-cdo_vct <- new_operator("vct", 1, 0)
-
-#' @param input_file input file.
+#' @export
+cdo_vct <- function(infile) {
+  .new_step(operator = 'vct', 
+            inputs = list(infile), 
+            outputs = c(), 
+            n_inputs = 1,
+            n_outputs = 0)
+}
+#' @param infile input file.
+#' 
 #' @rdname Filedes
-#' @export 
-cdo_zaxisdes <- new_operator("zaxisdes", 1, 0)
-
+#' @export
+cdo_zaxisdes <- function(infile) {
+  .new_step(operator = 'zaxisdes', 
+            inputs = list(infile), 
+            outputs = c(), 
+            n_inputs = 1,
+            n_outputs = 0)
+}

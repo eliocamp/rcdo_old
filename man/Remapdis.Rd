@@ -6,14 +6,14 @@
 \alias{cdo_remapdis}
 \title{Distance-weighted average remapping}
 \usage{
-cdo_gendis(input_file, output_file = NULL)
+cdo_gendis(infile, outfile = NULL)
 
-cdo_remapdis(input_file, output_file = NULL)
+cdo_remapdis(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This module contains operators for a distance-weighted average remapping of the

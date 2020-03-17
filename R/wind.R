@@ -22,15 +22,25 @@
 #' @name Wind
 NULL
 
-#' @param input_file input file.
-#' @param output_file output file.
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Wind
-#' @export 
-cdo_dv2uv <- new_operator("dv2uv", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_dv2uv <- function(infile, outfile = NULL) {
+  .new_step(operator = 'dv2uv', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Wind
-#' @export 
-cdo_uv2dv <- new_operator("uv2dv", 1, 1)
-
+#' @export
+cdo_uv2dv <- function(infile, outfile = NULL) {
+  .new_step(operator = 'uv2dv', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}

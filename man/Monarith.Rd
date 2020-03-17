@@ -8,18 +8,26 @@
 \alias{cdo_monsub}
 \title{Monthly arithmetic}
 \usage{
-cdo_monadd(input_file_1, input_file_2, output_file = NULL)
+cdo_monadd(infile1, infile2, outfile = NULL)
 
-cdo_mondiv(input_file_1, input_file_2, output_file = NULL)
+cdo_monadd(infile1, infile2, outfile = NULL)
 
-cdo_monmul(input_file_1, input_file_2, output_file = NULL)
+cdo_mondiv(infile1, infile2, outfile = NULL)
 
-cdo_monsub(input_file_1, input_file_2, output_file = NULL)
+cdo_mondiv(infile1, infile2, outfile = NULL)
+
+cdo_monmul(infile1, infile2, outfile = NULL)
+
+cdo_monmul(infile1, infile2, outfile = NULL)
+
+cdo_monsub(infile1, infile2, outfile = NULL)
+
+cdo_monsub(infile1, infile2, outfile = NULL)
 }
 \arguments{
-\item{input_file_1, input_file_2}{input files.}
+\item{infile1, infile2}{input files.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This module performs simple arithmetic of a time series and one timestep with

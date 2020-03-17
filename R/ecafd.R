@@ -17,9 +17,14 @@
 #' @name EcaFd
 NULL
 
-#' @param input_file input file.
-#' @param output_file output file.
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname EcaFd
-#' @export 
-cdo_eca_fd <- new_operator("eca_fd", 1, 1)
-
+#' @export
+cdo_eca_fd <- function(infile, outfile = NULL) {
+  .new_step(operator = 'eca_fd', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}

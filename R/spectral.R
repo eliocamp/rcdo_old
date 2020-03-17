@@ -18,15 +18,25 @@
 #' @name Spectral
 NULL
 
-#' @param input_file input file.
-#' @param output_file output file.
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Spectral
-#' @export 
-cdo_gp2sp <- new_operator("gp2sp", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_gp2sp <- function(infile, outfile = NULL) {
+  .new_step(operator = 'gp2sp', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Spectral
-#' @export 
-cdo_sp2gp <- new_operator("sp2gp", 1, 1)
-
+#' @export
+cdo_sp2gp <- function(infile, outfile = NULL) {
+  .new_step(operator = 'sp2gp', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}

@@ -35,69 +35,124 @@
 #' @name Merstat
 NULL
 
-#' @param input_file input file.
-#' @param output_file output file.
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Merstat
-#' @export 
-cdo_meravg <- new_operator("meravg", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_meravg <- function(infile, outfile = NULL) {
+  .new_step(operator = 'meravg', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Merstat
-#' @export 
-cdo_mermax <- new_operator("mermax", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_mermax <- function(infile, outfile = NULL) {
+  .new_step(operator = 'mermax', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Merstat
-#' @export 
-cdo_mermean <- new_operator("mermean", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_mermean <- function(infile, outfile = NULL) {
+  .new_step(operator = 'mermean', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Merstat
-#' @export 
-cdo_mermin <- new_operator("mermin", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_mermin <- function(infile, outfile = NULL) {
+  .new_step(operator = 'mermin', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Merstat
-#' @export 
-cdo_merpctl <- new_operator("merpctl", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_merpctl <- function(infile, outfile = NULL) {
+  .new_step(operator = 'merpctl', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Merstat
-#' @export 
-cdo_merrange <- new_operator("merrange", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_merrange <- function(infile, outfile = NULL) {
+  .new_step(operator = 'merrange', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Merstat
-#' @export 
-cdo_merstd <- new_operator("merstd", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_merstd <- function(infile, outfile = NULL) {
+  .new_step(operator = 'merstd', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Merstat
-#' @export 
-cdo_merstd1 <- new_operator("merstd1", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_merstd1 <- function(infile, outfile = NULL) {
+  .new_step(operator = 'merstd1', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Merstat
-#' @export 
-cdo_mersum <- new_operator("mersum", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_mersum <- function(infile, outfile = NULL) {
+  .new_step(operator = 'mersum', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Merstat
-#' @export 
-cdo_mervar <- new_operator("mervar", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_mervar <- function(infile, outfile = NULL) {
+  .new_step(operator = 'mervar', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Merstat
-#' @export 
-cdo_mervar1 <- new_operator("mervar1", 1, 1)
-
+#' @export
+cdo_mervar1 <- function(infile, outfile = NULL) {
+  .new_step(operator = 'mervar1', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}

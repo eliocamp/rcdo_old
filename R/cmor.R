@@ -16,8 +16,14 @@
 #' @name CMOR
 NULL
 
-#' @param input_file input file.
+#' @param infile input file.
+#' 
 #' @rdname CMOR
-#' @export 
-cdo_cmor <- new_operator("cmor", 1, 0)
-
+#' @export
+cdo_cmor <- function(infile) {
+  .new_step(operator = 'cmor', 
+            inputs = list(infile), 
+            outputs = c(), 
+            n_inputs = 1,
+            n_outputs = 0)
+}

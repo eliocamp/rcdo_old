@@ -5,12 +5,12 @@
 \alias{cdo_rhopot}
 \title{Calculates potential density}
 \usage{
-cdo_rhopot(input_file, output_file = NULL)
+cdo_rhopot(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This is a special operator for the post processing of the ocean and sea ice

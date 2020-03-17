@@ -29,69 +29,124 @@
 #' @name Ensstat
 NULL
 
-#' @param input_files input files.
-#' @param output_file output file.
+#' @param infiles input files.
+#' @param outfile output file.
 #' @rdname Ensstat
-#' @export 
-cdo_ensavg <- new_operator("ensavg", -1, 1)
-
-#' @param input_files input files.
-#' @param output_file output file.
+#' @export
+cdo_ensavg <- function(infiles, outfile = NULL) {
+  .new_step(operator = 'ensavg', 
+            inputs = list(infiles), 
+            outputs = c(outfile), 
+            n_inputs = -1,
+            n_outputs = 1)
+}
+#' @param infiles input files.
+#' @param outfile output file.
 #' @rdname Ensstat
-#' @export 
-cdo_ensmax <- new_operator("ensmax", -1, 1)
-
-#' @param input_files input files.
-#' @param output_file output file.
+#' @export
+cdo_ensmax <- function(infiles, outfile = NULL) {
+  .new_step(operator = 'ensmax', 
+            inputs = list(infiles), 
+            outputs = c(outfile), 
+            n_inputs = -1,
+            n_outputs = 1)
+}
+#' @param infiles input files.
+#' @param outfile output file.
 #' @rdname Ensstat
-#' @export 
-cdo_ensmean <- new_operator("ensmean", -1, 1)
-
-#' @param input_files input files.
-#' @param output_file output file.
+#' @export
+cdo_ensmean <- function(infiles, outfile = NULL) {
+  .new_step(operator = 'ensmean', 
+            inputs = list(infiles), 
+            outputs = c(outfile), 
+            n_inputs = -1,
+            n_outputs = 1)
+}
+#' @param infiles input files.
+#' @param outfile output file.
 #' @rdname Ensstat
-#' @export 
-cdo_ensmin <- new_operator("ensmin", -1, 1)
-
-#' @param input_files input files.
-#' @param output_file output file.
+#' @export
+cdo_ensmin <- function(infiles, outfile = NULL) {
+  .new_step(operator = 'ensmin', 
+            inputs = list(infiles), 
+            outputs = c(outfile), 
+            n_inputs = -1,
+            n_outputs = 1)
+}
+#' @param infiles input files.
+#' @param outfile output file.
 #' @rdname Ensstat
-#' @export 
-cdo_enspctl <- new_operator("enspctl", -1, 1)
-
-#' @param input_files input files.
-#' @param output_file output file.
+#' @export
+cdo_enspctl <- function(infiles, outfile = NULL) {
+  .new_step(operator = 'enspctl', 
+            inputs = list(infiles), 
+            outputs = c(outfile), 
+            n_inputs = -1,
+            n_outputs = 1)
+}
+#' @param infiles input files.
+#' @param outfile output file.
 #' @rdname Ensstat
-#' @export 
-cdo_ensrange <- new_operator("ensrange", -1, 1)
-
-#' @param input_files input files.
-#' @param output_file output file.
+#' @export
+cdo_ensrange <- function(infiles, outfile = NULL) {
+  .new_step(operator = 'ensrange', 
+            inputs = list(infiles), 
+            outputs = c(outfile), 
+            n_inputs = -1,
+            n_outputs = 1)
+}
+#' @param infiles input files.
+#' @param outfile output file.
 #' @rdname Ensstat
-#' @export 
-cdo_ensstd <- new_operator("ensstd", -1, 1)
-
-#' @param input_files input files.
-#' @param output_file output file.
+#' @export
+cdo_ensstd <- function(infiles, outfile = NULL) {
+  .new_step(operator = 'ensstd', 
+            inputs = list(infiles), 
+            outputs = c(outfile), 
+            n_inputs = -1,
+            n_outputs = 1)
+}
+#' @param infiles input files.
+#' @param outfile output file.
 #' @rdname Ensstat
-#' @export 
-cdo_ensstd1 <- new_operator("ensstd1", -1, 1)
-
-#' @param input_files input files.
-#' @param output_file output file.
+#' @export
+cdo_ensstd1 <- function(infiles, outfile = NULL) {
+  .new_step(operator = 'ensstd1', 
+            inputs = list(infiles), 
+            outputs = c(outfile), 
+            n_inputs = -1,
+            n_outputs = 1)
+}
+#' @param infiles input files.
+#' @param outfile output file.
 #' @rdname Ensstat
-#' @export 
-cdo_enssum <- new_operator("enssum", -1, 1)
-
-#' @param input_files input files.
-#' @param output_file output file.
+#' @export
+cdo_enssum <- function(infiles, outfile = NULL) {
+  .new_step(operator = 'enssum', 
+            inputs = list(infiles), 
+            outputs = c(outfile), 
+            n_inputs = -1,
+            n_outputs = 1)
+}
+#' @param infiles input files.
+#' @param outfile output file.
 #' @rdname Ensstat
-#' @export 
-cdo_ensvar <- new_operator("ensvar", -1, 1)
-
-#' @param input_files input files.
-#' @param output_file output file.
+#' @export
+cdo_ensvar <- function(infiles, outfile = NULL) {
+  .new_step(operator = 'ensvar', 
+            inputs = list(infiles), 
+            outputs = c(outfile), 
+            n_inputs = -1,
+            n_outputs = 1)
+}
+#' @param infiles input files.
+#' @param outfile output file.
 #' @rdname Ensstat
-#' @export 
-cdo_ensvar1 <- new_operator("ensvar1", -1, 1)
-
+#' @export
+cdo_ensvar1 <- function(infiles, outfile = NULL) {
+  .new_step(operator = 'ensvar1', 
+            inputs = list(infiles), 
+            outputs = c(outfile), 
+            n_inputs = -1,
+            n_outputs = 1)
+}

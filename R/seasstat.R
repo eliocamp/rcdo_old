@@ -19,63 +19,113 @@
 #' @name Seasstat
 NULL
 
-#' @param input_file input file.
-#' @param output_file output file.
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Seasstat
-#' @export 
-cdo_seasavg <- new_operator("seasavg", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_seasavg <- function(infile, outfile = NULL) {
+  .new_step(operator = 'seasavg', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Seasstat
-#' @export 
-cdo_seasmax <- new_operator("seasmax", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_seasmax <- function(infile, outfile = NULL) {
+  .new_step(operator = 'seasmax', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Seasstat
-#' @export 
-cdo_seasmean <- new_operator("seasmean", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_seasmean <- function(infile, outfile = NULL) {
+  .new_step(operator = 'seasmean', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Seasstat
-#' @export 
-cdo_seasmin <- new_operator("seasmin", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_seasmin <- function(infile, outfile = NULL) {
+  .new_step(operator = 'seasmin', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Seasstat
-#' @export 
-cdo_seasrange <- new_operator("seasrange", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_seasrange <- function(infile, outfile = NULL) {
+  .new_step(operator = 'seasrange', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Seasstat
-#' @export 
-cdo_seasstd <- new_operator("seasstd", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_seasstd <- function(infile, outfile = NULL) {
+  .new_step(operator = 'seasstd', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Seasstat
-#' @export 
-cdo_seasstd1 <- new_operator("seasstd1", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_seasstd1 <- function(infile, outfile = NULL) {
+  .new_step(operator = 'seasstd1', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Seasstat
-#' @export 
-cdo_seassum <- new_operator("seassum", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_seassum <- function(infile, outfile = NULL) {
+  .new_step(operator = 'seassum', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Seasstat
-#' @export 
-cdo_seasvar <- new_operator("seasvar", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_seasvar <- function(infile, outfile = NULL) {
+  .new_step(operator = 'seasvar', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Seasstat
-#' @export 
-cdo_seasvar1 <- new_operator("seasvar1", 1, 1)
-
+#' @export
+cdo_seasvar1 <- function(infile, outfile = NULL) {
+  .new_step(operator = 'seasvar1', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}

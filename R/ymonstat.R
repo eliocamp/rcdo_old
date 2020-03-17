@@ -16,63 +16,113 @@
 #' @name Ymonstat
 NULL
 
-#' @param input_file input file.
-#' @param output_file output file.
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Ymonstat
-#' @export 
-cdo_ymonavg <- new_operator("ymonavg", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_ymonavg <- function(infile, outfile = NULL) {
+  .new_step(operator = 'ymonavg', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Ymonstat
-#' @export 
-cdo_ymonmax <- new_operator("ymonmax", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_ymonmax <- function(infile, outfile = NULL) {
+  .new_step(operator = 'ymonmax', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Ymonstat
-#' @export 
-cdo_ymonmean <- new_operator("ymonmean", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_ymonmean <- function(infile, outfile = NULL) {
+  .new_step(operator = 'ymonmean', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Ymonstat
-#' @export 
-cdo_ymonmin <- new_operator("ymonmin", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_ymonmin <- function(infile, outfile = NULL) {
+  .new_step(operator = 'ymonmin', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Ymonstat
-#' @export 
-cdo_ymonrange <- new_operator("ymonrange", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_ymonrange <- function(infile, outfile = NULL) {
+  .new_step(operator = 'ymonrange', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Ymonstat
-#' @export 
-cdo_ymonstd <- new_operator("ymonstd", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_ymonstd <- function(infile, outfile = NULL) {
+  .new_step(operator = 'ymonstd', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Ymonstat
-#' @export 
-cdo_ymonstd1 <- new_operator("ymonstd1", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_ymonstd1 <- function(infile, outfile = NULL) {
+  .new_step(operator = 'ymonstd1', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Ymonstat
-#' @export 
-cdo_ymonsum <- new_operator("ymonsum", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_ymonsum <- function(infile, outfile = NULL) {
+  .new_step(operator = 'ymonsum', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Ymonstat
-#' @export 
-cdo_ymonvar <- new_operator("ymonvar", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_ymonvar <- function(infile, outfile = NULL) {
+  .new_step(operator = 'ymonvar', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Ymonstat
-#' @export 
-cdo_ymonvar1 <- new_operator("ymonvar1", 1, 1)
-
+#' @export
+cdo_ymonvar1 <- function(infile, outfile = NULL) {
+  .new_step(operator = 'ymonvar1', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}

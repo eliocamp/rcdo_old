@@ -13,28 +13,28 @@
 \alias{cdo_selyear}
 \title{Select timesteps}
 \usage{
-cdo_seldate(input_file, output_file = NULL)
+cdo_seldate(infile, outfile = NULL)
 
-cdo_selday(input_file, output_file = NULL)
+cdo_selday(infile, outfile = NULL)
 
-cdo_selhour(input_file, output_file = NULL)
+cdo_selhour(infile, outfile = NULL)
 
-cdo_selmonth(input_file, output_file = NULL)
+cdo_selmonth(infile, outfile = NULL)
 
-cdo_selseason(input_file, output_file = NULL)
+cdo_selseason(infile, outfile = NULL)
 
-cdo_selsmon(input_file, output_file = NULL)
+cdo_selsmon(infile, outfile = NULL)
 
-cdo_seltime(input_file, output_file = NULL)
+cdo_seltime(infile, outfile = NULL)
 
-cdo_seltimestep(input_file, output_file = NULL)
+cdo_seltimestep(infile, outfile = NULL)
 
-cdo_selyear(input_file, output_file = NULL)
+cdo_selyear(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This module selects user specified timesteps from infile and writes them to

@@ -5,12 +5,12 @@
 \alias{cdo_sp2sp}
 \title{Spectral conversion}
 \usage{
-cdo_sp2sp(input_file, output_file = NULL)
+cdo_sp2sp(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 Changed the triangular truncation of all spectral fields. This operator

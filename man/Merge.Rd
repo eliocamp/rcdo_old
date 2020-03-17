@@ -6,14 +6,14 @@
 \alias{cdo_mergetime}
 \title{Merge datasets}
 \usage{
-cdo_merge(input_files, output_file = NULL)
+cdo_merge(infiles, outfile = NULL)
 
-cdo_mergetime(input_files, output_file = NULL)
+cdo_mergetime(infiles, outfile = NULL)
 }
 \arguments{
-\item{input_files}{input files.}
+\item{infiles}{input files.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This module reads datasets from several input files, merges them and writes the

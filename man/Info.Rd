@@ -7,14 +7,14 @@
 \alias{cdo_map}
 \title{Information and simple statistics}
 \usage{
-cdo_info(input_files)
+cdo_info(infiles)
 
-cdo_infon(input_files)
+cdo_infon(infiles)
 
-cdo_map(input_files)
+cdo_map(infiles)
 }
 \arguments{
-\item{input_files}{input files.}
+\item{infiles}{input files.}
 }
 \description{
 This module writes information about the structure and contents for each field

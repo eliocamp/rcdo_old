@@ -20,9 +20,14 @@
 #' @name EcaRx1day
 NULL
 
-#' @param input_file input file.
-#' @param output_file output file.
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname EcaRx1day
-#' @export 
-cdo_eca_rx1day <- new_operator("eca_rx1day", 1, 1)
-
+#' @export
+cdo_eca_rx1day <- function(infile, outfile = NULL) {
+  .new_step(operator = 'eca_rx1day', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}

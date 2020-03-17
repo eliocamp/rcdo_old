@@ -11,24 +11,24 @@
 \alias{cdo_setvrange}
 \title{Set missing value}
 \usage{
-cdo_setctomiss(input_file, output_file = NULL)
+cdo_setctomiss(infile, outfile = NULL)
 
-cdo_setmisstoc(input_file, output_file = NULL)
+cdo_setmisstoc(infile, outfile = NULL)
 
-cdo_setmisstodis(input_file, output_file = NULL)
+cdo_setmisstodis(infile, outfile = NULL)
 
-cdo_setmisstonn(input_file, output_file = NULL)
+cdo_setmisstonn(infile, outfile = NULL)
 
-cdo_setmissval(input_file, output_file = NULL)
+cdo_setmissval(infile, outfile = NULL)
 
-cdo_setrtomiss(input_file, output_file = NULL)
+cdo_setrtomiss(infile, outfile = NULL)
 
-cdo_setvrange(input_file, output_file = NULL)
+cdo_setvrange(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This module sets part of a field to missing value or missing values to a

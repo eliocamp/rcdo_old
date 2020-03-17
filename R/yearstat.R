@@ -17,63 +17,113 @@
 #' @name Yearstat
 NULL
 
-#' @param input_file input file.
-#' @param output_file output file.
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Yearstat
-#' @export 
-cdo_yearavg <- new_operator("yearavg", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_yearavg <- function(infile, outfile = NULL) {
+  .new_step(operator = 'yearavg', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Yearstat
-#' @export 
-cdo_yearmax <- new_operator("yearmax", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_yearmax <- function(infile, outfile = NULL) {
+  .new_step(operator = 'yearmax', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Yearstat
-#' @export 
-cdo_yearmean <- new_operator("yearmean", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_yearmean <- function(infile, outfile = NULL) {
+  .new_step(operator = 'yearmean', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Yearstat
-#' @export 
-cdo_yearmin <- new_operator("yearmin", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_yearmin <- function(infile, outfile = NULL) {
+  .new_step(operator = 'yearmin', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Yearstat
-#' @export 
-cdo_yearrange <- new_operator("yearrange", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_yearrange <- function(infile, outfile = NULL) {
+  .new_step(operator = 'yearrange', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Yearstat
-#' @export 
-cdo_yearstd <- new_operator("yearstd", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_yearstd <- function(infile, outfile = NULL) {
+  .new_step(operator = 'yearstd', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Yearstat
-#' @export 
-cdo_yearstd1 <- new_operator("yearstd1", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_yearstd1 <- function(infile, outfile = NULL) {
+  .new_step(operator = 'yearstd1', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Yearstat
-#' @export 
-cdo_yearsum <- new_operator("yearsum", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_yearsum <- function(infile, outfile = NULL) {
+  .new_step(operator = 'yearsum', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Yearstat
-#' @export 
-cdo_yearvar <- new_operator("yearvar", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_yearvar <- function(infile, outfile = NULL) {
+  .new_step(operator = 'yearvar', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Yearstat
-#' @export 
-cdo_yearvar1 <- new_operator("yearvar1", 1, 1)
-
+#' @export
+cdo_yearvar1 <- function(infile, outfile = NULL) {
+  .new_step(operator = 'yearvar1', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}

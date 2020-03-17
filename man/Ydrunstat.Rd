@@ -13,28 +13,28 @@
 \alias{cdo_ydrunvar1}
 \title{Multi-year daily running statistical values}
 \usage{
-cdo_ydrunavg(input_file, output_file = NULL)
+cdo_ydrunavg(infile, outfile = NULL)
 
-cdo_ydrunmax(input_file, output_file = NULL)
+cdo_ydrunmax(infile, outfile = NULL)
 
-cdo_ydrunmean(input_file, output_file = NULL)
+cdo_ydrunmean(infile, outfile = NULL)
 
-cdo_ydrunmin(input_file, output_file = NULL)
+cdo_ydrunmin(infile, outfile = NULL)
 
-cdo_ydrunstd(input_file, output_file = NULL)
+cdo_ydrunstd(infile, outfile = NULL)
 
-cdo_ydrunstd1(input_file, output_file = NULL)
+cdo_ydrunstd1(infile, outfile = NULL)
 
-cdo_ydrunsum(input_file, output_file = NULL)
+cdo_ydrunsum(infile, outfile = NULL)
 
-cdo_ydrunvar(input_file, output_file = NULL)
+cdo_ydrunvar(infile, outfile = NULL)
 
-cdo_ydrunvar1(input_file, output_file = NULL)
+cdo_ydrunvar1(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This module writes running statistical values for each day of year in infile to

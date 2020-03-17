@@ -6,14 +6,14 @@
 \alias{cdo_smooth9}
 \title{Smooth grid points}
 \usage{
-cdo_smooth(input_file, output_file = NULL)
+cdo_smooth(infile, outfile = NULL)
 
-cdo_smooth9(input_file, output_file = NULL)
+cdo_smooth9(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 Smooth all grid points of a horizontal grid. Options is a comma-separated list

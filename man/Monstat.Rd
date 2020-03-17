@@ -14,30 +14,30 @@
 \alias{cdo_monvar1}
 \title{Monthly statistical values}
 \usage{
-cdo_monavg(input_file, output_file = NULL)
+cdo_monavg(infile, outfile = NULL)
 
-cdo_monmax(input_file, output_file = NULL)
+cdo_monmax(infile, outfile = NULL)
 
-cdo_monmean(input_file, output_file = NULL)
+cdo_monmean(infile, outfile = NULL)
 
-cdo_monmin(input_file, output_file = NULL)
+cdo_monmin(infile, outfile = NULL)
 
-cdo_monrange(input_file, output_file = NULL)
+cdo_monrange(infile, outfile = NULL)
 
-cdo_monstd(input_file, output_file = NULL)
+cdo_monstd(infile, outfile = NULL)
 
-cdo_monstd1(input_file, output_file = NULL)
+cdo_monstd1(infile, outfile = NULL)
 
-cdo_monsum(input_file, output_file = NULL)
+cdo_monsum(infile, outfile = NULL)
 
-cdo_monvar(input_file, output_file = NULL)
+cdo_monvar(infile, outfile = NULL)
 
-cdo_monvar1(input_file, output_file = NULL)
+cdo_monvar1(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This module computes statistical values over timesteps of the same month.

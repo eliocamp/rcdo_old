@@ -9,18 +9,18 @@
 \alias{cdo_outputsrv}
 \title{Formatted output}
 \usage{
-cdo_output(input_files)
+cdo_output(infiles)
 
-cdo_outputext(input_files)
+cdo_outputext(infiles)
 
-cdo_outputf(input_files)
+cdo_outputf(infiles)
 
-cdo_outputint(input_files)
+cdo_outputint(infiles)
 
-cdo_outputsrv(input_files)
+cdo_outputsrv(infiles)
 }
 \arguments{
-\item{input_files}{input files.}
+\item{infiles}{input files.}
 }
 \description{
 This module prints all values of all input datasets to standard output. All

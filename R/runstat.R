@@ -29,63 +29,113 @@
 #' @name Runstat
 NULL
 
-#' @param input_file input file.
-#' @param output_file output file.
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Runstat
-#' @export 
-cdo_runavg <- new_operator("runavg", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_runavg <- function(infile, outfile = NULL) {
+  .new_step(operator = 'runavg', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Runstat
-#' @export 
-cdo_runmax <- new_operator("runmax", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_runmax <- function(infile, outfile = NULL) {
+  .new_step(operator = 'runmax', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Runstat
-#' @export 
-cdo_runmean <- new_operator("runmean", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_runmean <- function(infile, outfile = NULL) {
+  .new_step(operator = 'runmean', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Runstat
-#' @export 
-cdo_runmin <- new_operator("runmin", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_runmin <- function(infile, outfile = NULL) {
+  .new_step(operator = 'runmin', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Runstat
-#' @export 
-cdo_runrange <- new_operator("runrange", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_runrange <- function(infile, outfile = NULL) {
+  .new_step(operator = 'runrange', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Runstat
-#' @export 
-cdo_runstd <- new_operator("runstd", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_runstd <- function(infile, outfile = NULL) {
+  .new_step(operator = 'runstd', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Runstat
-#' @export 
-cdo_runstd1 <- new_operator("runstd1", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_runstd1 <- function(infile, outfile = NULL) {
+  .new_step(operator = 'runstd1', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Runstat
-#' @export 
-cdo_runsum <- new_operator("runsum", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_runsum <- function(infile, outfile = NULL) {
+  .new_step(operator = 'runsum', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Runstat
-#' @export 
-cdo_runvar <- new_operator("runvar", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_runvar <- function(infile, outfile = NULL) {
+  .new_step(operator = 'runvar', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Runstat
-#' @export 
-cdo_runvar1 <- new_operator("runvar1", 1, 1)
-
+#' @export
+cdo_runvar1 <- function(infile, outfile = NULL) {
+  .new_step(operator = 'runvar1', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}

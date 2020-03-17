@@ -21,15 +21,25 @@
 #' @name Remapdis
 NULL
 
-#' @param input_file input file.
-#' @param output_file output file.
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Remapdis
-#' @export 
-cdo_gendis <- new_operator("gendis", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_gendis <- function(infile, outfile = NULL) {
+  .new_step(operator = 'gendis', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Remapdis
-#' @export 
-cdo_remapdis <- new_operator("remapdis", 1, 1)
-
+#' @export
+cdo_remapdis <- function(infile, outfile = NULL) {
+  .new_step(operator = 'remapdis', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}

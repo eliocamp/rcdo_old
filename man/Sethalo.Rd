@@ -5,12 +5,12 @@
 \alias{cdo_sethalo}
 \title{Set the left and right bounds of a field}
 \usage{
-cdo_sethalo(input_file, output_file = NULL)
+cdo_sethalo(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This operator sets the left and right bounds of the rectangularly understood

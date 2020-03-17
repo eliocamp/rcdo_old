@@ -26,9 +26,14 @@
 #' @name Remap
 NULL
 
-#' @param input_file input file.
-#' @param output_file output file.
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Remap
-#' @export 
-cdo_remap <- new_operator("remap", 1, 1)
-
+#' @export
+cdo_remap <- function(infile, outfile = NULL) {
+  .new_step(operator = 'remap', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}

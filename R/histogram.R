@@ -23,27 +23,47 @@
 #' @name Histogram
 NULL
 
-#' @param input_file input file.
-#' @param output_file output file.
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Histogram
-#' @export 
-cdo_histcount <- new_operator("histcount", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_histcount <- function(infile, outfile = NULL) {
+  .new_step(operator = 'histcount', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Histogram
-#' @export 
-cdo_histfreq <- new_operator("histfreq", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_histfreq <- function(infile, outfile = NULL) {
+  .new_step(operator = 'histfreq', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Histogram
-#' @export 
-cdo_histmean <- new_operator("histmean", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_histmean <- function(infile, outfile = NULL) {
+  .new_step(operator = 'histmean', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Histogram
-#' @export 
-cdo_histsum <- new_operator("histsum", 1, 1)
-
+#' @export
+cdo_histsum <- function(infile, outfile = NULL) {
+  .new_step(operator = 'histsum', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}

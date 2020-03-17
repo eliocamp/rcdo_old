@@ -36,39 +36,69 @@
 #' @name Compc
 NULL
 
-#' @param input_file input file.
-#' @param output_file output file.
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Compc
-#' @export 
-cdo_eqc <- new_operator("eqc", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_eqc <- function(infile, outfile = NULL) {
+  .new_step(operator = 'eqc', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Compc
-#' @export 
-cdo_gec <- new_operator("gec", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_gec <- function(infile, outfile = NULL) {
+  .new_step(operator = 'gec', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Compc
-#' @export 
-cdo_gtc <- new_operator("gtc", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_gtc <- function(infile, outfile = NULL) {
+  .new_step(operator = 'gtc', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Compc
-#' @export 
-cdo_lec <- new_operator("lec", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_lec <- function(infile, outfile = NULL) {
+  .new_step(operator = 'lec', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Compc
-#' @export 
-cdo_ltc <- new_operator("ltc", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_ltc <- function(infile, outfile = NULL) {
+  .new_step(operator = 'ltc', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Compc
-#' @export 
-cdo_nec <- new_operator("nec", 1, 1)
-
+#' @export
+cdo_nec <- function(infile, outfile = NULL) {
+  .new_step(operator = 'nec', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}

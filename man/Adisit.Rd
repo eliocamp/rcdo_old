@@ -6,14 +6,14 @@
 \alias{cdo_adisit}
 \title{Potential temperature to in-situ temperature and vice versa}
 \usage{
-cdo_adipot(input_file, output_file = NULL)
+cdo_adipot(infile, outfile = NULL)
 
-cdo_adisit(input_file, output_file = NULL)
+cdo_adisit(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 DESCRIPTION

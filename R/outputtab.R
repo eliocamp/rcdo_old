@@ -28,8 +28,14 @@
 #' @name Outputtab
 NULL
 
-#' @param input_files input files.
+#' @param infiles input files.
+#' 
 #' @rdname Outputtab
-#' @export 
-cdo_outputtab <- new_operator("outputtab", -1, 0)
-
+#' @export
+cdo_outputtab <- function(infiles) {
+  .new_step(operator = 'outputtab', 
+            inputs = list(infiles), 
+            outputs = c(), 
+            n_inputs = -1,
+            n_outputs = 0)
+}

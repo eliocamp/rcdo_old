@@ -5,12 +5,12 @@
 \alias{cdo_yearmonmean}
 \title{Yearly mean from monthly data}
 \usage{
-cdo_yearmonmean(input_file, output_file = NULL)
+cdo_yearmonmean(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This operator computes the yearly mean of a monthly time series. Each month is

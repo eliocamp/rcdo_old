@@ -16,9 +16,14 @@
 #' @name Regres
 NULL
 
-#' @param input_file input file.
-#' @param output_file output file.
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Regres
-#' @export 
-cdo_regres <- new_operator("regres", 1, 1)
-
+#' @export
+cdo_regres <- function(infile, outfile = NULL) {
+  .new_step(operator = 'regres', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}

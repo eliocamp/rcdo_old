@@ -5,12 +5,14 @@
 \alias{cdo_eca_etr}
 \title{Intra-period extreme temperature range}
 \usage{
-cdo_eca_etr(input_file_1, input_file_2, output_file = NULL)
+cdo_eca_etr(infile1, infile2, outfile = NULL)
+
+cdo_eca_etr(infile1, infile2, outfile = NULL)
 }
 \arguments{
-\item{input_file_1, input_file_2}{input files.}
+\item{infile1, infile2}{input files.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 Let infile1 and infile2 be time series of thr maximum and minimum temperature

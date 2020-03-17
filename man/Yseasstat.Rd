@@ -14,30 +14,30 @@
 \alias{cdo_yseasvar1}
 \title{Multi-year seasonal statistical values}
 \usage{
-cdo_yseasavg(input_file, output_file = NULL)
+cdo_yseasavg(infile, outfile = NULL)
 
-cdo_yseasmax(input_file, output_file = NULL)
+cdo_yseasmax(infile, outfile = NULL)
 
-cdo_yseasmean(input_file, output_file = NULL)
+cdo_yseasmean(infile, outfile = NULL)
 
-cdo_yseasmin(input_file, output_file = NULL)
+cdo_yseasmin(infile, outfile = NULL)
 
-cdo_yseasrange(input_file, output_file = NULL)
+cdo_yseasrange(infile, outfile = NULL)
 
-cdo_yseasstd(input_file, output_file = NULL)
+cdo_yseasstd(infile, outfile = NULL)
 
-cdo_yseasstd1(input_file, output_file = NULL)
+cdo_yseasstd1(infile, outfile = NULL)
 
-cdo_yseassum(input_file, output_file = NULL)
+cdo_yseassum(infile, outfile = NULL)
 
-cdo_yseasvar(input_file, output_file = NULL)
+cdo_yseasvar(infile, outfile = NULL)
 
-cdo_yseasvar1(input_file, output_file = NULL)
+cdo_yseasvar1(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This module computes statistical values of each season. Depending on the chosen

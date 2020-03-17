@@ -17,63 +17,113 @@
 #' @name Monstat
 NULL
 
-#' @param input_file input file.
-#' @param output_file output file.
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Monstat
-#' @export 
-cdo_monavg <- new_operator("monavg", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_monavg <- function(infile, outfile = NULL) {
+  .new_step(operator = 'monavg', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Monstat
-#' @export 
-cdo_monmax <- new_operator("monmax", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_monmax <- function(infile, outfile = NULL) {
+  .new_step(operator = 'monmax', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Monstat
-#' @export 
-cdo_monmean <- new_operator("monmean", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_monmean <- function(infile, outfile = NULL) {
+  .new_step(operator = 'monmean', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Monstat
-#' @export 
-cdo_monmin <- new_operator("monmin", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_monmin <- function(infile, outfile = NULL) {
+  .new_step(operator = 'monmin', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Monstat
-#' @export 
-cdo_monrange <- new_operator("monrange", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_monrange <- function(infile, outfile = NULL) {
+  .new_step(operator = 'monrange', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Monstat
-#' @export 
-cdo_monstd <- new_operator("monstd", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_monstd <- function(infile, outfile = NULL) {
+  .new_step(operator = 'monstd', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Monstat
-#' @export 
-cdo_monstd1 <- new_operator("monstd1", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_monstd1 <- function(infile, outfile = NULL) {
+  .new_step(operator = 'monstd1', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Monstat
-#' @export 
-cdo_monsum <- new_operator("monsum", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_monsum <- function(infile, outfile = NULL) {
+  .new_step(operator = 'monsum', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Monstat
-#' @export 
-cdo_monvar <- new_operator("monvar", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_monvar <- function(infile, outfile = NULL) {
+  .new_step(operator = 'monvar', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Monstat
-#' @export 
-cdo_monvar1 <- new_operator("monvar1", 1, 1)
-
+#' @export
+cdo_monvar1 <- function(infile, outfile = NULL) {
+  .new_step(operator = 'monvar1', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}

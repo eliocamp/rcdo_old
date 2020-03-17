@@ -5,12 +5,14 @@
 \alias{cdo_replace}
 \title{Replace variables}
 \usage{
-cdo_replace(input_file_1, input_file_2, output_file = NULL)
+cdo_replace(infile1, infile2, outfile = NULL)
+
+cdo_replace(infile1, infile2, outfile = NULL)
 }
 \arguments{
-\item{input_file_1, input_file_2}{input files.}
+\item{infile1, infile2}{input files.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 The replace operator replaces variables in infile1 by variables from infile2

@@ -11,24 +11,24 @@
 \alias{cdo_setunit}
 \title{Set field info}
 \usage{
-cdo_setcode(input_file, output_file = NULL)
+cdo_setcode(infile, outfile = NULL)
 
-cdo_setcodetab(input_file, output_file = NULL)
+cdo_setcodetab(infile, outfile = NULL)
 
-cdo_setlevel(input_file, output_file = NULL)
+cdo_setlevel(infile, outfile = NULL)
 
-cdo_setltype(input_file, output_file = NULL)
+cdo_setltype(infile, outfile = NULL)
 
-cdo_setname(input_file, output_file = NULL)
+cdo_setname(infile, outfile = NULL)
 
-cdo_setparam(input_file, output_file = NULL)
+cdo_setparam(infile, outfile = NULL)
 
-cdo_setunit(input_file, output_file = NULL)
+cdo_setunit(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This module sets some field information. Depending on the chosen operator the

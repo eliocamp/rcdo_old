@@ -22,27 +22,91 @@
 #' @name Ymonarith
 NULL
 
-#' @param input_file_1,input_file_2 input files.
-#' @param output_file output file.
+#' @param infile1,infile2 input files.
+#' @param outfile output file.
 #' @rdname Ymonarith
-#' @export 
-cdo_ymonadd <- new_operator("ymonadd", 2, 1)
-
-#' @param input_file_1,input_file_2 input files.
-#' @param output_file output file.
+#' @export
+cdo_ymonadd <- function(infile1, infile2, outfile = NULL) {
+  .new_step(operator = 'ymonadd', 
+            inputs = list(infile1), 
+            outputs = c(outfile), 
+            n_inputs = 2,
+            n_outputs = 1)
+}
+#' @param infile1,infile2 input files.
+#' @param outfile output file.
 #' @rdname Ymonarith
-#' @export 
-cdo_ymondiv <- new_operator("ymondiv", 2, 1)
-
-#' @param input_file_1,input_file_2 input files.
-#' @param output_file output file.
+#' @export
+cdo_ymonadd <- function(infile1, infile2, outfile = NULL) {
+  .new_step(operator = 'ymonadd', 
+            inputs = list(infile2), 
+            outputs = c(outfile), 
+            n_inputs = 2,
+            n_outputs = 1)
+}
+#' @param infile1,infile2 input files.
+#' @param outfile output file.
 #' @rdname Ymonarith
-#' @export 
-cdo_ymonmul <- new_operator("ymonmul", 2, 1)
-
-#' @param input_file_1,input_file_2 input files.
-#' @param output_file output file.
+#' @export
+cdo_ymondiv <- function(infile1, infile2, outfile = NULL) {
+  .new_step(operator = 'ymondiv', 
+            inputs = list(infile1), 
+            outputs = c(outfile), 
+            n_inputs = 2,
+            n_outputs = 1)
+}
+#' @param infile1,infile2 input files.
+#' @param outfile output file.
 #' @rdname Ymonarith
-#' @export 
-cdo_ymonsub <- new_operator("ymonsub", 2, 1)
-
+#' @export
+cdo_ymondiv <- function(infile1, infile2, outfile = NULL) {
+  .new_step(operator = 'ymondiv', 
+            inputs = list(infile2), 
+            outputs = c(outfile), 
+            n_inputs = 2,
+            n_outputs = 1)
+}
+#' @param infile1,infile2 input files.
+#' @param outfile output file.
+#' @rdname Ymonarith
+#' @export
+cdo_ymonmul <- function(infile1, infile2, outfile = NULL) {
+  .new_step(operator = 'ymonmul', 
+            inputs = list(infile1), 
+            outputs = c(outfile), 
+            n_inputs = 2,
+            n_outputs = 1)
+}
+#' @param infile1,infile2 input files.
+#' @param outfile output file.
+#' @rdname Ymonarith
+#' @export
+cdo_ymonmul <- function(infile1, infile2, outfile = NULL) {
+  .new_step(operator = 'ymonmul', 
+            inputs = list(infile2), 
+            outputs = c(outfile), 
+            n_inputs = 2,
+            n_outputs = 1)
+}
+#' @param infile1,infile2 input files.
+#' @param outfile output file.
+#' @rdname Ymonarith
+#' @export
+cdo_ymonsub <- function(infile1, infile2, outfile = NULL) {
+  .new_step(operator = 'ymonsub', 
+            inputs = list(infile1), 
+            outputs = c(outfile), 
+            n_inputs = 2,
+            n_outputs = 1)
+}
+#' @param infile1,infile2 input files.
+#' @param outfile output file.
+#' @rdname Ymonarith
+#' @export
+cdo_ymonsub <- function(infile1, infile2, outfile = NULL) {
+  .new_step(operator = 'ymonsub', 
+            inputs = list(infile2), 
+            outputs = c(outfile), 
+            n_inputs = 2,
+            n_outputs = 1)
+}

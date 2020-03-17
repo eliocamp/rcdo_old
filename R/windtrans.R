@@ -21,21 +21,36 @@
 #' @name WindTrans
 NULL
 
-#' @param input_file input file.
-#' @param output_file output file.
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname WindTrans
-#' @export 
-cdo_projuvLatLon <- new_operator("projuvLatLon", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_projuvLatLon <- function(infile, outfile = NULL) {
+  .new_step(operator = 'projuvLatLon', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname WindTrans
-#' @export 
-cdo_rotuvNorth <- new_operator("rotuvNorth", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_rotuvNorth <- function(infile, outfile = NULL) {
+  .new_step(operator = 'rotuvNorth', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname WindTrans
-#' @export 
-cdo_uvDestag <- new_operator("uvDestag", 1, 1)
-
+#' @export
+cdo_uvDestag <- function(infile, outfile = NULL) {
+  .new_step(operator = 'uvDestag', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}

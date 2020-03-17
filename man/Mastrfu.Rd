@@ -5,12 +5,12 @@
 \alias{cdo_mastrfu}
 \title{Mass stream function}
 \usage{
-cdo_mastrfu(input_file, output_file = NULL)
+cdo_mastrfu(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This is a special operator for the post processing of the atmospheric general

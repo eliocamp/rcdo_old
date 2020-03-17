@@ -7,16 +7,16 @@
 \alias{cdo_ensroc}
 \title{Statistical values over an ensemble}
 \usage{
-cdo_ensrkhistspace(input_files, output_file = NULL)
+cdo_ensrkhistspace(infiles, outfile = NULL)
 
-cdo_ensrkhisttime(input_files, output_file = NULL)
+cdo_ensrkhisttime(infiles, outfile = NULL)
 
-cdo_ensroc(input_files, output_file = NULL)
+cdo_ensroc(infiles, outfile = NULL)
 }
 \arguments{
-\item{input_files}{input files.}
+\item{infiles}{input files.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This module computes statistical values over the ensemble of ensfiles using

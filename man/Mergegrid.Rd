@@ -5,12 +5,14 @@
 \alias{cdo_mergegrid}
 \title{Merge grid}
 \usage{
-cdo_mergegrid(input_file_1, input_file_2, output_file = NULL)
+cdo_mergegrid(infile1, infile2, outfile = NULL)
+
+cdo_mergegrid(infile1, infile2, outfile = NULL)
 }
 \arguments{
-\item{input_file_1, input_file_2}{input files.}
+\item{infile1, infile2}{input files.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 Merges grid points of all variables from infile2 to infile1 and write the

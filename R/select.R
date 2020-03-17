@@ -19,15 +19,25 @@
 #' @name Select
 NULL
 
-#' @param input_files input files.
-#' @param output_file output file.
+#' @param infiles input files.
+#' @param outfile output file.
 #' @rdname Select
-#' @export 
-cdo_delete <- new_operator("delete", -1, 1)
-
-#' @param input_files input files.
-#' @param output_file output file.
+#' @export
+cdo_delete <- function(infiles, outfile = NULL) {
+  .new_step(operator = 'delete', 
+            inputs = list(infiles), 
+            outputs = c(outfile), 
+            n_inputs = -1,
+            n_outputs = 1)
+}
+#' @param infiles input files.
+#' @param outfile output file.
 #' @rdname Select
-#' @export 
-cdo_select <- new_operator("select", -1, 1)
-
+#' @export
+cdo_select <- function(infiles, outfile = NULL) {
+  .new_step(operator = 'select', 
+            inputs = list(infiles), 
+            outputs = c(outfile), 
+            n_inputs = -1,
+            n_outputs = 1)
+}

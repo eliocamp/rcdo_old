@@ -5,12 +5,12 @@
 \alias{cdo_eca_cfd}
 \title{Consecutive frost days index per time period}
 \usage{
-cdo_eca_cfd(input_file, output_file = NULL)
+cdo_eca_cfd(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 Let infile be a time series of the daily minimum temperature TN, then the

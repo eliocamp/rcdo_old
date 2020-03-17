@@ -26,45 +26,80 @@
 #' @name Set
 NULL
 
-#' @param input_file input file.
-#' @param output_file output file.
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Set
-#' @export 
-cdo_setcode <- new_operator("setcode", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_setcode <- function(infile, outfile = NULL) {
+  .new_step(operator = 'setcode', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Set
-#' @export 
-cdo_setcodetab <- new_operator("setcodetab", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_setcodetab <- function(infile, outfile = NULL) {
+  .new_step(operator = 'setcodetab', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Set
-#' @export 
-cdo_setlevel <- new_operator("setlevel", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_setlevel <- function(infile, outfile = NULL) {
+  .new_step(operator = 'setlevel', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Set
-#' @export 
-cdo_setltype <- new_operator("setltype", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_setltype <- function(infile, outfile = NULL) {
+  .new_step(operator = 'setltype', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Set
-#' @export 
-cdo_setname <- new_operator("setname", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_setname <- function(infile, outfile = NULL) {
+  .new_step(operator = 'setname', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Set
-#' @export 
-cdo_setparam <- new_operator("setparam", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_setparam <- function(infile, outfile = NULL) {
+  .new_step(operator = 'setparam', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Set
-#' @export 
-cdo_setunit <- new_operator("setunit", 1, 1)
-
+#' @export
+cdo_setunit <- function(infile, outfile = NULL) {
+  .new_step(operator = 'setunit', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}

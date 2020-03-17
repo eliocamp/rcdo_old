@@ -6,12 +6,12 @@
 \alias{cdo_gmtxyz}
 \title{GMT output}
 \usage{
-cdo_gmtcells(input_file)
+cdo_gmtcells(infile)
 
-cdo_gmtxyz(input_file)
+cdo_gmtxyz(infile)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 }
 \description{
 This module prints the first field of the input dataset to standard output. The

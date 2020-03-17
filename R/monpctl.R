@@ -21,9 +21,36 @@
 #' @name Monpctl
 NULL
 
-#' @param input_file_1,input_file_2,input_file_3 input files.
-#' @param output_file output file.
+#' @param infile1,infile2,infile3 input files.
+#' @param outfile output file.
 #' @rdname Monpctl
-#' @export 
-cdo_monpctl <- new_operator("monpctl", 3, 1)
-
+#' @export
+cdo_monpctl <- function(infile1, infile2, infile3, outfile = NULL) {
+  .new_step(operator = 'monpctl', 
+            inputs = list(infile1), 
+            outputs = c(outfile), 
+            n_inputs = 3,
+            n_outputs = 1)
+}
+#' @param infile1,infile2,infile3 input files.
+#' @param outfile output file.
+#' @rdname Monpctl
+#' @export
+cdo_monpctl <- function(infile1, infile2, infile3, outfile = NULL) {
+  .new_step(operator = 'monpctl', 
+            inputs = list(infile2), 
+            outputs = c(outfile), 
+            n_inputs = 3,
+            n_outputs = 1)
+}
+#' @param infile1,infile2,infile3 input files.
+#' @param outfile output file.
+#' @rdname Monpctl
+#' @export
+cdo_monpctl <- function(infile1, infile2, infile3, outfile = NULL) {
+  .new_step(operator = 'monpctl', 
+            inputs = list(infile3), 
+            outputs = c(outfile), 
+            n_inputs = 3,
+            n_outputs = 1)
+}

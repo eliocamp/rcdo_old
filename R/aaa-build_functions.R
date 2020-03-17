@@ -39,26 +39,75 @@
 #' @param inputs vector of inputs
 #' @param outputs vector of outputs
 #' 
-.build_command <- function(operator, inputs, outputs = NULL) {
-  command <- paste0(operator, " ",
-                    paste(inputs, collapse = " "))
-  
-  if (is.null(outputs)) {
-    class(command) <- c("cdo_operator", class(command))
-    return(command)
+.build_command <- function(operation, chain = FALSE) {
+  if (inherits(operation, "character")) {
+    return(operation)
   }
   
-  if (outputs == "") {
-    return(cdo_run(paste0("cdo ", command)))
+  if (operation$pattern$n_outputs == 0) {
+    out <- ""
+  } else {
+    out <- paste0(unlist(operation$params$outputs), collapse = " ")
   }
   
-  command <- paste0("cdo ", command, " ", paste(outputs, collapse = " "))
-  class(command) <- c("cdo_output", class(command))
+  if (inherits(operation$params$inputs, "list")) {
+    ins <- vapply(operation$params$inputs, .build_command, "character", chain = TRUE)
+  } else {
+    ins <- .build_command(unlist(operation$params$inputs), chain = TRUE)
+  }
+  ins <- paste0(ins, collapse = " ")
   
   
+  command <- paste0(operation$operator, " ", 
+                    ins, " ",
+                    out)
+  if (isTRUE(chain)) {
+    command <- paste0("-", command)
+  }
   return(command)
-  
 }
+
+#' @export
+print.cdo_operation <- function(x, ...) {
+  cat("cdo operation:\n   ")
+  cat(.build_command(x))
+}
+
+
+
+
+
+#' Creates the structure of a cdo operation
+#' 
+#' @param operator name of the operator
+#' @param inputs list of inputs
+#' @param outputs outputs
+#' @param obase base for outputs (for operators with -1 n_outputs)
+#' @param n_inputs,n_outputs expected number of inputs and outputs.
+#' @param params list of parameters (ignored)
+#' 
+#' 
+.new_step <- function(operator,
+                      inputs, 
+                      outputs = NULL, 
+                      n_inputs,
+                      n_outputs,
+                      params = list()) {
+  operation <- structure(list(operator = operator,
+                              pattern = list(n_inputs = n_inputs, 
+                                             n_outputs = n_outputs),
+                              params = list(inputs = inputs, 
+                                            outputs = outputs)),
+                         class = "cdo_operation")
+  
+  if (operation$pattern$n_outputs == 0) {
+    return(cdo_run(operation))
+  }
+  # .validate_step(step)
+  
+  return(operation)
+}
+
 
 
 .file_args <- function(n, suffix) {
@@ -69,7 +118,7 @@
   } else if (n == 0) {
     inputs <- ""
   }  else {
-    inputs <- paste0(paste0(suffix, "_"), seq_len(n))
+    inputs <- paste0(suffix, seq_len(n))
   }
   
   return(inputs)

@@ -25,57 +25,102 @@
 #' @name Ydrunstat
 NULL
 
-#' @param input_file input file.
-#' @param output_file output file.
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Ydrunstat
-#' @export 
-cdo_ydrunavg <- new_operator("ydrunavg", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_ydrunavg <- function(infile, outfile = NULL) {
+  .new_step(operator = 'ydrunavg', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Ydrunstat
-#' @export 
-cdo_ydrunmax <- new_operator("ydrunmax", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_ydrunmax <- function(infile, outfile = NULL) {
+  .new_step(operator = 'ydrunmax', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Ydrunstat
-#' @export 
-cdo_ydrunmean <- new_operator("ydrunmean", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_ydrunmean <- function(infile, outfile = NULL) {
+  .new_step(operator = 'ydrunmean', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Ydrunstat
-#' @export 
-cdo_ydrunmin <- new_operator("ydrunmin", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_ydrunmin <- function(infile, outfile = NULL) {
+  .new_step(operator = 'ydrunmin', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Ydrunstat
-#' @export 
-cdo_ydrunstd <- new_operator("ydrunstd", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_ydrunstd <- function(infile, outfile = NULL) {
+  .new_step(operator = 'ydrunstd', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Ydrunstat
-#' @export 
-cdo_ydrunstd1 <- new_operator("ydrunstd1", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_ydrunstd1 <- function(infile, outfile = NULL) {
+  .new_step(operator = 'ydrunstd1', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Ydrunstat
-#' @export 
-cdo_ydrunsum <- new_operator("ydrunsum", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_ydrunsum <- function(infile, outfile = NULL) {
+  .new_step(operator = 'ydrunsum', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Ydrunstat
-#' @export 
-cdo_ydrunvar <- new_operator("ydrunvar", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_ydrunvar <- function(infile, outfile = NULL) {
+  .new_step(operator = 'ydrunvar', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Ydrunstat
-#' @export 
-cdo_ydrunvar1 <- new_operator("ydrunvar1", 1, 1)
-
+#' @export
+cdo_ydrunvar1 <- function(infile, outfile = NULL) {
+  .new_step(operator = 'ydrunvar1', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}

@@ -5,12 +5,12 @@
 \alias{cdo_splitsel}
 \title{Split selected timesteps}
 \usage{
-cdo_splitsel(input_file, output_files = NULL)
+cdo_splitsel(infile, obase = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_files}{output files.}
+\item{obase}{preffix added to the output files.}
 }
 \description{
 This operator splits infile into pieces, one for each adjacent sequence t_1,

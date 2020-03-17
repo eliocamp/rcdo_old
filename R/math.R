@@ -45,105 +45,190 @@
 #' @name Math
 NULL
 
-#' @param input_file input file.
-#' @param output_file output file.
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Math
-#' @export 
-cdo_abs <- new_operator("abs", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_abs <- function(infile, outfile = NULL) {
+  .new_step(operator = 'abs', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Math
-#' @export 
-cdo_acos <- new_operator("acos", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_acos <- function(infile, outfile = NULL) {
+  .new_step(operator = 'acos', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Math
-#' @export 
-cdo_asin <- new_operator("asin", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_asin <- function(infile, outfile = NULL) {
+  .new_step(operator = 'asin', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Math
-#' @export 
-cdo_atan <- new_operator("atan", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_atan <- function(infile, outfile = NULL) {
+  .new_step(operator = 'atan', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Math
-#' @export 
-cdo_cos <- new_operator("cos", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_cos <- function(infile, outfile = NULL) {
+  .new_step(operator = 'cos', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Math
-#' @export 
-cdo_exp <- new_operator("exp", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_exp <- function(infile, outfile = NULL) {
+  .new_step(operator = 'exp', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Math
-#' @export 
-cdo_int <- new_operator("int", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_int <- function(infile, outfile = NULL) {
+  .new_step(operator = 'int', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Math
-#' @export 
-cdo_ln <- new_operator("ln", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_ln <- function(infile, outfile = NULL) {
+  .new_step(operator = 'ln', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Math
-#' @export 
-cdo_log10 <- new_operator("log10", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_log10 <- function(infile, outfile = NULL) {
+  .new_step(operator = 'log10', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Math
-#' @export 
-cdo_nint <- new_operator("nint", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_nint <- function(infile, outfile = NULL) {
+  .new_step(operator = 'nint', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Math
-#' @export 
-cdo_not <- new_operator("not", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_not <- function(infile, outfile = NULL) {
+  .new_step(operator = 'not', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Math
-#' @export 
-cdo_pow <- new_operator("pow", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_pow <- function(infile, outfile = NULL) {
+  .new_step(operator = 'pow', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Math
-#' @export 
-cdo_reci <- new_operator("reci", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_reci <- function(infile, outfile = NULL) {
+  .new_step(operator = 'reci', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Math
-#' @export 
-cdo_sin <- new_operator("sin", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_sin <- function(infile, outfile = NULL) {
+  .new_step(operator = 'sin', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Math
-#' @export 
-cdo_sqr <- new_operator("sqr", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_sqr <- function(infile, outfile = NULL) {
+  .new_step(operator = 'sqr', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Math
-#' @export 
-cdo_sqrt <- new_operator("sqrt", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_sqrt <- function(infile, outfile = NULL) {
+  .new_step(operator = 'sqrt', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Math
-#' @export 
-cdo_tan <- new_operator("tan", 1, 1)
-
+#' @export
+cdo_tan <- function(infile, outfile = NULL) {
+  .new_step(operator = 'tan', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}

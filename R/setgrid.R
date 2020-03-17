@@ -33,27 +33,47 @@
 #' @name Setgrid
 NULL
 
-#' @param input_file input file.
-#' @param output_file output file.
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Setgrid
-#' @export 
-cdo_setgrid <- new_operator("setgrid", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_setgrid <- function(infile, outfile = NULL) {
+  .new_step(operator = 'setgrid', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Setgrid
-#' @export 
-cdo_setgridarea <- new_operator("setgridarea", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_setgridarea <- function(infile, outfile = NULL) {
+  .new_step(operator = 'setgridarea', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Setgrid
-#' @export 
-cdo_setgridmask <- new_operator("setgridmask", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_setgridmask <- function(infile, outfile = NULL) {
+  .new_step(operator = 'setgridmask', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Setgrid
-#' @export 
-cdo_setgridtype <- new_operator("setgridtype", 1, 1)
-
+#' @export
+cdo_setgridtype <- function(infile, outfile = NULL) {
+  .new_step(operator = 'setgridtype', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}

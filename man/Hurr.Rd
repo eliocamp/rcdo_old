@@ -5,12 +5,12 @@
 \alias{cdo_hurr}
 \title{Hurricane days index per time period}
 \usage{
-cdo_hurr(input_file, output_file = NULL)
+cdo_hurr(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 Let infile be a time series of the daily maximum horizontal wind speed VX, then

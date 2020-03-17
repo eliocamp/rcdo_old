@@ -6,14 +6,14 @@
 \alias{cdo_remapcon}
 \title{First order conservative remapping}
 \usage{
-cdo_gencon(input_file, output_file = NULL)
+cdo_gencon(infile, outfile = NULL)
 
-cdo_remapcon(input_file, output_file = NULL)
+cdo_remapcon(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This module contains operators for a first order conservative remapping of

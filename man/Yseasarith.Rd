@@ -8,18 +8,26 @@
 \alias{cdo_yseassub}
 \title{Multi-year seasonal arithmetic}
 \usage{
-cdo_yseasadd(input_file_1, input_file_2, output_file = NULL)
+cdo_yseasadd(infile1, infile2, outfile = NULL)
 
-cdo_yseasdiv(input_file_1, input_file_2, output_file = NULL)
+cdo_yseasadd(infile1, infile2, outfile = NULL)
 
-cdo_yseasmul(input_file_1, input_file_2, output_file = NULL)
+cdo_yseasdiv(infile1, infile2, outfile = NULL)
 
-cdo_yseassub(input_file_1, input_file_2, output_file = NULL)
+cdo_yseasdiv(infile1, infile2, outfile = NULL)
+
+cdo_yseasmul(infile1, infile2, outfile = NULL)
+
+cdo_yseasmul(infile1, infile2, outfile = NULL)
+
+cdo_yseassub(infile1, infile2, outfile = NULL)
+
+cdo_yseassub(infile1, infile2, outfile = NULL)
 }
 \arguments{
-\item{input_file_1, input_file_2}{input files.}
+\item{infile1, infile2}{input files.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This module performs simple arithmetic of a time series and one timestep with

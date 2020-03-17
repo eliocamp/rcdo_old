@@ -10,22 +10,34 @@
 \alias{cdo_ne}
 \title{Comparison of two fields}
 \usage{
-cdo_eq(input_file_1, input_file_2, output_file = NULL)
+cdo_eq(infile1, infile2, outfile = NULL)
 
-cdo_ge(input_file_1, input_file_2, output_file = NULL)
+cdo_eq(infile1, infile2, outfile = NULL)
 
-cdo_gt(input_file_1, input_file_2, output_file = NULL)
+cdo_ge(infile1, infile2, outfile = NULL)
 
-cdo_le(input_file_1, input_file_2, output_file = NULL)
+cdo_ge(infile1, infile2, outfile = NULL)
 
-cdo_lt(input_file_1, input_file_2, output_file = NULL)
+cdo_gt(infile1, infile2, outfile = NULL)
 
-cdo_ne(input_file_1, input_file_2, output_file = NULL)
+cdo_gt(infile1, infile2, outfile = NULL)
+
+cdo_le(infile1, infile2, outfile = NULL)
+
+cdo_le(infile1, infile2, outfile = NULL)
+
+cdo_lt(infile1, infile2, outfile = NULL)
+
+cdo_lt(infile1, infile2, outfile = NULL)
+
+cdo_ne(infile1, infile2, outfile = NULL)
+
+cdo_ne(infile1, infile2, outfile = NULL)
 }
 \arguments{
-\item{input_file_1, input_file_2}{input files.}
+\item{infile1, infile2}{input files.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This module compares two datasets field by field. The resulting field is a mask

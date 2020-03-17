@@ -14,30 +14,30 @@
 \alias{cdo_yhourvar1}
 \title{Multi-year hourly statistical values}
 \usage{
-cdo_yhouravg(input_file, output_file = NULL)
+cdo_yhouravg(infile, outfile = NULL)
 
-cdo_yhourmax(input_file, output_file = NULL)
+cdo_yhourmax(infile, outfile = NULL)
 
-cdo_yhourmean(input_file, output_file = NULL)
+cdo_yhourmean(infile, outfile = NULL)
 
-cdo_yhourmin(input_file, output_file = NULL)
+cdo_yhourmin(infile, outfile = NULL)
 
-cdo_yhourrange(input_file, output_file = NULL)
+cdo_yhourrange(infile, outfile = NULL)
 
-cdo_yhourstd(input_file, output_file = NULL)
+cdo_yhourstd(infile, outfile = NULL)
 
-cdo_yhourstd1(input_file, output_file = NULL)
+cdo_yhourstd1(infile, outfile = NULL)
 
-cdo_yhoursum(input_file, output_file = NULL)
+cdo_yhoursum(infile, outfile = NULL)
 
-cdo_yhourvar(input_file, output_file = NULL)
+cdo_yhourvar(infile, outfile = NULL)
 
-cdo_yhourvar1(input_file, output_file = NULL)
+cdo_yhourvar1(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This module computes statistical values of each hour and day of year. Depending

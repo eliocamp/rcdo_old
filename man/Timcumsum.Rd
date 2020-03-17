@@ -5,12 +5,12 @@
 \alias{cdo_timcumsum}
 \title{Cumulative sum over all timesteps}
 \usage{
-cdo_timcumsum(input_file, output_file = NULL)
+cdo_timcumsum(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 The timcumsum operator calculates the cumulative sum over all timesteps.

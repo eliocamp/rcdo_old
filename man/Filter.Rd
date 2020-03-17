@@ -7,16 +7,16 @@
 \alias{cdo_lowpass}
 \title{Time series filtering}
 \usage{
-cdo_bandpass(input_file, output_file = NULL)
+cdo_bandpass(infile, outfile = NULL)
 
-cdo_highpass(input_file, output_file = NULL)
+cdo_highpass(infile, outfile = NULL)
 
-cdo_lowpass(input_file, output_file = NULL)
+cdo_lowpass(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This module takes the time series for each gridpoint in infile and (fast

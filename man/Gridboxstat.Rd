@@ -14,30 +14,30 @@
 \alias{cdo_gridboxvar1}
 \title{Statistical values over grid boxes}
 \usage{
-cdo_gridboxavg(input_file, output_file = NULL)
+cdo_gridboxavg(infile, outfile = NULL)
 
-cdo_gridboxmax(input_file, output_file = NULL)
+cdo_gridboxmax(infile, outfile = NULL)
 
-cdo_gridboxmean(input_file, output_file = NULL)
+cdo_gridboxmean(infile, outfile = NULL)
 
-cdo_gridboxmin(input_file, output_file = NULL)
+cdo_gridboxmin(infile, outfile = NULL)
 
-cdo_gridboxrange(input_file, output_file = NULL)
+cdo_gridboxrange(infile, outfile = NULL)
 
-cdo_gridboxstd(input_file, output_file = NULL)
+cdo_gridboxstd(infile, outfile = NULL)
 
-cdo_gridboxstd1(input_file, output_file = NULL)
+cdo_gridboxstd1(infile, outfile = NULL)
 
-cdo_gridboxsum(input_file, output_file = NULL)
+cdo_gridboxsum(infile, outfile = NULL)
 
-cdo_gridboxvar(input_file, output_file = NULL)
+cdo_gridboxvar(infile, outfile = NULL)
 
-cdo_gridboxvar1(input_file, output_file = NULL)
+cdo_gridboxvar1(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This module computes statistical values over surrounding grid boxes. According

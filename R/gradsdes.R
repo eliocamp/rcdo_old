@@ -20,8 +20,14 @@
 #' @name Gradsdes
 NULL
 
-#' @param input_file input file.
+#' @param infile input file.
+#' 
 #' @rdname Gradsdes
-#' @export 
-cdo_gradsdes <- new_operator("gradsdes", 1, 0)
-
+#' @export
+cdo_gradsdes <- function(infile) {
+  .new_step(operator = 'gradsdes', 
+            inputs = list(infile), 
+            outputs = c(), 
+            n_inputs = 1,
+            n_outputs = 0)
+}

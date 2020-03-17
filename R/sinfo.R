@@ -29,13 +29,25 @@
 #' @name Sinfo
 NULL
 
-#' @param input_files input files.
+#' @param infiles input files.
+#' 
 #' @rdname Sinfo
-#' @export 
-cdo_sinfo <- new_operator("sinfo", -1, 0)
-
-#' @param input_files input files.
+#' @export
+cdo_sinfo <- function(infiles) {
+  .new_step(operator = 'sinfo', 
+            inputs = list(infiles), 
+            outputs = c(), 
+            n_inputs = -1,
+            n_outputs = 0)
+}
+#' @param infiles input files.
+#' 
 #' @rdname Sinfo
-#' @export 
-cdo_sinfon <- new_operator("sinfon", -1, 0)
-
+#' @export
+cdo_sinfon <- function(infiles) {
+  .new_step(operator = 'sinfon', 
+            inputs = list(infiles), 
+            outputs = c(), 
+            n_inputs = -1,
+            n_outputs = 0)
+}

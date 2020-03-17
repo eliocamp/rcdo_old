@@ -5,12 +5,12 @@
 \alias{cdo_vector}
 \title{Lat/Lon vector plot}
 \usage{
-cdo_vector(input_file, output_file = NULL)
+cdo_vector(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This operator generates 2D Lon/Lat vector plots. The data for the plot is read

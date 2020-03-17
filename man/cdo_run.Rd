@@ -4,10 +4,10 @@
 \alias{cdo_run}
 \title{Run a cdo operation.}
 \usage{
-cdo_run(cdo_operator)
+cdo_run(operation)
 }
 \arguments{
-\item{cdo_operator}{a cdo_operator, which is the result of any \verb{cdo_*} functions
+\item{operation}{a cdo_operator, which is the result of any \verb{cdo_*} functions
 that has at least one output file. `}
 }
 \description{

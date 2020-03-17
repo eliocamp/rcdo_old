@@ -24,15 +24,25 @@
 #' @name Adisit
 NULL
 
-#' @param input_file input file.
-#' @param output_file output file.
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Adisit
-#' @export 
-cdo_adipot <- new_operator("adipot", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_adipot <- function(infile, outfile = NULL) {
+  .new_step(operator = 'adipot', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Adisit
-#' @export 
-cdo_adisit <- new_operator("adisit", 1, 1)
-
+#' @export
+cdo_adisit <- function(infile, outfile = NULL) {
+  .new_step(operator = 'adisit', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}

@@ -20,21 +20,36 @@
 #' @name EcaPd
 NULL
 
-#' @param input_file input file.
-#' @param output_file output file.
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname EcaPd
-#' @export 
-cdo_eca_pd <- new_operator("eca_pd", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_eca_pd <- function(infile, outfile = NULL) {
+  .new_step(operator = 'eca_pd', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname EcaPd
-#' @export 
-cdo_eca_r10mm <- new_operator("eca_r10mm", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_eca_r10mm <- function(infile, outfile = NULL) {
+  .new_step(operator = 'eca_r10mm', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname EcaPd
-#' @export 
-cdo_eca_r20mm <- new_operator("eca_r20mm", 1, 1)
-
+#' @export
+cdo_eca_r20mm <- function(infile, outfile = NULL) {
+  .new_step(operator = 'eca_r20mm', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}

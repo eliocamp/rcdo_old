@@ -6,14 +6,14 @@
 \alias{cdo_setpartabp}
 \title{Set parameter table}
 \usage{
-cdo_setpartabn(input_file, output_file = NULL)
+cdo_setpartabn(infile, outfile = NULL)
 
-cdo_setpartabp(input_file, output_file = NULL)
+cdo_setpartabp(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This module transforms data and metadata of infile via a parameter table and

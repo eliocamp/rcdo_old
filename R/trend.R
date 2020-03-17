@@ -18,9 +18,25 @@
 #' @name Trend
 NULL
 
-#' @param input_file input file.
-#' @param output_file_1,output_file_2 output files.
+#' @param infile input file.
+#' @param outfile1,outfile2 output files.
 #' @rdname Trend
-#' @export 
-cdo_trend <- new_operator("trend", 1, 2)
-
+#' @export
+cdo_trend <- function(infile, outfile1 = NULL, outfile2 = NULL) {
+  .new_step(operator = 'trend', 
+            inputs = list(infile), 
+            outputs = c(outfile1), 
+            n_inputs = 1,
+            n_outputs = 2)
+}
+#' @param infile input file.
+#' @param outfile1,outfile2 output files.
+#' @rdname Trend
+#' @export
+cdo_trend <- function(infile, outfile1 = NULL, outfile2 = NULL) {
+  .new_step(operator = 'trend', 
+            inputs = list(infile), 
+            outputs = c(outfile2), 
+            n_inputs = 1,
+            n_outputs = 2)
+}

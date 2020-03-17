@@ -39,45 +39,80 @@
 #' @name Setmiss
 NULL
 
-#' @param input_file input file.
-#' @param output_file output file.
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Setmiss
-#' @export 
-cdo_setctomiss <- new_operator("setctomiss", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_setctomiss <- function(infile, outfile = NULL) {
+  .new_step(operator = 'setctomiss', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Setmiss
-#' @export 
-cdo_setmisstoc <- new_operator("setmisstoc", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_setmisstoc <- function(infile, outfile = NULL) {
+  .new_step(operator = 'setmisstoc', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Setmiss
-#' @export 
-cdo_setmisstodis <- new_operator("setmisstodis", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_setmisstodis <- function(infile, outfile = NULL) {
+  .new_step(operator = 'setmisstodis', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Setmiss
-#' @export 
-cdo_setmisstonn <- new_operator("setmisstonn", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_setmisstonn <- function(infile, outfile = NULL) {
+  .new_step(operator = 'setmisstonn', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Setmiss
-#' @export 
-cdo_setmissval <- new_operator("setmissval", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_setmissval <- function(infile, outfile = NULL) {
+  .new_step(operator = 'setmissval', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Setmiss
-#' @export 
-cdo_setrtomiss <- new_operator("setrtomiss", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_setrtomiss <- function(infile, outfile = NULL) {
+  .new_step(operator = 'setrtomiss', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Setmiss
-#' @export 
-cdo_setvrange <- new_operator("setvrange", 1, 1)
-
+#' @export
+cdo_setvrange <- function(infile, outfile = NULL) {
+  .new_step(operator = 'setvrange', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}

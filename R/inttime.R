@@ -16,15 +16,25 @@
 #' @name Inttime
 NULL
 
-#' @param input_file input file.
-#' @param output_file output file.
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Inttime
-#' @export 
-cdo_intntime <- new_operator("intntime", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_intntime <- function(infile, outfile = NULL) {
+  .new_step(operator = 'intntime', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Inttime
-#' @export 
-cdo_inttime <- new_operator("inttime", 1, 1)
-
+#' @export
+cdo_inttime <- function(infile, outfile = NULL) {
+  .new_step(operator = 'inttime', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}

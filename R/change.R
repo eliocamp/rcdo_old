@@ -25,45 +25,80 @@
 #' @name Change
 NULL
 
-#' @param input_file input file.
-#' @param output_file output file.
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Change
-#' @export 
-cdo_chcode <- new_operator("chcode", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_chcode <- function(infile, outfile = NULL) {
+  .new_step(operator = 'chcode', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Change
-#' @export 
-cdo_chlevel <- new_operator("chlevel", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_chlevel <- function(infile, outfile = NULL) {
+  .new_step(operator = 'chlevel', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Change
-#' @export 
-cdo_chlevelc <- new_operator("chlevelc", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_chlevelc <- function(infile, outfile = NULL) {
+  .new_step(operator = 'chlevelc', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Change
-#' @export 
-cdo_chlevelv <- new_operator("chlevelv", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_chlevelv <- function(infile, outfile = NULL) {
+  .new_step(operator = 'chlevelv', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Change
-#' @export 
-cdo_chname <- new_operator("chname", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_chname <- function(infile, outfile = NULL) {
+  .new_step(operator = 'chname', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Change
-#' @export 
-cdo_chparam <- new_operator("chparam", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_chparam <- function(infile, outfile = NULL) {
+  .new_step(operator = 'chparam', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Change
-#' @export 
-cdo_chunit <- new_operator("chunit", 1, 1)
-
+#' @export
+cdo_chunit <- function(infile, outfile = NULL) {
+  .new_step(operator = 'chunit', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}

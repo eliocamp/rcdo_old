@@ -5,12 +5,12 @@
 \alias{cdo_eca_cdd}
 \title{Consecutive dry days index per time period}
 \usage{
-cdo_eca_cdd(input_file, output_file = NULL)
+cdo_eca_cdd(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 Let infile be a time series of the daily precipitation amount RR, then the

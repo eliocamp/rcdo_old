@@ -6,14 +6,18 @@
 \alias{cdo_intlevelx3d}
 \title{Linear level interpolation from/to 3d vertical coordinates}
 \usage{
-cdo_intlevel3d(input_file_1, input_file_2, output_file = NULL)
+cdo_intlevel3d(infile1, infile2, outfile = NULL)
 
-cdo_intlevelx3d(input_file_1, input_file_2, output_file = NULL)
+cdo_intlevel3d(infile1, infile2, outfile = NULL)
+
+cdo_intlevelx3d(infile1, infile2, outfile = NULL)
+
+cdo_intlevelx3d(infile1, infile2, outfile = NULL)
 }
 \arguments{
-\item{input_file_1, input_file_2}{input files.}
+\item{infile1, infile2}{input files.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This operator performs a linear vertical interpolation of 3D variables fields

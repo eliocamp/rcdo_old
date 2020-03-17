@@ -8,18 +8,26 @@
 \alias{cdo_ymonsub}
 \title{Multi-year monthly arithmetic}
 \usage{
-cdo_ymonadd(input_file_1, input_file_2, output_file = NULL)
+cdo_ymonadd(infile1, infile2, outfile = NULL)
 
-cdo_ymondiv(input_file_1, input_file_2, output_file = NULL)
+cdo_ymonadd(infile1, infile2, outfile = NULL)
 
-cdo_ymonmul(input_file_1, input_file_2, output_file = NULL)
+cdo_ymondiv(infile1, infile2, outfile = NULL)
 
-cdo_ymonsub(input_file_1, input_file_2, output_file = NULL)
+cdo_ymondiv(infile1, infile2, outfile = NULL)
+
+cdo_ymonmul(infile1, infile2, outfile = NULL)
+
+cdo_ymonmul(infile1, infile2, outfile = NULL)
+
+cdo_ymonsub(infile1, infile2, outfile = NULL)
+
+cdo_ymonsub(infile1, infile2, outfile = NULL)
 }
 \arguments{
-\item{input_file_1, input_file_2}{input files.}
+\item{infile1, infile2}{input files.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This module performs simple arithmetic of a time series and one timestep with

@@ -24,15 +24,25 @@
 #' @name Merge
 NULL
 
-#' @param input_files input files.
-#' @param output_file output file.
+#' @param infiles input files.
+#' @param outfile output file.
 #' @rdname Merge
-#' @export 
-cdo_merge <- new_operator("merge", -1, 1)
-
-#' @param input_files input files.
-#' @param output_file output file.
+#' @export
+cdo_merge <- function(infiles, outfile = NULL) {
+  .new_step(operator = 'merge', 
+            inputs = list(infiles), 
+            outputs = c(outfile), 
+            n_inputs = -1,
+            n_outputs = 1)
+}
+#' @param infiles input files.
+#' @param outfile output file.
 #' @rdname Merge
-#' @export 
-cdo_mergetime <- new_operator("mergetime", -1, 1)
-
+#' @export
+cdo_mergetime <- function(infiles, outfile = NULL) {
+  .new_step(operator = 'mergetime', 
+            inputs = list(infiles), 
+            outputs = c(outfile), 
+            n_inputs = -1,
+            n_outputs = 1)
+}

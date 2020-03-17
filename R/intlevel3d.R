@@ -13,15 +13,47 @@
 #' @name Intlevel3d
 NULL
 
-#' @param input_file_1,input_file_2 input files.
-#' @param output_file output file.
+#' @param infile1,infile2 input files.
+#' @param outfile output file.
 #' @rdname Intlevel3d
-#' @export 
-cdo_intlevel3d <- new_operator("intlevel3d", 2, 1)
-
-#' @param input_file_1,input_file_2 input files.
-#' @param output_file output file.
+#' @export
+cdo_intlevel3d <- function(infile1, infile2, outfile = NULL) {
+  .new_step(operator = 'intlevel3d', 
+            inputs = list(infile1), 
+            outputs = c(outfile), 
+            n_inputs = 2,
+            n_outputs = 1)
+}
+#' @param infile1,infile2 input files.
+#' @param outfile output file.
 #' @rdname Intlevel3d
-#' @export 
-cdo_intlevelx3d <- new_operator("intlevelx3d", 2, 1)
-
+#' @export
+cdo_intlevel3d <- function(infile1, infile2, outfile = NULL) {
+  .new_step(operator = 'intlevel3d', 
+            inputs = list(infile2), 
+            outputs = c(outfile), 
+            n_inputs = 2,
+            n_outputs = 1)
+}
+#' @param infile1,infile2 input files.
+#' @param outfile output file.
+#' @rdname Intlevel3d
+#' @export
+cdo_intlevelx3d <- function(infile1, infile2, outfile = NULL) {
+  .new_step(operator = 'intlevelx3d', 
+            inputs = list(infile1), 
+            outputs = c(outfile), 
+            n_inputs = 2,
+            n_outputs = 1)
+}
+#' @param infile1,infile2 input files.
+#' @param outfile output file.
+#' @rdname Intlevel3d
+#' @export
+cdo_intlevelx3d <- function(infile1, infile2, outfile = NULL) {
+  .new_step(operator = 'intlevelx3d', 
+            inputs = list(infile2), 
+            outputs = c(outfile), 
+            n_inputs = 2,
+            n_outputs = 1)
+}

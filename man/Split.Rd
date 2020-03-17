@@ -11,24 +11,24 @@
 \alias{cdo_splitzaxis}
 \title{Split a dataset}
 \usage{
-cdo_splitcode(input_file, output_files = NULL)
+cdo_splitcode(infile, obase = NULL)
 
-cdo_splitgrid(input_file, output_files = NULL)
+cdo_splitgrid(infile, obase = NULL)
 
-cdo_splitlevel(input_file, output_files = NULL)
+cdo_splitlevel(infile, obase = NULL)
 
-cdo_splitname(input_file, output_files = NULL)
+cdo_splitname(infile, obase = NULL)
 
-cdo_splitparam(input_file, output_files = NULL)
+cdo_splitparam(infile, obase = NULL)
 
-cdo_splittabnum(input_file, output_files = NULL)
+cdo_splittabnum(infile, obase = NULL)
 
-cdo_splitzaxis(input_file, output_files = NULL)
+cdo_splitzaxis(infile, obase = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_files}{output files.}
+\item{obase}{preffix added to the output files.}
 }
 \description{
 This module splits infile into pieces. The output files will be named

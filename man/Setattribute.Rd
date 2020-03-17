@@ -5,12 +5,12 @@
 \alias{cdo_setattribute}
 \title{Set attributes}
 \usage{
-cdo_setattribute(input_file, output_file = NULL)
+cdo_setattribute(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This operator sets attributes of a dataset and writes the result to outfile.

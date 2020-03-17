@@ -6,14 +6,14 @@
 \alias{cdo_uv2vr_cfd}
 \title{Wind transformation}
 \usage{
-cdo_uv2dv_cfd(input_file, output_file = NULL)
+cdo_uv2dv_cfd(infile, outfile = NULL)
 
-cdo_uv2vr_cfd(input_file, output_file = NULL)
+cdo_uv2vr_cfd(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This module contains CDO operators with an interface to NCL functions. The

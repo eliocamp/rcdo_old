@@ -5,12 +5,12 @@
 \alias{cdo_detrend}
 \title{Detrend time series}
 \usage{
-cdo_detrend(input_file, output_file = NULL)
+cdo_detrend(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 Every time series in infile is linearly detrended. For every field element x

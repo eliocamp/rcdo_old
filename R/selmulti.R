@@ -16,21 +16,36 @@
 #' @name Selmulti
 NULL
 
-#' @param input_file input file.
-#' @param output_file output file.
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Selmulti
-#' @export 
-cdo_changemulti <- new_operator("changemulti", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_changemulti <- function(infile, outfile = NULL) {
+  .new_step(operator = 'changemulti', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Selmulti
-#' @export 
-cdo_delmulti <- new_operator("delmulti", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_delmulti <- function(infile, outfile = NULL) {
+  .new_step(operator = 'delmulti', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Selmulti
-#' @export 
-cdo_selmulti <- new_operator("selmulti", 1, 1)
-
+#' @export
+cdo_selmulti <- function(infile, outfile = NULL) {
+  .new_step(operator = 'selmulti', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}

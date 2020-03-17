@@ -18,38 +18,38 @@
 \alias{cdo_selzaxisname}
 \title{Select fields}
 \usage{
-cdo_delcode(input_file, output_file = NULL)
+cdo_delcode(infile, outfile = NULL)
 
-cdo_delname(input_file, output_file = NULL)
+cdo_delname(infile, outfile = NULL)
 
-cdo_delparam(input_file, output_file = NULL)
+cdo_delparam(infile, outfile = NULL)
 
-cdo_selcode(input_file, output_file = NULL)
+cdo_selcode(infile, outfile = NULL)
 
-cdo_selgrid(input_file, output_file = NULL)
+cdo_selgrid(infile, outfile = NULL)
 
-cdo_sellevel(input_file, output_file = NULL)
+cdo_sellevel(infile, outfile = NULL)
 
-cdo_sellevidx(input_file, output_file = NULL)
+cdo_sellevidx(infile, outfile = NULL)
 
-cdo_selltype(input_file, output_file = NULL)
+cdo_selltype(infile, outfile = NULL)
 
-cdo_selname(input_file, output_file = NULL)
+cdo_selname(infile, outfile = NULL)
 
-cdo_selparam(input_file, output_file = NULL)
+cdo_selparam(infile, outfile = NULL)
 
-cdo_selstdname(input_file, output_file = NULL)
+cdo_selstdname(infile, outfile = NULL)
 
-cdo_seltabnum(input_file, output_file = NULL)
+cdo_seltabnum(infile, outfile = NULL)
 
-cdo_selzaxis(input_file, output_file = NULL)
+cdo_selzaxis(infile, outfile = NULL)
 
-cdo_selzaxisname(input_file, output_file = NULL)
+cdo_selzaxisname(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This module selects some fields from infile and writes them to outfile. The

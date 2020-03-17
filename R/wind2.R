@@ -17,9 +17,14 @@
 #' @name Wind2
 NULL
 
-#' @param input_file input file.
-#' @param output_file output file.
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Wind2
-#' @export 
-cdo_dv2ps <- new_operator("dv2ps", 1, 1)
-
+#' @export
+cdo_dv2ps <- function(infile, outfile = NULL) {
+  .new_step(operator = 'dv2ps', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}

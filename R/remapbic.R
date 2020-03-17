@@ -20,15 +20,25 @@
 #' @name Remapbic
 NULL
 
-#' @param input_file input file.
-#' @param output_file output file.
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Remapbic
-#' @export 
-cdo_genbic <- new_operator("genbic", 1, 1)
-
-#' @param input_file input file.
-#' @param output_file output file.
+#' @export
+cdo_genbic <- function(infile, outfile = NULL) {
+  .new_step(operator = 'genbic', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Remapbic
-#' @export 
-cdo_remapbic <- new_operator("remapbic", 1, 1)
-
+#' @export
+cdo_remapbic <- function(infile, outfile = NULL) {
+  .new_step(operator = 'remapbic', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}

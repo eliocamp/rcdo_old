@@ -5,12 +5,12 @@
 \alias{cdo_after}
 \title{ECHAM standard post processor}
 \usage{
-cdo_after(input_files, output_file = NULL)
+cdo_after(infiles, outfile = NULL)
 }
 \arguments{
-\item{input_files}{input files.}
+\item{infiles}{input files.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 The \"afterburner\" is the standard post processor for ECHAM data which

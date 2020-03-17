@@ -5,12 +5,12 @@
 \alias{cdo_collgrid}
 \title{Collect horizontal grid}
 \usage{
-cdo_collgrid(input_files, output_file = NULL)
+cdo_collgrid(infiles, outfile = NULL)
 }
 \arguments{
-\item{input_files}{input files.}
+\item{infiles}{input files.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This operator collects the data of the input files to one output file. All

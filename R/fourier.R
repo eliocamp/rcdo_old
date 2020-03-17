@@ -20,9 +20,14 @@
 #' @name Fourier
 NULL
 
-#' @param input_file input file.
-#' @param output_file output file.
+#' @param infile input file.
+#' @param outfile output file.
 #' @rdname Fourier
-#' @export 
-cdo_fourier <- new_operator("fourier", 1, 1)
-
+#' @export
+cdo_fourier <- function(infile, outfile = NULL) {
+  .new_step(operator = 'fourier', 
+            inputs = list(infile), 
+            outputs = c(outfile), 
+            n_inputs = 1,
+            n_outputs = 1)
+}

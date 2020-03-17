@@ -14,30 +14,30 @@
 \alias{cdo_yearvar1}
 \title{Yearly statistical values}
 \usage{
-cdo_yearavg(input_file, output_file = NULL)
+cdo_yearavg(infile, outfile = NULL)
 
-cdo_yearmax(input_file, output_file = NULL)
+cdo_yearmax(infile, outfile = NULL)
 
-cdo_yearmean(input_file, output_file = NULL)
+cdo_yearmean(infile, outfile = NULL)
 
-cdo_yearmin(input_file, output_file = NULL)
+cdo_yearmin(infile, outfile = NULL)
 
-cdo_yearrange(input_file, output_file = NULL)
+cdo_yearrange(infile, outfile = NULL)
 
-cdo_yearstd(input_file, output_file = NULL)
+cdo_yearstd(infile, outfile = NULL)
 
-cdo_yearstd1(input_file, output_file = NULL)
+cdo_yearstd1(infile, outfile = NULL)
 
-cdo_yearsum(input_file, output_file = NULL)
+cdo_yearsum(infile, outfile = NULL)
 
-cdo_yearvar(input_file, output_file = NULL)
+cdo_yearvar(infile, outfile = NULL)
 
-cdo_yearvar1(input_file, output_file = NULL)
+cdo_yearvar1(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This module computes statistical values over timesteps of the same year.

@@ -15,32 +15,32 @@
 \alias{cdo_fldvar1}
 \title{Statistical values over a field}
 \usage{
-cdo_fldavg(input_file, output_file = NULL)
+cdo_fldavg(infile, outfile = NULL)
 
-cdo_fldmax(input_file, output_file = NULL)
+cdo_fldmax(infile, outfile = NULL)
 
-cdo_fldmean(input_file, output_file = NULL)
+cdo_fldmean(infile, outfile = NULL)
 
-cdo_fldmin(input_file, output_file = NULL)
+cdo_fldmin(infile, outfile = NULL)
 
-cdo_fldpctl(input_file, output_file = NULL)
+cdo_fldpctl(infile, outfile = NULL)
 
-cdo_fldrange(input_file, output_file = NULL)
+cdo_fldrange(infile, outfile = NULL)
 
-cdo_fldstd(input_file, output_file = NULL)
+cdo_fldstd(infile, outfile = NULL)
 
-cdo_fldstd1(input_file, output_file = NULL)
+cdo_fldstd1(infile, outfile = NULL)
 
-cdo_fldsum(input_file, output_file = NULL)
+cdo_fldsum(infile, outfile = NULL)
 
-cdo_fldvar(input_file, output_file = NULL)
+cdo_fldvar(infile, outfile = NULL)
 
-cdo_fldvar1(input_file, output_file = NULL)
+cdo_fldvar1(infile, outfile = NULL)
 }
 \arguments{
-\item{input_file}{input file.}
+\item{infile}{input file.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This module computes statistical values of all input fields. A field is a

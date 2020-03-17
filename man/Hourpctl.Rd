@@ -5,12 +5,16 @@
 \alias{cdo_hourpctl}
 \title{Hourly percentile values}
 \usage{
-cdo_hourpctl(input_file_1, input_file_2, input_file_3, output_file = NULL)
+cdo_hourpctl(infile1, infile2, infile3, outfile = NULL)
+
+cdo_hourpctl(infile1, infile2, infile3, outfile = NULL)
+
+cdo_hourpctl(infile1, infile2, infile3, outfile = NULL)
 }
 \arguments{
-\item{input_file_1, input_file_2, input_file_3}{input files.}
+\item{infile1, infile2, infile3}{input files.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 This operator computes percentiles over all timesteps of the same hour in

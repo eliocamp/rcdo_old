@@ -22,27 +22,91 @@
 #' @name Yseasarith
 NULL
 
-#' @param input_file_1,input_file_2 input files.
-#' @param output_file output file.
+#' @param infile1,infile2 input files.
+#' @param outfile output file.
 #' @rdname Yseasarith
-#' @export 
-cdo_yseasadd <- new_operator("yseasadd", 2, 1)
-
-#' @param input_file_1,input_file_2 input files.
-#' @param output_file output file.
+#' @export
+cdo_yseasadd <- function(infile1, infile2, outfile = NULL) {
+  .new_step(operator = 'yseasadd', 
+            inputs = list(infile1), 
+            outputs = c(outfile), 
+            n_inputs = 2,
+            n_outputs = 1)
+}
+#' @param infile1,infile2 input files.
+#' @param outfile output file.
 #' @rdname Yseasarith
-#' @export 
-cdo_yseasdiv <- new_operator("yseasdiv", 2, 1)
-
-#' @param input_file_1,input_file_2 input files.
-#' @param output_file output file.
+#' @export
+cdo_yseasadd <- function(infile1, infile2, outfile = NULL) {
+  .new_step(operator = 'yseasadd', 
+            inputs = list(infile2), 
+            outputs = c(outfile), 
+            n_inputs = 2,
+            n_outputs = 1)
+}
+#' @param infile1,infile2 input files.
+#' @param outfile output file.
 #' @rdname Yseasarith
-#' @export 
-cdo_yseasmul <- new_operator("yseasmul", 2, 1)
-
-#' @param input_file_1,input_file_2 input files.
-#' @param output_file output file.
+#' @export
+cdo_yseasdiv <- function(infile1, infile2, outfile = NULL) {
+  .new_step(operator = 'yseasdiv', 
+            inputs = list(infile1), 
+            outputs = c(outfile), 
+            n_inputs = 2,
+            n_outputs = 1)
+}
+#' @param infile1,infile2 input files.
+#' @param outfile output file.
 #' @rdname Yseasarith
-#' @export 
-cdo_yseassub <- new_operator("yseassub", 2, 1)
-
+#' @export
+cdo_yseasdiv <- function(infile1, infile2, outfile = NULL) {
+  .new_step(operator = 'yseasdiv', 
+            inputs = list(infile2), 
+            outputs = c(outfile), 
+            n_inputs = 2,
+            n_outputs = 1)
+}
+#' @param infile1,infile2 input files.
+#' @param outfile output file.
+#' @rdname Yseasarith
+#' @export
+cdo_yseasmul <- function(infile1, infile2, outfile = NULL) {
+  .new_step(operator = 'yseasmul', 
+            inputs = list(infile1), 
+            outputs = c(outfile), 
+            n_inputs = 2,
+            n_outputs = 1)
+}
+#' @param infile1,infile2 input files.
+#' @param outfile output file.
+#' @rdname Yseasarith
+#' @export
+cdo_yseasmul <- function(infile1, infile2, outfile = NULL) {
+  .new_step(operator = 'yseasmul', 
+            inputs = list(infile2), 
+            outputs = c(outfile), 
+            n_inputs = 2,
+            n_outputs = 1)
+}
+#' @param infile1,infile2 input files.
+#' @param outfile output file.
+#' @rdname Yseasarith
+#' @export
+cdo_yseassub <- function(infile1, infile2, outfile = NULL) {
+  .new_step(operator = 'yseassub', 
+            inputs = list(infile1), 
+            outputs = c(outfile), 
+            n_inputs = 2,
+            n_outputs = 1)
+}
+#' @param infile1,infile2 input files.
+#' @param outfile output file.
+#' @rdname Yseasarith
+#' @export
+cdo_yseassub <- function(infile1, infile2, outfile = NULL) {
+  .new_step(operator = 'yseassub', 
+            inputs = list(infile2), 
+            outputs = c(outfile), 
+            n_inputs = 2,
+            n_outputs = 1)
+}

@@ -17,15 +17,25 @@
 #' @name Copy
 NULL
 
-#' @param input_files input files.
-#' @param output_file output file.
+#' @param infiles input files.
+#' @param outfile output file.
 #' @rdname Copy
-#' @export 
-cdo_cat <- new_operator("cat", -1, 1)
-
-#' @param input_files input files.
-#' @param output_file output file.
+#' @export
+cdo_cat <- function(infiles, outfile = NULL) {
+  .new_step(operator = 'cat', 
+            inputs = list(infiles), 
+            outputs = c(outfile), 
+            n_inputs = -1,
+            n_outputs = 1)
+}
+#' @param infiles input files.
+#' @param outfile output file.
 #' @rdname Copy
-#' @export 
-cdo_copy <- new_operator("copy", -1, 1)
-
+#' @export
+cdo_copy <- function(infiles, outfile = NULL) {
+  .new_step(operator = 'copy', 
+            inputs = list(infiles), 
+            outputs = c(outfile), 
+            n_inputs = -1,
+            n_outputs = 1)
+}

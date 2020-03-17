@@ -5,12 +5,14 @@
 \alias{cdo_eca_cwfi}
 \title{Cold-spell days index wrt 10th percentile of reference period}
 \usage{
-cdo_eca_cwfi(input_file_1, input_file_2, output_file = NULL)
+cdo_eca_cwfi(infile1, infile2, outfile = NULL)
+
+cdo_eca_cwfi(infile1, infile2, outfile = NULL)
 }
 \arguments{
-\item{input_file_1, input_file_2}{input files.}
+\item{infile1, infile2}{input files.}
 
-\item{output_file}{output file.}
+\item{outfile}{output file.}
 }
 \description{
 Let infile1 be a time series of the daily mean temperature TG, and infile2 be
