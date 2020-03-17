@@ -1,0 +1,26 @@
+## This file was created automatically, do not edit by hand.
+
+
+#' Trend of time series
+#' 
+#' The values of the input file infile are assumed to be distributed as
+#' N(a+b*t,S^2) with unknown a, b and S^2. This operator estimates the parameter a
+#' and b. For every field element x only those timesteps t belong to the sample
+#' S(x), which have i(t,x) NE miss. Thus the estimation for a is stored in
+#' outfile1 and that for b is stored in outfile2. To subtract the trend from the
+#' data see operator subtrend. It is assumed that all timesteps are equidistant,
+#' if this is not the case set the parameter equal=false.
+#' 
+#' @details
+#'      ydrunmin   Multi-year daily running minimum
+#'                 o(001,x) = min{i(t,x), i(t+1,x), ..., i(t+nts-1,x); day[(i(t+(nts-1)/2)] = 001}
+#' 
+#' @name Trend
+NULL
+
+#' @param input_file input file.
+#' @param output_file_1,output_file_2 output files.
+#' @rdname Trend
+#' @export 
+cdo_trend <- new_operator("trend", 1, 2)
+
